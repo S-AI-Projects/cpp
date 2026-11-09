@@ -11,12 +11,15 @@
 
 [237ff487-467a-47e1-9b01-8a891844f86c]
 description = "no rows"
+comment = "Validates empty grid input (zero rows) producing empty output collection"
 
 [4b4134ec-e20f-439c-a295-664c38950ba1]
 description = "no columns"
+comment = "Validates single empty row input (zero columns) producing empty string output"
 
 [d774d054-bbad-4867-88ae-069cbd1c4f92]
 description = "no flowers"
+comment = "Validates grid containing only spaces with no flowers present"
 
 [225176a0-725e-43cd-aa13-9dced501f16e]
 description = "garden full of flowers"
