@@ -1,0 +1,9 @@
+=== REFERENCE (separate hour/minute) ===
+===============================================================================
+All tests passed (50 assertions in 3 test cases)
+
+
+=== ALTERNATIVE (total minutes) ===
+===============================================================================
+All tests passed (50 assertions in 3 test cases)
+
