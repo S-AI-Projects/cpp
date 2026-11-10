@@ -1,0 +1,31 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+isogram is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+word_with_duplicated_character_in_mixed_case
+-------------------------------------------------------------------------------
+/private/var/folders/7j/hz4v98wx44z23tq2v2gv7hd40000gn/T/tmpk52__96r/isogram/isogram_test.cpp:53
+...............................................................................
+
+/private/var/folders/7j/hz4v98wx44z23tq2v2gv7hd40000gn/T/tmpk52__96r/isogram/isogram_test.cpp:58: FAILED:
+  REQUIRE( expected == actual )
+with expansion:
+  false == true
+
+-------------------------------------------------------------------------------
+word_with_duplicated_character_in_mixed_case_lowercase_first
+-------------------------------------------------------------------------------
+/private/var/folders/7j/hz4v98wx44z23tq2v2gv7hd40000gn/T/tmpk52__96r/isogram/isogram_test.cpp:61
+...............................................................................
+
+/private/var/folders/7j/hz4v98wx44z23tq2v2gv7hd40000gn/T/tmpk52__96r/isogram/isogram_test.cpp:66: FAILED:
+  REQUIRE( expected == actual )
+with expansion:
+  false == true
+
+===============================================================================
+test cases: 14 | 12 passed | 2 failed
+assertions: 14 | 12 passed | 2 failed
+
