@@ -1,0 +1,179 @@
+Starting check for exercises/practice/rotational-cipher
+Counts before: {'included': 10, 'excluded': 0, 'total': 10}
+Loaded config.json: {'solution': ['rotational_cipher.cpp', 'rotational_cipher.h'], 'test': ['rotational_cipher_test.cpp'], 'example': ['.meta/example.cpp', '.meta/example.h']}
+File substitutions planned: [('.meta/example.cpp', 'rotational_cipher.cpp'), ('.meta/example.h', 'rotational_cipher.h')]
+Copying /Users/muditkumawat/cpp/exercises/practice/rotational-cipher to /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher
+Substituting /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/.meta/example.cpp -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher.cpp
+Substituting /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/.meta/example.h -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher.h
+Running command: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+--- cmake configure stdout ---
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/build
+
+--- cmake configure stderr ---
+CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+
+Running command: cmake --build build
+--- cmake build stdout ---
+[ 25%] Building CXX object CMakeFiles/rotational-cipher.dir/rotational_cipher_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/rotational-cipher.dir/rotational_cipher.cpp.o
+[ 75%] Building CXX object CMakeFiles/rotational-cipher.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable rotational-cipher
+[100%] Built target rotational-cipher
+===============================================================================
+All tests passed (10 assertions in 10 test cases)
+
+[100%] Built target test_rotational-cipher
+
+--- cmake build stderr ---
+
+Running command: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/build/rotational-cipher -s
+--- test execution stdout ---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rotational-cipher is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+rotate a by 0, same output as input
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:13
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:14: PASSED:
+  REQUIRE( rotational_cipher::rotate("a", 0) == "a" )
+with expansion:
+  "a" == "a"
+
+-------------------------------------------------------------------------------
+rotate a by 1
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:19
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:20: PASSED:
+  REQUIRE( rotational_cipher::rotate("a", 1) == "b" )
+with expansion:
+  "b" == "b"
+
+-------------------------------------------------------------------------------
+rotate a by 26, same output as input
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:24
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:25: PASSED:
+  REQUIRE( rotational_cipher::rotate("a", 26) == "a" )
+with expansion:
+  "a" == "a"
+
+-------------------------------------------------------------------------------
+rotate m by 13
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:28
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:29: PASSED:
+  REQUIRE( rotational_cipher::rotate("m", 13) == "z" )
+with expansion:
+  "z" == "z"
+
+-------------------------------------------------------------------------------
+rotate n by 13 with wrap around alphabet
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:33
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:34: PASSED:
+  REQUIRE( rotational_cipher::rotate("n", 13) == "a" )
+with expansion:
+  "a" == "a"
+
+-------------------------------------------------------------------------------
+rotate capital letters
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:37
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:38: PASSED:
+  REQUIRE( rotational_cipher::rotate("OMG", 5) == "TRL" )
+with expansion:
+  "TRL" == "TRL"
+
+-------------------------------------------------------------------------------
+rotate spaces
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:41
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:42: PASSED:
+  REQUIRE( rotational_cipher::rotate("O M G", 5) == "T R L" )
+with expansion:
+  "T R L" == "T R L"
+
+-------------------------------------------------------------------------------
+rotate numbers
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:45
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:47: PASSED:
+  REQUIRE( rotational_cipher::rotate("Testing 1 2 3 testing", 4) == "Xiwxmrk 1 2 3 xiwxmrk" )
+with expansion:
+  "Xiwxmrk 1 2 3 xiwxmrk"
+  ==
+  "Xiwxmrk 1 2 3 xiwxmrk"
+
+-------------------------------------------------------------------------------
+rotate punctuation
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:50
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:52: PASSED:
+  REQUIRE( rotational_cipher::rotate("Let's eat, Grandma!", 21) == "Gzo'n zvo, Bmviyhv!" )
+with expansion:
+  "Gzo'n zvo, Bmviyhv!"
+  ==
+  "Gzo'n zvo, Bmviyhv!"
+
+-------------------------------------------------------------------------------
+rotate all letters
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:55
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt9kimpnu/rotational-cipher/rotational_cipher_test.cpp:58: PASSED:
+  REQUIRE( rotational_cipher::rotate( "The quick brown fox jumps over the lazy dog.", 13) == "Gur dhvpx oebja sbk whzcf bire gur ynml qbt." )
+with expansion:
+  "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."
+  ==
+  "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."
+
+===============================================================================
+All tests passed (10 assertions in 10 test cases)
+
+
+--- test execution stderr ---
+
+Test summary parsed: 10 test cases, 10 assertions
+Verified required test case passed: 'rotate a by 0, same output as input'
+Verified required test case passed: 'rotate a by 1'
+Verified required test case passed: 'rotate a by 26, same output as input'
+Counts after: {'included': 10, 'excluded': 0, 'total': 10}

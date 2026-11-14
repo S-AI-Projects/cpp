@@ -9,12 +9,15 @@
 # As user-added comments (using the # character) will be removed when this file
 # is regenerated, comments can be added via a `comment` key.
 
+# Included: example.cpp handles shift_key = 0 using the modulo arithmetic expression (c + shift_key - 'a') % 26 + 'a', leaving the character unchanged.
 [74e58a38-e484-43f1-9466-877a7515e10f]
 description = "rotate a by 0, same output as input"
 
+# Included: example.cpp handles shift_key = 1 by advancing the character via (c + shift_key - 'a') % 26 + 'a'.
 [7ee352c6-e6b0-4930-b903-d09943ecb8f5]
 description = "rotate a by 1"
 
+# Included: example.cpp handles shift_key = 26 via (c + shift_key - 'a') % 26 + 'a', where shift_key % 26 wraps back to the original character.
 [edf0a733-4231-4594-a5ee-46a4009ad764]
 description = "rotate a by 26, same output as input"
 
