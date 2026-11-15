@@ -1,0 +1,628 @@
+Starting check for exercises/practice/allergies
+Config solution files: ['allergies.cpp', 'allergies.h']
+Config example files: ['.meta/example.cpp', '.meta/example.h']
+Config test files: ['allergies_test.cpp']
+Planned substitutions: [('.meta/example.cpp', 'allergies.cpp'), ('.meta/example.h', 'allergies.h')]
+Copying /Users/muditkumawat/cpp/exercises/practice/allergies -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies
+Substituting reference file /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/.meta/example.cpp -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies.cpp
+Substituting reference file /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/.meta/example.h -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies.h
+Running command: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+--- cmake configure stdout ---
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/build
+
+--- cmake configure stderr ---
+CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+
+Running command: cmake --build build
+--- cmake build stdout ---
+[ 25%] Building CXX object CMakeFiles/allergies.dir/allergies_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/allergies.dir/allergies.cpp.o
+[ 75%] Building CXX object CMakeFiles/allergies.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable allergies
+[100%] Built target allergies
+===============================================================================
+All tests passed (50 assertions in 50 test cases)
+
+[100%] Built target test_allergies
+
+--- cmake build stderr ---
+
+Running command: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/build/allergies -s
+--- test execution stdout ---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+allergies is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+testing for eggs allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:9
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:10: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("eggs") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for eggs allergy -> allergic only to eggs
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:16
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:17: PASSED:
+  REQUIRE( true == allergies::allergy_test(1).is_allergic_to("eggs") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for eggs allergy -> allergic to eggs and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:21
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:22: PASSED:
+  REQUIRE( true == allergies::allergy_test(3).is_allergic_to("eggs") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for eggs allergy -> allergic to something, but not eggs
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:26
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:27: PASSED:
+  REQUIRE( false == allergies::allergy_test(2).is_allergic_to("eggs") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for eggs allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:31
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:32: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("eggs") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for peanuts allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:36
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:37: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("peanuts") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for peanuts allergy -> allergic only to peanuts
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:41
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:42: PASSED:
+  REQUIRE( true == allergies::allergy_test(2).is_allergic_to("peanuts") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for peanuts allergy -> allergic to peanuts and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:47
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:48: PASSED:
+  REQUIRE( true == allergies::allergy_test(7).is_allergic_to("peanuts") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for peanuts allergy -> allergic to something, but not peanuts
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:53
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:54: PASSED:
+  REQUIRE( false == allergies::allergy_test(5).is_allergic_to("peanuts") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for peanuts allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:58
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:59: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("peanuts") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for shellfish allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:63
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:64: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("shellfish") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for shellfish allergy -> allergic only to shellfish
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:68
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:69: PASSED:
+  REQUIRE( true == allergies::allergy_test(4).is_allergic_to("shellfish") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for shellfish allergy -> allergic to shellfish and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:74
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:75: PASSED:
+  REQUIRE( true == allergies::allergy_test(14).is_allergic_to("shellfish") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for shellfish allergy -> allergic to something, but not shellfish
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:80
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:81: PASSED:
+  REQUIRE( false == allergies::allergy_test(10).is_allergic_to("shellfish") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for shellfish allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:85
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:86: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("shellfish") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for strawberries allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:90
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:91: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("strawberries") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for strawberries allergy -> allergic only to strawberries
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:95
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:96: PASSED:
+  REQUIRE( true == allergies::allergy_test(8).is_allergic_to("strawberries") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for strawberries allergy -> allergic to strawberries and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:103
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:104: PASSED:
+  REQUIRE( true == allergies::allergy_test(28).is_allergic_to("strawberries") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for strawberries allergy -> allergic to something, but not strawberries
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:111
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:113: PASSED:
+  REQUIRE( false == allergies::allergy_test(20).is_allergic_to("strawberries") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for strawberries allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:117
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:119: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("strawberries") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for tomatoes allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:123
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:124: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("tomatoes") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for tomatoes allergy -> allergic only to tomatoes
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:128
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:129: PASSED:
+  REQUIRE( true == allergies::allergy_test(16).is_allergic_to("tomatoes") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for tomatoes allergy -> allergic to tomatoes and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:134
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:135: PASSED:
+  REQUIRE( true == allergies::allergy_test(56).is_allergic_to("tomatoes") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for tomatoes allergy -> allergic to something, but not tomatoes
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:140
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:141: PASSED:
+  REQUIRE( false == allergies::allergy_test(40).is_allergic_to("tomatoes") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for tomatoes allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:145
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:146: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("tomatoes") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for chocolate allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:150
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:151: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("chocolate") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for chocolate allergy -> allergic only to chocolate
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:155
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:156: PASSED:
+  REQUIRE( true == allergies::allergy_test(32).is_allergic_to("chocolate") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for chocolate allergy -> allergic to chocolate and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:161
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:162: PASSED:
+  REQUIRE( true == allergies::allergy_test(112).is_allergic_to("chocolate") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for chocolate allergy -> allergic to something, but not chocolate
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:167
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:168: PASSED:
+  REQUIRE( false == allergies::allergy_test(80).is_allergic_to("chocolate") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for chocolate allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:172
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:173: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("chocolate") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for pollen allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:177
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:178: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("pollen") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for pollen allergy -> allergic only to pollen
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:182
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:183: PASSED:
+  REQUIRE( true == allergies::allergy_test(64).is_allergic_to("pollen") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for pollen allergy -> allergic to pollen and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:187
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:188: PASSED:
+  REQUIRE( true == allergies::allergy_test(224).is_allergic_to("pollen") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for pollen allergy -> allergic to something, but not pollen
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:192
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:193: PASSED:
+  REQUIRE( false == allergies::allergy_test(160).is_allergic_to("pollen") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for pollen allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:197
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:198: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("pollen") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for cats allergy -> not allergic to anything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:202
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:203: PASSED:
+  REQUIRE( false == allergies::allergy_test(0).is_allergic_to("cats") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for cats allergy -> allergic only to cats
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:207
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:208: PASSED:
+  REQUIRE( true == allergies::allergy_test(128).is_allergic_to("cats") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for cats allergy -> allergic to cats and something else
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:212
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:213: PASSED:
+  REQUIRE( true == allergies::allergy_test(192).is_allergic_to("cats") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+testing for cats allergy -> allergic to something, but not cats
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:217
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:218: PASSED:
+  REQUIRE( false == allergies::allergy_test(64).is_allergic_to("cats") )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+testing for cats allergy -> allergic to everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:222
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:223: PASSED:
+  REQUIRE( true == allergies::allergy_test(255).is_allergic_to("cats") )
+with expansion:
+  true == true
+
+-------------------------------------------------------------------------------
+list when: -> no allergies
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:227
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:229: PASSED:
+  REQUIRE( expected == allergies::allergy_test(0).get_allergies() )
+with expansion:
+  {  } == {  }
+
+-------------------------------------------------------------------------------
+list when: -> just eggs
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:232
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:234: PASSED:
+  REQUIRE( expected == allergies::allergy_test(1).get_allergies() )
+with expansion:
+  { "eggs" } == { "eggs" }
+
+-------------------------------------------------------------------------------
+list when: -> just peanuts
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:238
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:240: PASSED:
+  REQUIRE( expected == allergies::allergy_test(2).get_allergies() )
+with expansion:
+  { "peanuts" } == { "peanuts" }
+
+-------------------------------------------------------------------------------
+list when: -> just strawberries
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:244
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:246: PASSED:
+  REQUIRE( expected == allergies::allergy_test(8).get_allergies() )
+with expansion:
+  { "strawberries" } == { "strawberries" }
+
+-------------------------------------------------------------------------------
+list when: -> eggs and peanuts
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:250
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:252: PASSED:
+  REQUIRE( expected == allergies::allergy_test(3).get_allergies() )
+with expansion:
+  { "peanuts", "eggs" }
+  ==
+  { "peanuts", "eggs" }
+
+-------------------------------------------------------------------------------
+list when: -> more than eggs but not peanuts
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:256
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:258: PASSED:
+  REQUIRE( expected == allergies::allergy_test(5).get_allergies() )
+with expansion:
+  { "shellfish", "eggs" }
+  ==
+  { "shellfish", "eggs" }
+
+-------------------------------------------------------------------------------
+list when: -> lots of stuff
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:262
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:265: PASSED:
+  REQUIRE( expected == allergies::allergy_test(248).get_allergies() )
+with expansion:
+  { "pollen", "chocolate", "tomatoes", "cats", "strawberries" }
+  ==
+  { "tomatoes", "pollen", "chocolate", "strawberries", "cats" }
+
+-------------------------------------------------------------------------------
+list when: -> everything
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:269
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:273: PASSED:
+  REQUIRE( expected == allergies::allergy_test(255).get_allergies() )
+with expansion:
+  { "cats", "pollen", "chocolate", "peanuts", "tomatoes", "strawberries",
+  "shellfish", "eggs" }
+  ==
+  { "strawberries", "pollen", "tomatoes", "peanuts", "shellfish", "eggs",
+  "chocolate", "cats" }
+
+-------------------------------------------------------------------------------
+list when: -> no allergen score parts
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:277
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:281: PASSED:
+  REQUIRE( expected == allergies::allergy_test(509).get_allergies() )
+with expansion:
+  { "cats", "pollen", "tomatoes", "strawberries", "eggs", "shellfish",
+  "chocolate" }
+  ==
+  { "tomatoes", "strawberries", "eggs", "shellfish", "pollen", "chocolate",
+  "cats" }
+
+-------------------------------------------------------------------------------
+list when: -> no allergen score parts without highest valid score
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:285
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpk0_p96be/allergies/allergies_test.cpp:287: PASSED:
+  REQUIRE( expected == allergies::allergy_test(257).get_allergies() )
+with expansion:
+  { "eggs" } == { "eggs" }
+
+===============================================================================
+All tests passed (50 assertions in 50 test cases)
+
+
+--- test execution stderr ---
+
+Total executed test cases: 50
+Total assertions: 50
+Explicit assertion passed: 'testing for eggs allergy -> not allergic to anything' is present and executed.
+Explicit assertion passed: 'testing for eggs allergy -> allergic only to eggs' is present and executed.
+Explicit assertion passed: 'testing for eggs allergy -> allergic to eggs and something else' is present and executed.
