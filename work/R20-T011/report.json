@@ -1,0 +1,73 @@
+{
+  "task": "R20-T011",
+  "versions": {
+    "python": "3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.3.34.2)"
+  },
+  "counts_before_after": {
+    "metadata_entries": {
+      "before": 16,
+      "after": 16
+    },
+    "explicit_exclusions": {
+      "before": 0,
+      "after": 0
+    },
+    "cpp_test_cases": {
+      "before": 12,
+      "after": 12
+    }
+  },
+  "enabled_test_cases": [
+    "sum_to_1_yields_0",
+    "sum_to_4_yields_3",
+    "sum_to_10_yields_23",
+    "sum_to_100",
+    "sum_to_1000",
+    "sum_of_7_13_17_to_20_yields_51",
+    "sum_of_4_6_to_15",
+    "sum_of_5_6_8_to_150",
+    "sum_of_5_25_to_51",
+    "sum_of_43_47_to_10000",
+    "sum_of_1_to_100",
+    "sum_of_empty_list"
+  ],
+  "canonical_results": [
+    {
+      "factors": [
+        3,
+        5
+      ],
+      "limit": 1,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "factors": [
+        3,
+        5
+      ],
+      "limit": 4,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "factors": [
+        3
+      ],
+      "limit": 7,
+      "expected": 9,
+      "actual": 9
+    }
+  ],
+  "test_run": {
+    "configure_exit": 0,
+    "build_exit": 0,
+    "list_exit": 12,
+    "executable_exit": 0,
+    "listed_cases": 12,
+    "executed_cases": 12,
+    "summary": "All tests passed (12 assertions in 12 test cases)"
+  }
+}
