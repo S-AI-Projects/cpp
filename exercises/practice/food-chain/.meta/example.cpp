@@ -6,6 +6,8 @@ namespace food_chain {
 
 namespace {
 
+// With eight fixed entries, a verse calls sing() once and appends at most six
+// prior verse fragments; these string copies are bounded by the lyric table.
 class song_verse {
    public:
     song_verse(string f, string r, string v)
