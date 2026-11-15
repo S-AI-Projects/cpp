@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "uuid": "a3f0fb58-f240-4723-8ddc-e644666b85cc",
+      "test": "roster_is_empty_when_no_student_is_added",
+      "input": "An empty school.",
+      "expected": "The roster is empty."
+    },
+    {
+      "uuid": "6d0a30e4-1b4e-472e-8e20-c41702125667",
+      "test": "student_is_added_to_the_roster",
+      "input": "Add Aimee to grade 2.",
+      "expected": {"2": ["Aimee"]}
+    },
+    {
+      "uuid": "233be705-dd58-4968-889d-fb3c7954c9cc",
+      "test": "multiple_students_in_the_same_grade_are_added_to_the_roster",
+      "input": "Add Blair, James, and Paul to grade 2.",
+      "expected": {"2": ["Blair", "James", "Paul"]}
+    }
+  ],
+  "baseline_counts": {"metadata": 23, "included": 15, "excluded": 8}
+}

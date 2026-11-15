@@ -1,0 +1,109 @@
+{
+  "task": "R20-T012",
+  "tools": {
+    "python": "3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+    "configlet": "4.0.3"
+  },
+  "metadata_counts": {
+    "total": 23,
+    "included": 15,
+    "excluded": 8
+  },
+  "required_case_ids": {
+    "a3f0fb58-f240-4723-8ddc-e644666b85cc": "roster_is_empty_when_no_student_is_added",
+    "6d0a30e4-1b4e-472e-8e20-c41702125667": "student_is_added_to_the_roster",
+    "233be705-dd58-4968-889d-fb3c7954c9cc": "multiple_students_in_the_same_grade_are_added_to_the_roster"
+  },
+  "maintained_test_source": "exercises/practice/grade-school/grade_school_test.cpp",
+  "learner_file_hashes_before": {
+    "grade_school.cpp": "8d405c9bb5d4a802dfed6a50eb1b8308375124f8dbecdd0237bff8b43e5aa9b6",
+    "grade_school.h": "7212dfbde126c504a117b2a02d5e65f9f8ec2e45c154122f79800c97f533759e"
+  },
+  "generations": [
+    {
+      "configlet_output": "Updating cached 'problem-specifications' data...\nChecking exercises...\nThe `grade-school` exercise has up-to-date tests!",
+      "metadata_sha256": "7995b1cc14a7a0e6aa83514d652d603ce2c6566f1e6c19f02ba22556add1fb68",
+      "test_source_sha256": "408d8357eaf1e623cdb9df5a190ee0c12c5a688fd2177d48fd48a0979c4e6f98",
+      "metadata_entries": 23,
+      "included": 15,
+      "excluded": 8,
+      "test_cases": 15,
+      "test_names": [
+        "roster_is_empty_when_no_student_is_added",
+        "student_is_added_to_the_roster",
+        "multiple_students_in_the_same_grade_are_added_to_the_roster",
+        "student_not_added_to_same_grade_in_the_roster_more_than_once",
+        "students_in_multiple_grades_are_added_to_the_roster",
+        "student_not_added_to_multiple_grades_in_the_roster",
+        "students_are_sorted_by_grades_in_the_roster",
+        "students_are_sorted_by_name_in_the_roster",
+        "students_are_sorted_by_grades_and_then_by_name_in_the_roster",
+        "grade_is_empty_if_no_students_in_the_roster",
+        "grade_is_empty_if_no_students_in_that_grade",
+        "student_not_added_to_same_grade_more_than_once",
+        "student_not_added_to_multiple_grades",
+        "student_not_added_to_other_grade_for_multiple_grades",
+        "students_are_sorted_by_name_in_a_grade"
+      ],
+      "test_summary": "All tests passed (15 assertions in 15 test cases)"
+    },
+    {
+      "configlet_output": "Updating cached 'problem-specifications' data...\nChecking exercises...\nThe `grade-school` exercise has up-to-date tests!",
+      "metadata_sha256": "7995b1cc14a7a0e6aa83514d652d603ce2c6566f1e6c19f02ba22556add1fb68",
+      "test_source_sha256": "408d8357eaf1e623cdb9df5a190ee0c12c5a688fd2177d48fd48a0979c4e6f98",
+      "metadata_entries": 23,
+      "included": 15,
+      "excluded": 8,
+      "test_cases": 15,
+      "test_names": [
+        "roster_is_empty_when_no_student_is_added",
+        "student_is_added_to_the_roster",
+        "multiple_students_in_the_same_grade_are_added_to_the_roster",
+        "student_not_added_to_same_grade_in_the_roster_more_than_once",
+        "students_in_multiple_grades_are_added_to_the_roster",
+        "student_not_added_to_multiple_grades_in_the_roster",
+        "students_are_sorted_by_grades_in_the_roster",
+        "students_are_sorted_by_name_in_the_roster",
+        "students_are_sorted_by_grades_and_then_by_name_in_the_roster",
+        "grade_is_empty_if_no_students_in_the_roster",
+        "grade_is_empty_if_no_students_in_that_grade",
+        "student_not_added_to_same_grade_more_than_once",
+        "student_not_added_to_multiple_grades",
+        "student_not_added_to_other_grade_for_multiple_grades",
+        "students_are_sorted_by_name_in_a_grade"
+      ],
+      "test_summary": "All tests passed (15 assertions in 15 test cases)"
+    }
+  ],
+  "named_case_results": [
+    {
+      "uuid": "a3f0fb58-f240-4723-8ddc-e644666b85cc",
+      "test": "roster_is_empty_when_no_student_is_added",
+      "status": "assertion passed in both builds"
+    },
+    {
+      "uuid": "6d0a30e4-1b4e-472e-8e20-c41702125667",
+      "test": "student_is_added_to_the_roster",
+      "status": "assertion passed in both builds"
+    },
+    {
+      "uuid": "233be705-dd58-4968-889d-fb3c7954c9cc",
+      "test": "multiple_students_in_the_same_grade_are_added_to_the_roster",
+      "status": "assertion passed in both builds"
+    }
+  ],
+  "comparisons": {
+    "metadata_equal": true,
+    "configlet_sync_output_equal": true,
+    "maintained_test_source_equal": true,
+    "compiled_test_lists_equal": true,
+    "timestamp_normalization": "None needed; the generated TOML and test-name list contain no timestamps."
+  },
+  "learner_file_hashes_after": {
+    "grade_school.cpp": "8d405c9bb5d4a802dfed6a50eb1b8308375124f8dbecdd0237bff8b43e5aa9b6",
+    "grade_school.h": "7212dfbde126c504a117b2a02d5e65f9f8ec2e45c154122f79800c97f533759e"
+  },
+  "maintained_test_source_unchanged": true
+}
