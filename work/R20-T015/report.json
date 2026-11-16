@@ -1,0 +1,197 @@
+{
+  "task_id": "R20-T015",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/19",
+  "timestamp_utc": "2026-11-16T11:06:29.681731+00:00",
+  "exercise": "exercises/practice/food-chain",
+  "fixed_domain": {
+    "first_verse": 1,
+    "last_verse": 8
+  },
+  "selected_cases": [
+    {
+      "name": "fly",
+      "verse_number": 1,
+      "expected": "I know an old lady who swallowed a fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\n"
+    },
+    {
+      "name": "spider",
+      "verse_number": 2,
+      "expected": "I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\n"
+    },
+    {
+      "name": "bird",
+      "verse_number": 3,
+      "expected": "I know an old lady who swallowed a bird.\nHow absurd to swallow a bird!\nShe swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\n"
+    }
+  ],
+  "case_counts": {
+    "metadata_entries": 10,
+    "C++_source_cases": 10
+  },
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_before": {
+    "food_chain.cpp": "73b682546ce23ec380961acf3ce995dfb84f32f28fe52a804cdefc4dc4c8e0ed",
+    "food_chain.h": "cf3a8b3cd993239e5a53e02f3857222f1d868124cd4e1eb6366e148447135f12"
+  },
+  "configure": {
+    "command": [
+      "cmake",
+      "-S",
+      ".",
+      "-B",
+      "build",
+      "-DEXERCISM_RUN_ALL_TESTS=ON"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/food-chain",
+    "returncode": 0,
+    "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/food-chain/build\n"
+  },
+  "build": {
+    "command": [
+      "cmake",
+      "--build",
+      "build"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/food-chain",
+    "returncode": 0,
+    "stdout": "[ 25%] Building CXX object CMakeFiles/food-chain.dir/food_chain_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/food-chain.dir/food_chain.cpp.o\n[ 75%] Building CXX object CMakeFiles/food-chain.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable food-chain\n[100%] Built target food-chain\n===============================================================================\nAll tests passed (10 assertions in 10 test cases)\n\n[100%] Built target test_food-chain\n"
+  },
+  "test_run": {
+    "command": [
+      "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/food-chain/build/food-chain",
+      "--reporter",
+      "junit"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/food-chain",
+    "returncode": 0,
+    "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"food-chain\" errors=\"0\" failures=\"0\" tests=\"10\" hostname=\"tbd\" time=\"0.000165\" timestamp=\"2026-11-16T11:06:32Z\">\n    <testcase classname=\"food-chain.global\" name=\"fly\" time=\"0.000018\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"spider\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"bird\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"cat\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"dog\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"goat\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"cow\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"horse\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"multiple_verses\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"food-chain.global\" name=\"the_whole_song\" time=\"0.000027\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+  },
+  "test_summary": {
+    "test_case_count": 10,
+    "failed_case_count": 0,
+    "error_case_count": 0,
+    "case_names": [
+      "fly",
+      "spider",
+      "bird",
+      "cat",
+      "dog",
+      "goat",
+      "cow",
+      "horse",
+      "multiple_verses",
+      "the_whole_song"
+    ],
+    "failures": []
+  },
+  "operation_probe": {
+    "build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/food-chain",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/instrumented_food_chain.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/operation_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/operation_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "execution": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0/operation_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t015-i10jggw0",
+      "returncode": 0,
+      "stdout": "METRIC 1 1 0 0 1 100\nOUTPUT_1_BEGIN\nI know an old lady who swallowed a fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\nOUTPUT_1_END\nMETRIC 2 1 1 1 2 194\nOUTPUT_2_BEGIN\nI know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\nOUTPUT_2_END\nMETRIC 3 1 2 2 3 267\nOUTPUT_3_BEGIN\nI know an old lady who swallowed a bird.\nHow absurd to swallow a bird!\nShe swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\nOUTPUT_3_END\nMETRIC 4 1 3 3 4 309\nMETRIC 5 1 4 4 5 347\nMETRIC 6 1 5 5 6 404\nMETRIC 7 1 6 6 7 437\nMETRIC 8 1 0 0 0 65\n"
+    },
+    "metrics": [
+      {
+        "verse_number": 1,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 0,
+        "prior_fragment_appends": 0,
+        "loop_condition_checks": 1,
+        "verse_output_characters": 100
+      },
+      {
+        "verse_number": 2,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 1,
+        "prior_fragment_appends": 1,
+        "loop_condition_checks": 2,
+        "verse_output_characters": 194
+      },
+      {
+        "verse_number": 3,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 2,
+        "prior_fragment_appends": 2,
+        "loop_condition_checks": 3,
+        "verse_output_characters": 267
+      },
+      {
+        "verse_number": 4,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 3,
+        "prior_fragment_appends": 3,
+        "loop_condition_checks": 4,
+        "verse_output_characters": 309
+      },
+      {
+        "verse_number": 5,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 4,
+        "prior_fragment_appends": 4,
+        "loop_condition_checks": 5,
+        "verse_output_characters": 347
+      },
+      {
+        "verse_number": 6,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 5,
+        "prior_fragment_appends": 5,
+        "loop_condition_checks": 6,
+        "verse_output_characters": 404
+      },
+      {
+        "verse_number": 7,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 6,
+        "prior_fragment_appends": 6,
+        "loop_condition_checks": 7,
+        "verse_output_characters": 437
+      },
+      {
+        "verse_number": 8,
+        "song_verse_sing_calls": 1,
+        "song_verse_verse_calls": 0,
+        "prior_fragment_appends": 0,
+        "loop_condition_checks": 0,
+        "verse_output_characters": 65
+      }
+    ],
+    "selected_outputs": {
+      "fly": "I know an old lady who swallowed a fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\n",
+      "spider": "I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\n",
+      "bird": "I know an old lady who swallowed a bird.\nHow absurd to swallow a bird!\nShe swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.\n"
+    }
+  },
+  "timing_benchmark": "Not run: the exercise domain is fixed at verses 1 through 8.",
+  "learner_solution_sha256_after": {
+    "food_chain.cpp": "73b682546ce23ec380961acf3ce995dfb84f32f28fe52a804cdefc4dc4c8e0ed",
+    "food_chain.h": "cf3a8b3cd993239e5a53e02f3857222f1d868124cd4e1eb6366e148447135f12"
+  },
+  "learner_files_unchanged": true
+}
