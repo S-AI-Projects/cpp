@@ -1,0 +1,150 @@
+{
+  "task": "R20-T020",
+  "exercise": "exercises/practice/prime-factors",
+  "tool_versions": {
+    "python": "3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "selected_cases": [
+    {
+      "uuid": "924fc966-a8f5-4288-82f2-6b9224819ccd",
+      "name": "no factors",
+      "input": 1,
+      "expected": []
+    },
+    {
+      "uuid": "17e30670-b105-4305-af53-ddde182cb6ad",
+      "name": "prime number",
+      "input": 2,
+      "expected": [
+        2
+      ]
+    },
+    {
+      "uuid": "238d57c8-4c12-42ef-af34-ae4929f94789",
+      "name": "another prime number",
+      "input": 3,
+      "expected": [
+        3
+      ]
+    }
+  ],
+  "expected_case_count": 12,
+  "checker_failure_paths": {
+    "nonzero_child_exit": "rejected",
+    "zero_test_run": "rejected",
+    "assertion_failure": "rejected"
+  },
+  "children": [
+    {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors",
+      "returncode": 0,
+      "stdout": "-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.8s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors/build\n",
+      "stderr": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n"
+    },
+    {
+      "command": [
+        "cmake",
+        "--build",
+        "build",
+        "--parallel"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors",
+      "returncode": 0,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/prime-factors.dir/prime_factors_test.cpp.o\n[ 75%] Building CXX object CMakeFiles/prime-factors.dir/prime_factors.cpp.o\n[ 75%] Building CXX object CMakeFiles/prime-factors.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable prime-factors\n[100%] Built target prime-factors\n===============================================================================\nAll tests passed (12 assertions in 12 test cases)\n\n[100%] Built target test_prime-factors\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors/build/prime-factors",
+        "--reporter",
+        "junit",
+        "--out",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors-junit.xml"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors/prime_factors.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/selected_cases_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/selected_cases_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/selected_cases_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t020-t_0l3f_t/prime-factors",
+      "returncode": 0,
+      "stdout": "[]\n[2]\n[3]\n",
+      "stderr": ""
+    }
+  ],
+  "junit": {
+    "executed": 12,
+    "failures": 0,
+    "names": [
+      "no factors",
+      "prime number",
+      "another prime number",
+      "square of a prime",
+      "product of first prime",
+      "cube of a prime",
+      "product of second prime",
+      "product of third prime",
+      "product of first and second prime",
+      "product of primes and non-primes",
+      "product of primes",
+      "factors include a large prime"
+    ]
+  },
+  "selected_case_probe": {
+    "expected_lines": [
+      "[]",
+      "[2]",
+      "[3]"
+    ],
+    "actual_lines": [
+      "[]",
+      "[2]",
+      "[3]"
+    ]
+  },
+  "learner_hashes": {
+    "before": {
+      "exercises/practice/prime-factors/prime_factors.cpp": "5be66c679ed062ac40bbe6ca819e486e938fec9eeb3ec5c88a3dccbc6b82c930",
+      "exercises/practice/prime-factors/prime_factors.h": "e3b6d1bcfa925e4b2501b57ee50838519b8a6c07bd1323c3ef8ba9ddb7bf6dd7"
+    },
+    "after": {
+      "exercises/practice/prime-factors/prime_factors.cpp": "5be66c679ed062ac40bbe6ca819e486e938fec9eeb3ec5c88a3dccbc6b82c930",
+      "exercises/practice/prime-factors/prime_factors.h": "e3b6d1bcfa925e4b2501b57ee50838519b8a6c07bd1323c3ef8ba9ddb7bf6dd7"
+    }
+  },
+  "temporary_copy_removed": true
+}

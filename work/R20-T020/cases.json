@@ -1,0 +1,36 @@
+{
+  "selected_cases": [
+    {
+      "uuid": "924fc966-a8f5-4288-82f2-6b9224819ccd",
+      "name": "no factors",
+      "input": 1,
+      "expected": []
+    },
+    {
+      "uuid": "17e30670-b105-4305-af53-ddde182cb6ad",
+      "name": "prime number",
+      "input": 2,
+      "expected": [
+        2
+      ]
+    },
+    {
+      "uuid": "238d57c8-4c12-42ef-af34-ae4929f94789",
+      "name": "another prime number",
+      "input": 3,
+      "expected": [
+        3
+      ]
+    }
+  ],
+  "expected_outputs": [
+    "[]",
+    "[2]",
+    "[3]"
+  ],
+  "actual_outputs": [
+    "[]",
+    "[2]",
+    "[3]"
+  ]
+}
