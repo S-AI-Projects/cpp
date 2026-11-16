@@ -3,7 +3,7 @@
   "tools": {
     "python": "3.14.6",
     "cmake": "cmake version 4.4.5",
-    "cxx": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
     "configlet": "4.0.3"
   },
   "metadata_counts": {
