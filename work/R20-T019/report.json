@@ -1,0 +1,323 @@
+{
+  "task_id": "R20-T019",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/23",
+  "named_cases": [
+    {
+      "name": "EmptyListHasSizeZero",
+      "input": "new empty List",
+      "expected": "size() == 0"
+    },
+    {
+      "name": "SingletonListHasSizeOne",
+      "input": "push(44)",
+      "expected": "size() == 1"
+    },
+    {
+      "name": "NonEmptyListHasCorrectSize",
+      "input": "push(44), push(42), push(47), push(-11)",
+      "expected": "size() == 4"
+    }
+  ],
+  "tests_metadata": ".meta/tests.toml is not present; use the executable JUnit case count.",
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_before_all_runs": {
+    "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+    "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+  },
+  "success_run": {
+    "task": "R20-T019",
+    "status": "passed",
+    "selection": "all",
+    "exercise_dir": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list",
+    "config_path": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/config.json",
+    "learner_solution_sha256_before": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "configured_test_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list_test.cpp"
+    ],
+    "configured_example_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.cpp",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.h"
+    ],
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/success-temps/course-r20-t019-et457p6o/simple-linked-list/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/simple-linked-list.dir/simple_linked_list_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/simple-linked-list.dir/simple_linked_list.cpp.o\n[ 75%] Building CXX object CMakeFiles/simple-linked-list.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable simple-linked-list\n[100%] Built target simple-linked-list\n===============================================================================\nAll tests passed (20 assertions in 10 test cases)\n\n[100%] Built target test_simple-linked-list\n"
+    },
+    "test_run": {
+      "command": [
+        "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/success-temps/course-r20-t019-et457p6o/simple-linked-list/build/simple-linked-list",
+        "--reporter",
+        "junit"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"simple-linked-list\" errors=\"0\" failures=\"0\" tests=\"20\" hostname=\"tbd\" time=\"0.000135\" timestamp=\"2026-11-16T11:06:49Z\">\n    <testcase classname=\"simple-linked-list.global\" name=\"EmptyListHasSizeZero\" time=\"0.000016\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"SingletonListHasSizeOne\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"NonEmptyListHasCorrectSize\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ListHasCorrectSizeAfterPop\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ListHasCorrectSizeAfterPopAndPush\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"PopFromSize1\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"PopFromSizeTwo\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"PopAndPushList\" time=\"0.000012\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ReverseEmptyList\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ReverseNonEmptyList\" time=\"0.000013\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 10,
+      "failed_case_count": 0,
+      "error_case_count": 0,
+      "case_names": [
+        "EmptyListHasSizeZero",
+        "SingletonListHasSizeOne",
+        "NonEmptyListHasCorrectSize",
+        "ListHasCorrectSizeAfterPop",
+        "ListHasCorrectSizeAfterPopAndPush",
+        "PopFromSize1",
+        "PopFromSizeTwo",
+        "PopAndPushList",
+        "ReverseEmptyList",
+        "ReverseNonEmptyList"
+      ],
+      "failures": []
+    },
+    "temporary_directory": "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/success-temps/course-r20-t019-et457p6o",
+    "temporary_files_removed": true,
+    "learner_solution_sha256_after": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "learner_files_unchanged": true,
+    "exit_code": 0,
+    "outer_exit_code": 0,
+    "temporary_parent_empty": true
+  },
+  "failing_reference_run": {
+    "task": "R20-T019",
+    "status": "test_failure",
+    "selection": "all",
+    "exercise_dir": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list",
+    "config_path": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/config.json",
+    "learner_solution_sha256_before": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "configured_test_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list_test.cpp"
+    ],
+    "configured_example_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.cpp",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.h"
+    ],
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "returncode": 2,
+      "timed_out": false,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/simple-linked-list.dir/simple_linked_list_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/simple-linked-list.dir/simple_linked_list.cpp.o\n[ 75%] Building CXX object CMakeFiles/simple-linked-list.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable simple-linked-list\n[100%] Built target simple-linked-list\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nsimple-linked-list is a Catch v2.13.6 host application.\nRun with -? for options\n\n-------------------------------------------------------------------------------\nEmptyListHasSizeZero\n-------------------------------------------------------------------------------\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/simple_linked_list_test.cpp:12\n...............................................................................\n\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/simple_linked_list_test.cpp:14: FAILED:\n  REQUIRE( empty.size() == 0 )\nwith expansion:\n  1 == 0\n\n-------------------------------------------------------------------------------\nReverseEmptyList\n-------------------------------------------------------------------------------\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/simple_linked_list_test.cpp:96\n...............................................................................\n\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/simple_linked_list_test.cpp:99: FAILED:\n  REQUIRE( empty.size() == 0 )\nwith expansion:\n  1 == 0\n\n===============================================================================\ntest cases: 10 |  8 passed | 2 failed\nassertions: 20 | 18 passed | 2 failed\n\nmake[2]: *** [CMakeFiles/test_simple-linked-list] Error 2\nmake[1]: *** [CMakeFiles/test_simple-linked-list.dir/all] Error 2\nmake: *** [all] Error 2\n"
+    },
+    "test_run": {
+      "command": [
+        "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/build/simple-linked-list",
+        "--reporter",
+        "junit"
+      ],
+      "returncode": 2,
+      "timed_out": false,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"simple-linked-list\" errors=\"0\" failures=\"2\" tests=\"20\" hostname=\"tbd\" time=\"0.000208\" timestamp=\"2026-11-16T11:06:51Z\">\n    <testcase classname=\"simple-linked-list.global\" name=\"EmptyListHasSizeZero\" time=\"0.0\" status=\"run\">\n      <failure message=\"empty.size() == 0\" type=\"REQUIRE\">\nFAILED:\n  REQUIRE( empty.size() == 0 )\nwith expansion:\n  1 == 0\nat /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/simple_linked_list_test.cpp:14\n      </failure>\n    </testcase>\n    <testcase classname=\"simple-linked-list.global\" name=\"SingletonListHasSizeOne\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"NonEmptyListHasCorrectSize\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ListHasCorrectSizeAfterPop\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ListHasCorrectSizeAfterPopAndPush\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"PopFromSize1\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"PopFromSizeTwo\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"PopAndPushList\" time=\"0.000011\" status=\"run\"/>\n    <testcase classname=\"simple-linked-list.global\" name=\"ReverseEmptyList\" time=\"0.0\" status=\"run\">\n      <failure message=\"empty.size() == 0\" type=\"REQUIRE\">\nFAILED:\n  REQUIRE( empty.size() == 0 )\nwith expansion:\n  1 == 0\nat /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol/simple-linked-list/simple_linked_list_test.cpp:99\n      </failure>\n    </testcase>\n    <testcase classname=\"simple-linked-list.global\" name=\"ReverseNonEmptyList\" time=\"0.000011\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 10,
+      "failed_case_count": 2,
+      "error_case_count": 0,
+      "case_names": [
+        "EmptyListHasSizeZero",
+        "SingletonListHasSizeOne",
+        "NonEmptyListHasCorrectSize",
+        "ListHasCorrectSizeAfterPop",
+        "ListHasCorrectSizeAfterPopAndPush",
+        "PopFromSize1",
+        "PopFromSizeTwo",
+        "PopAndPushList",
+        "ReverseEmptyList",
+        "ReverseNonEmptyList"
+      ],
+      "failures": [
+        "empty.size() == 0",
+        "empty.size() == 0"
+      ]
+    },
+    "temporary_directory": "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/failure-temps/course-r20-t019-hfg7_yol",
+    "temporary_files_removed": true,
+    "learner_solution_sha256_after": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "learner_files_unchanged": true,
+    "exit_code": 1,
+    "outer_exit_code": 1,
+    "temporary_parent_empty": true
+  },
+  "zero_selection_run": {
+    "task": "R20-T019",
+    "status": "zero_tests",
+    "selection": "none",
+    "exercise_dir": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list",
+    "config_path": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/config.json",
+    "learner_solution_sha256_before": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "configured_test_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list_test.cpp"
+    ],
+    "configured_example_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.cpp",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.h"
+    ],
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/empty-temps/course-r20-t019-p296t_in/simple-linked-list/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/simple-linked-list.dir/simple_linked_list_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/simple-linked-list.dir/simple_linked_list.cpp.o\n[ 75%] Building CXX object CMakeFiles/simple-linked-list.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable simple-linked-list\n[100%] Built target simple-linked-list\n===============================================================================\nAll tests passed (20 assertions in 10 test cases)\n\n[100%] Built target test_simple-linked-list\n"
+    },
+    "test_run": {
+      "command": [
+        "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/empty-temps/course-r20-t019-p296t_in/simple-linked-list/build/simple-linked-list",
+        "--reporter",
+        "junit",
+        "__r20_t019_no_test_selection__"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"simple-linked-list\" errors=\"0\" failures=\"0\" tests=\"0\" hostname=\"tbd\" time=\"1e-06\" timestamp=\"2026-11-16T11:06:54Z\">\n    <properties>\n      <property name=\"filters\" value=\"__r20_t019_no_test_selection__\"/>\n    </properties>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 0,
+      "failed_case_count": 0,
+      "error_case_count": 0,
+      "case_names": [],
+      "failures": []
+    },
+    "temporary_directory": "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/empty-temps/course-r20-t019-p296t_in",
+    "temporary_files_removed": true,
+    "learner_solution_sha256_after": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "learner_files_unchanged": true,
+    "exit_code": 2,
+    "outer_exit_code": 2,
+    "temporary_parent_empty": true
+  },
+  "timeout_interruption_run": {
+    "task": "R20-T019",
+    "status": "timed_out",
+    "selection": "all",
+    "exercise_dir": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list",
+    "config_path": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/config.json",
+    "learner_solution_sha256_before": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "configured_test_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list_test.cpp"
+    ],
+    "configured_example_files": [
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.cpp",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/.meta/example.h"
+    ],
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "returncode": 124,
+      "timed_out": true,
+      "stdout": ""
+    },
+    "temporary_directory": "/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t019-check-ef260vn0/interrupted-temps/course-r20-t019-p0o9a4sv",
+    "temporary_files_removed": true,
+    "learner_solution_sha256_after": {
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+      "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+    },
+    "learner_files_unchanged": true,
+    "exit_code": 124,
+    "outer_exit_code": 124,
+    "temporary_parent_empty": true
+  },
+  "direct_named_case_probe": {
+    "compile_returncode": 0,
+    "compile_output": "",
+    "run_returncode": 0,
+    "stdout": "0\n1\n4\n",
+    "expected": [
+      0,
+      1,
+      4
+    ],
+    "actual": [
+      0,
+      1,
+      4
+    ]
+  },
+  "learner_solution_sha256_after_all_runs": {
+    "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.cpp": "ad657d8aecf46b0e214e34c8f54559982a91d4d5c39353f4d5cb3c8b70892451",
+    "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T019/exercises/practice/simple-linked-list/simple_linked_list.h": "79c078709afa8560d8c31fadcd949fbb11d939da380f04565a1759e632f619d0"
+  },
+  "learner_files_unchanged_across_runs": true
+}
