@@ -1,0 +1,196 @@
+{
+  "task_id": "R20-T016",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/20",
+  "timestamp_utc": "2026-11-16T11:06:32.909117+00:00",
+  "exercise": "exercises/practice/zebra-puzzle",
+  "base_commit": "8d139cb04c7463722ae1f233099cc0bd39a71092",
+  "representation": "Each category maps its values to house indices 0 through 4; each array is a permutation.",
+  "selected_cases": [
+    {
+      "name": "drinks_water",
+      "id": "16efb4e4-8ad7-4d5e-ba96-e5537b66fd42",
+      "field": "drinksWater",
+      "description": "resident who drinks water",
+      "expected": "Norwegian"
+    },
+    {
+      "name": "owns_zebra",
+      "id": "084d5b8b-24e2-40e6-b008-c800da8cd257",
+      "field": "ownsZebra",
+      "description": "resident who owns zebra",
+      "expected": "Japanese"
+    }
+  ],
+  "test_case_count_expected": 2,
+  "metadata_entries": 2,
+  "metadata_contract_preserved_from_base": true,
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_before": {
+    "zebra_puzzle.cpp": "14ff4b9a48c2af49d6d7b6bfafcf4ac5dfa0ea8589f35fc37234894f3765b878",
+    "zebra_puzzle.h": "4c3c9b4b346ffea00c34a0f8593c03b5adb9ae4402d5fd1903015258c3f9ad5b"
+  },
+  "reference": {
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle",
+      "returncode": 0,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle",
+      "returncode": 0,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/zebra-puzzle.dir/zebra_puzzle_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/zebra-puzzle.dir/zebra_puzzle.cpp.o\n[ 75%] Building CXX object CMakeFiles/zebra-puzzle.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable zebra-puzzle\n[100%] Built target zebra-puzzle\n===============================================================================\nAll tests passed (2 assertions in 2 test cases)\n\n[100%] Built target test_zebra-puzzle\n"
+    },
+    "test_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle/build/zebra-puzzle",
+        "--reporter",
+        "junit"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle",
+      "returncode": 0,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"zebra-puzzle\" errors=\"0\" failures=\"0\" tests=\"2\" hostname=\"tbd\" time=\"0.013261\" timestamp=\"2026-11-16T11:06:35Z\">\n    <testcase classname=\"zebra-puzzle.global\" name=\"drinks_water/Drinks water\" time=\"0.00001\" status=\"run\"/>\n    <testcase classname=\"zebra-puzzle.global\" name=\"owns_zebra/Owns zebra\" time=\"0.000002\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 2,
+      "failed_case_count": 0,
+      "error_case_count": 0,
+      "case_names": [
+        "drinks_water/Drinks water",
+        "owns_zebra/Owns zebra"
+      ],
+      "failures": []
+    },
+    "probe_build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/zebra-puzzle/zebra_puzzle.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/answer_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/answer_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "probe_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference/answer_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/reference",
+      "returncode": 0,
+      "stdout": "Norwegian\nJapanese\n"
+    },
+    "outputs": [
+      "Norwegian",
+      "Japanese"
+    ]
+  },
+  "alternative": {
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle",
+      "returncode": 0,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle",
+      "returncode": 0,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/zebra-puzzle.dir/zebra_puzzle_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/zebra-puzzle.dir/zebra_puzzle.cpp.o\n[ 75%] Building CXX object CMakeFiles/zebra-puzzle.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable zebra-puzzle\n[100%] Built target zebra-puzzle\n===============================================================================\nAll tests passed (2 assertions in 2 test cases)\n\n[100%] Built target test_zebra-puzzle\n"
+    },
+    "test_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle/build/zebra-puzzle",
+        "--reporter",
+        "junit"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle",
+      "returncode": 0,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"zebra-puzzle\" errors=\"0\" failures=\"0\" tests=\"2\" hostname=\"tbd\" time=\"0.000858\" timestamp=\"2026-11-16T11:06:38Z\">\n    <testcase classname=\"zebra-puzzle.global\" name=\"drinks_water/Drinks water\" time=\"0.000012\" status=\"run\"/>\n    <testcase classname=\"zebra-puzzle.global\" name=\"owns_zebra/Owns zebra\" time=\"0.000002\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 2,
+      "failed_case_count": 0,
+      "error_case_count": 0,
+      "case_names": [
+        "drinks_water/Drinks water",
+        "owns_zebra/Owns zebra"
+      ],
+      "failures": []
+    },
+    "probe_build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/zebra-puzzle/zebra_puzzle.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/answer_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/answer_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "probe_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative/answer_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t016-1uvughnb/alternative",
+      "returncode": 0,
+      "stdout": "Norwegian\nJapanese\n"
+    },
+    "outputs": [
+      "Norwegian",
+      "Japanese"
+    ]
+  },
+  "both_test_lists_match": true,
+  "reference_alternative_outputs_match": true,
+  "alternative_source_sha256": "29e685077919a949d8a54b920eb27f608475bd2268688830b8921f08f32c1f0d",
+  "learner_solution_sha256_after": {
+    "zebra_puzzle.cpp": "14ff4b9a48c2af49d6d7b6bfafcf4ac5dfa0ea8589f35fc37234894f3765b878",
+    "zebra_puzzle.h": "4c3c9b4b346ffea00c34a0f8593c03b5adb9ae4402d5fd1903015258c3f9ad5b"
+  },
+  "learner_files_unchanged": true
+}

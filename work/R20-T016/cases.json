@@ -1,0 +1,20 @@
+[
+  {
+    "name": "drinks_water",
+    "id": "16efb4e4-8ad7-4d5e-ba96-e5537b66fd42",
+    "field": "drinksWater",
+    "description": "resident who drinks water",
+    "expected": "Norwegian",
+    "reference_actual": "Norwegian",
+    "alternative_actual": "Norwegian"
+  },
+  {
+    "name": "owns_zebra",
+    "id": "084d5b8b-24e2-40e6-b008-c800da8cd257",
+    "field": "ownsZebra",
+    "description": "resident who owns zebra",
+    "expected": "Japanese",
+    "reference_actual": "Japanese",
+    "alternative_actual": "Japanese"
+  }
+]
