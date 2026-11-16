@@ -1,0 +1,23 @@
+[
+  {
+    "name": "EmptyListHasSizeZero",
+    "input": "new empty List",
+    "expected": "size() == 0",
+    "actual": 0,
+    "test_status": "passed"
+  },
+  {
+    "name": "SingletonListHasSizeOne",
+    "input": "push(44)",
+    "expected": "size() == 1",
+    "actual": 1,
+    "test_status": "passed"
+  },
+  {
+    "name": "NonEmptyListHasCorrectSize",
+    "input": "push(44), push(42), push(47), push(-11)",
+    "expected": "size() == 4",
+    "actual": 4,
+    "test_status": "passed"
+  }
+]
