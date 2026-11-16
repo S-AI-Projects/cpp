@@ -1,0 +1,223 @@
+{
+  "task_id": "R20-T018",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/22",
+  "timestamp_utc": "2026-11-16T11:06:46.357705+00:00",
+  "exercise": "exercises/practice/binary-search",
+  "real_path_check": {
+    "valid": true,
+    "roles": {
+      "solution": [
+        {
+          "configured": "binary_search.cpp",
+          "resolved": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search/binary_search.cpp"
+        },
+        {
+          "configured": "binary_search.h",
+          "resolved": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search/binary_search.h"
+        }
+      ],
+      "test": [
+        {
+          "configured": "binary_search_test.cpp",
+          "resolved": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search/binary_search_test.cpp"
+        }
+      ],
+      "example": [
+        {
+          "configured": ".meta/example.cpp",
+          "resolved": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search/.meta/example.cpp"
+        },
+        {
+          "configured": ".meta/example.h",
+          "resolved": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search/.meta/example.h"
+        }
+      ]
+    },
+    "errors": [],
+    "exercise_dir": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search",
+    "config_path": "/Users/kavyanshkushwaha/Documents/Codex/2026-11-15/master-execution-prompt-s-ai-internal/work/audit-checkouts/R20-T018/exercises/practice/binary-search/.meta/config.json"
+  },
+  "invalid_fixture_results": {
+    "missing_reference": {
+      "returncode": 1,
+      "errors": [
+        {
+          "role": "example",
+          "path": ".meta/missing_reference.cpp",
+          "reason": "configured file does not exist"
+        }
+      ]
+    },
+    "missing_test": {
+      "returncode": 1,
+      "errors": [
+        {
+          "role": "test",
+          "path": "tests/missing_test.cpp",
+          "reason": "configured file does not exist"
+        }
+      ]
+    },
+    "outside_exercise": {
+      "returncode": 1,
+      "errors": [
+        {
+          "role": "solution",
+          "path": "../outside.cpp",
+          "reason": "parent traversal or absolute path is not allowed"
+        }
+      ]
+    }
+  },
+  "selected_cases": [
+    {
+      "name": "finds_a_value_in_an_array_with_one_element",
+      "id": "b55c24a9-a98d-4379-a08c-2adcf8ebeee8",
+      "data": [
+        6
+      ],
+      "value": 6,
+      "expected": 0
+    },
+    {
+      "name": "finds_a_value_in_the_middle_of_an_array",
+      "id": "73469346-b0a0-4011-89bf-989e443d503d",
+      "data": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        11
+      ],
+      "value": 6,
+      "expected": 3
+    },
+    {
+      "name": "finds_a_value_at_the_beginning_of_an_array",
+      "id": "327bc482-ab85-424e-a724-fb4658e66ddb",
+      "data": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        11
+      ],
+      "value": 1,
+      "expected": 0
+    }
+  ],
+  "case_counts": {
+    "metadata_entries": 11,
+    "C++_source_cases": 11,
+    "executed_cases": 11
+  },
+  "configure": {
+    "command": [
+      "cmake",
+      "-S",
+      ".",
+      "-B",
+      "build",
+      "-DEXERCISM_RUN_ALL_TESTS=ON"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search",
+    "returncode": 0,
+    "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search/build\n"
+  },
+  "build": {
+    "command": [
+      "cmake",
+      "--build",
+      "build"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search",
+    "returncode": 0,
+    "stdout": "[ 25%] Building CXX object CMakeFiles/binary-search.dir/binary_search_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/binary-search.dir/binary_search.cpp.o\n[ 75%] Building CXX object CMakeFiles/binary-search.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable binary-search\n[100%] Built target binary-search\n===============================================================================\nAll tests passed (11 assertions in 11 test cases)\n\n[100%] Built target test_binary-search\n"
+  },
+  "test_run": {
+    "command": [
+      "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search/build/binary-search",
+      "--reporter",
+      "junit"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search",
+    "returncode": 0,
+    "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"binary-search\" errors=\"0\" failures=\"0\" tests=\"11\" hostname=\"tbd\" time=\"0.000257\" timestamp=\"2026-11-16T11:06:45Z\">\n    <testcase classname=\"binary-search.global\" name=\"finds_a_value_in_an_array_with_one_element\" time=\"0.000012\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"finds_a_value_in_the_middle_of_an_array\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"finds_a_value_at_the_beginning_of_an_array\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"finds_a_value_at_the_end_of_an_array\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"finds_a_value_in_an_array_of_odd_length\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"finds_a_value_in_an_array_of_even_length\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"identifies_that_a_value_is_not_included_in_the_array\" time=\"0.000077\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"a_value_smaller_than_the_arrays_smallest_value_is_not_found\" time=\"0.000026\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"a_value_larger_than_the_arrays_largest_value_is_not_found\" time=\"0.000026\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"nothing_is_found_in_an_empty_array\" time=\"0.000025\" status=\"run\"/>\n    <testcase classname=\"binary-search.global\" name=\"nothing_is_found_when_the_left_and_right_bounds_cross\" time=\"0.00002\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+  },
+  "test_summary": {
+    "test_case_count": 11,
+    "failed_case_count": 0,
+    "error_case_count": 0,
+    "case_names": [
+      "finds_a_value_in_an_array_with_one_element",
+      "finds_a_value_in_the_middle_of_an_array",
+      "finds_a_value_at_the_beginning_of_an_array",
+      "finds_a_value_at_the_end_of_an_array",
+      "finds_a_value_in_an_array_of_odd_length",
+      "finds_a_value_in_an_array_of_even_length",
+      "identifies_that_a_value_is_not_included_in_the_array",
+      "a_value_smaller_than_the_arrays_smallest_value_is_not_found",
+      "a_value_larger_than_the_arrays_largest_value_is_not_found",
+      "nothing_is_found_in_an_empty_array",
+      "nothing_is_found_when_the_left_and_right_bounds_cross"
+    ],
+    "failures": []
+  },
+  "selected_output_probe": {
+    "build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary-search/binary_search.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary_search_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary_search_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "execution": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p/binary_search_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t018-58oolr9p",
+      "returncode": 0,
+      "stdout": "0\n3\n0\n"
+    },
+    "actual": [
+      0,
+      3,
+      0
+    ],
+    "expected": [
+      0,
+      3,
+      0
+    ]
+  },
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_before": {
+    "binary_search.cpp": "baf5e6b113334af0ac85a5967dbf78476671c53d24a061c15b905ad6922c94a3",
+    "binary_search.h": "a3ca7a3463b683fc03472a2e96749a4374b445464341b1f8de00f62676b8c594"
+  },
+  "learner_solution_sha256_after": {
+    "binary_search.cpp": "baf5e6b113334af0ac85a5967dbf78476671c53d24a061c15b905ad6922c94a3",
+    "binary_search.h": "a3ca7a3463b683fc03472a2e96749a4374b445464341b1f8de00f62676b8c594"
+  },
+  "learner_files_unchanged": true
+}
