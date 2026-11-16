@@ -1,0 +1,32 @@
+{
+  "canonical_cases": [
+    {
+      "uuid": "54aaab5a-ce86-4edc-8b40-d3ab2400a279",
+      "description": "no multiples within limit",
+      "input": {"factors": [3, 5], "limit": 1},
+      "expected": 0,
+      "enabled_cpp_test": "sum_to_1_yields_0",
+      "observation": "The C++ test currently passes limit 0, not the canonical limit 1."
+    },
+    {
+      "uuid": "361e4e50-c89b-4f60-95ef-5bc5c595490a",
+      "description": "one factor has multiples within limit",
+      "input": {"factors": [3, 5], "limit": 4},
+      "expected": 3,
+      "enabled_cpp_test": "sum_to_4_yields_3"
+    },
+    {
+      "uuid": "e644e070-040e-4ae0-9910-93c69fc3f7ce",
+      "description": "more than one multiple within limit",
+      "input": {"factors": [3], "limit": 7},
+      "expected": 9,
+      "enabled_cpp_test": null,
+      "observation": "The C++ suite has no exact one-factor case for this canonical input."
+    }
+  ],
+  "baseline_counts": {
+    "canonical_uuid_entries": 16,
+    "explicit_exclusions": 0,
+    "cpp_test_cases": 12
+  }
+}
