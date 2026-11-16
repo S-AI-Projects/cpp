@@ -1,0 +1,346 @@
+{
+  "variants": {
+    "original": {
+      "reference_replacement": {
+        "solution_cpp": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding/run_length_encoding.cpp",
+        "mutant": false
+      },
+      "configure": {
+        "command": [
+          "cmake",
+          "-S",
+          ".",
+          "-B",
+          "build",
+          "-DEXERCISM_RUN_ALL_TESTS=ON"
+        ],
+        "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding",
+        "returncode": 0,
+        "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding/build\n"
+      },
+      "build": {
+        "command": [
+          "cmake",
+          "--build",
+          "build"
+        ],
+        "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding",
+        "returncode": 0,
+        "stdout": "[ 25%] Building CXX object CMakeFiles/run-length-encoding.dir/run_length_encoding_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/run-length-encoding.dir/run_length_encoding.cpp.o\n[ 75%] Building CXX object CMakeFiles/run-length-encoding.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable run-length-encoding\n[100%] Built target run-length-encoding\n===============================================================================\nAll tests passed (13 assertions in 13 test cases)\n\n[100%] Built target test_run-length-encoding\n"
+      },
+      "all_tests": {
+        "process": {
+          "command": [
+            "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding/build/run-length-encoding",
+            "--reporter",
+            "junit"
+          ],
+          "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding",
+          "returncode": 0,
+          "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"run-length-encoding\" errors=\"0\" failures=\"0\" tests=\"13\" hostname=\"tbd\" time=\"0.000173\" timestamp=\"2026-11-16T11:06:18Z\">\n    <testcase classname=\"run-length-encoding.global\" name=\"encode empty string\" time=\"0.000019\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode single characters only are encoded without count\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode string with no single characters\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode single characters mixed with repeated characters\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode multiple whitespace mixed in string\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode lowercase characters\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode run-length decode a string\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode single characters only\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode string with no single characters\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode single characters with repeated characters\" time=\"0.000011\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode multiple whitespace mixed in string\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode lowercase string\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode and then decode\" time=\"0.000007\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+        },
+        "test_case_count": 13,
+        "failed_case_count": 0,
+        "error_case_count": 0,
+        "case_names": [
+          "encode empty string",
+          "encode single characters only are encoded without count",
+          "encode string with no single characters",
+          "encode single characters mixed with repeated characters",
+          "encode multiple whitespace mixed in string",
+          "encode lowercase characters",
+          "decode run-length decode a string",
+          "decode single characters only",
+          "decode string with no single characters",
+          "decode single characters with repeated characters",
+          "decode multiple whitespace mixed in string",
+          "decode lowercase string",
+          "encode and then decode"
+        ],
+        "failure_messages": []
+      },
+      "target_case": {
+        "process": {
+          "command": [
+            "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding/build/run-length-encoding",
+            "--reporter",
+            "junit",
+            "encode single characters only are encoded without count"
+          ],
+          "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding",
+          "returncode": 0,
+          "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"run-length-encoding\" errors=\"0\" failures=\"0\" tests=\"1\" hostname=\"tbd\" time=\"3e-05\" timestamp=\"2026-11-16T11:06:18Z\">\n    <properties>\n      <property name=\"filters\" value=\"encode single characters only are encoded without count\"/>\n    </properties>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode single characters only are encoded without count\" time=\"0.000013\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+        },
+        "test_case_count": 1,
+        "failed_case_count": 0,
+        "error_case_count": 0,
+        "case_names": [
+          "encode single characters only are encoded without count"
+        ],
+        "failure_messages": []
+      },
+      "probes": [
+        {
+          "input": "",
+          "expected": "",
+          "actual": "",
+          "returncode": 0
+        },
+        {
+          "input": "XYZ",
+          "expected": "XYZ",
+          "actual": "XYZ",
+          "returncode": 0
+        },
+        {
+          "input": "AABBBCCCC",
+          "expected": "2A3B4C",
+          "actual": "2A3B4C",
+          "returncode": 0
+        },
+        {
+          "input": "A",
+          "expected": "A",
+          "actual": "A",
+          "returncode": 0
+        }
+      ]
+    },
+    "mutant": {
+      "reference_replacement": {
+        "solution_cpp": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding.cpp",
+        "mutant": true
+      },
+      "configure": {
+        "command": [
+          "cmake",
+          "-S",
+          ".",
+          "-B",
+          "build",
+          "-DEXERCISM_RUN_ALL_TESTS=ON"
+        ],
+        "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding",
+        "returncode": 0,
+        "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/build\n"
+      },
+      "build": {
+        "command": [
+          "cmake",
+          "--build",
+          "build"
+        ],
+        "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding",
+        "returncode": 2,
+        "stdout": "[ 25%] Building CXX object CMakeFiles/run-length-encoding.dir/run_length_encoding_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/run-length-encoding.dir/run_length_encoding.cpp.o\n[ 75%] Building CXX object CMakeFiles/run-length-encoding.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable run-length-encoding\n[100%] Built target run-length-encoding\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nrun-length-encoding is a Catch v2.13.6 host application.\nRun with -? for options\n\n-------------------------------------------------------------------------------\nencode single characters only are encoded without count\n-------------------------------------------------------------------------------\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:13\n...............................................................................\n\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:14: FAILED:\n  REQUIRE( run_length_encoding::encode(\"XYZ\") == \"XYZ\" )\nwith expansion:\n  \"1X1Y1Z\" == \"XYZ\"\n\n-------------------------------------------------------------------------------\nencode single characters mixed with repeated characters\n-------------------------------------------------------------------------------\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:22\n...............................................................................\n\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:25: FAILED:\n  REQUIRE( run_length_encoding::encode( \"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB\") == \"12WB12W3B24WB\" )\nwith expansion:\n  \"12W1B12W3B24W1B\" == \"12WB12W3B24WB\"\n\n-------------------------------------------------------------------------------\nencode multiple whitespace mixed in string\n-------------------------------------------------------------------------------\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:28\n...............................................................................\n\n/private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:29: FAILED:\n  REQUIRE( run_length_encoding::encode(\"  hsqq qww  \") == \"2 hs2q q2w2 \" )\nwith expansion:\n  \"2 1h1s2q1 1q2w2 \" == \"2 hs2q q2w2 \"\n\n===============================================================================\ntest cases: 13 | 10 passed | 3 failed\nassertions: 13 | 10 passed | 3 failed\n\nmake[2]: *** [CMakeFiles/test_run-length-encoding] Error 3\nmake[1]: *** [CMakeFiles/test_run-length-encoding.dir/all] Error 2\nmake: *** [all] Error 2\n"
+      },
+      "all_tests": {
+        "process": {
+          "command": [
+            "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/build/run-length-encoding",
+            "--reporter",
+            "junit"
+          ],
+          "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding",
+          "returncode": 3,
+          "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"run-length-encoding\" errors=\"0\" failures=\"3\" tests=\"13\" hostname=\"tbd\" time=\"0.000289\" timestamp=\"2026-11-16T11:06:22Z\">\n    <testcase classname=\"run-length-encoding.global\" name=\"encode empty string\" time=\"0.000013\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode single characters only are encoded without count\" time=\"0.0\" status=\"run\">\n      <failure message=\"run_length_encoding::encode(&quot;XYZ&quot;) == &quot;XYZ&quot;\" type=\"REQUIRE\">\nFAILED:\n  REQUIRE( run_length_encoding::encode(\"XYZ\") == \"XYZ\" )\nwith expansion:\n  \"1X1Y1Z\" == \"XYZ\"\nat /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:14\n      </failure>\n    </testcase>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode string with no single characters\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode single characters mixed with repeated characters\" time=\"0.0\" status=\"run\">\n      <failure message=\"run_length_encoding::encode( &quot;WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB&quot;) == &quot;12WB12W3B24WB&quot;\" type=\"REQUIRE\">\nFAILED:\n  REQUIRE( run_length_encoding::encode( \"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB\") == \"12WB12W3B24WB\" )\nwith expansion:\n  \"12W1B12W3B24W1B\" == \"12WB12W3B24WB\"\nat /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:25\n      </failure>\n    </testcase>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode multiple whitespace mixed in string\" time=\"0.0\" status=\"run\">\n      <failure message=\"run_length_encoding::encode(&quot;  hsqq qww  &quot;) == &quot;2 hs2q q2w2 &quot;\" type=\"REQUIRE\">\nFAILED:\n  REQUIRE( run_length_encoding::encode(\"  hsqq qww  \") == \"2 hs2q q2w2 \" )\nwith expansion:\n  \"2 1h1s2q1 1q2w2 \" == \"2 hs2q q2w2 \"\nat /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:29\n      </failure>\n    </testcase>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode lowercase characters\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode run-length decode a string\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode single characters only\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode string with no single characters\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode single characters with repeated characters\" time=\"0.000008\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode multiple whitespace mixed in string\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"decode lowercase string\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode and then decode\" time=\"0.000005\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+        },
+        "test_case_count": 13,
+        "failed_case_count": 3,
+        "error_case_count": 0,
+        "case_names": [
+          "encode empty string",
+          "encode single characters only are encoded without count",
+          "encode string with no single characters",
+          "encode single characters mixed with repeated characters",
+          "encode multiple whitespace mixed in string",
+          "encode lowercase characters",
+          "decode run-length decode a string",
+          "decode single characters only",
+          "decode string with no single characters",
+          "decode single characters with repeated characters",
+          "decode multiple whitespace mixed in string",
+          "decode lowercase string",
+          "encode and then decode"
+        ],
+        "failure_messages": [
+          "run_length_encoding::encode(\"XYZ\") == \"XYZ\"",
+          "run_length_encoding::encode( \"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB\") == \"12WB12W3B24WB\"",
+          "run_length_encoding::encode(\"  hsqq qww  \") == \"2 hs2q q2w2 \""
+        ]
+      },
+      "target_case": {
+        "process": {
+          "command": [
+            "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/build/run-length-encoding",
+            "--reporter",
+            "junit",
+            "encode single characters only are encoded without count"
+          ],
+          "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding",
+          "returncode": 1,
+          "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"run-length-encoding\" errors=\"0\" failures=\"1\" tests=\"1\" hostname=\"tbd\" time=\"6.6e-05\" timestamp=\"2026-11-16T11:06:22Z\">\n    <properties>\n      <property name=\"filters\" value=\"encode single characters only are encoded without count\"/>\n    </properties>\n    <testcase classname=\"run-length-encoding.global\" name=\"encode single characters only are encoded without count\" time=\"0.0\" status=\"run\">\n      <failure message=\"run_length_encoding::encode(&quot;XYZ&quot;) == &quot;XYZ&quot;\" type=\"REQUIRE\">\nFAILED:\n  REQUIRE( run_length_encoding::encode(\"XYZ\") == \"XYZ\" )\nwith expansion:\n  \"1X1Y1Z\" == \"XYZ\"\nat /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding_test.cpp:14\n      </failure>\n    </testcase>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+        },
+        "test_case_count": 1,
+        "failed_case_count": 1,
+        "error_case_count": 0,
+        "case_names": [
+          "encode single characters only are encoded without count"
+        ],
+        "failure_messages": [
+          "run_length_encoding::encode(\"XYZ\") == \"XYZ\""
+        ]
+      },
+      "probes": [
+        {
+          "input": "",
+          "expected": "",
+          "actual": "",
+          "returncode": 0
+        },
+        {
+          "input": "XYZ",
+          "expected": "1X1Y1Z",
+          "actual": "1X1Y1Z",
+          "returncode": 0
+        },
+        {
+          "input": "AABBBCCCC",
+          "expected": "2A3B4C",
+          "actual": "2A3B4C",
+          "returncode": 0
+        },
+        {
+          "input": "A",
+          "expected": "1A",
+          "actual": "1A",
+          "returncode": 0
+        }
+      ]
+    }
+  },
+  "probe_compiles": [
+    {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/run-length-encoding/run_length_encoding.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/encode_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original/encode_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/original",
+      "returncode": 0,
+      "stdout": ""
+    },
+    {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/run-length-encoding/run_length_encoding.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/encode_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant/encode_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t013-vt1gxewe/mutant",
+      "returncode": 0,
+      "stdout": ""
+    }
+  ],
+  "task_id": "R20-T013",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/17",
+  "timestamp_utc": "2026-11-16T11:06:16.342900+00:00",
+  "exercise": "exercises/practice/run-length-encoding",
+  "target_case": {
+    "id": "52012823-b7e6-4277-893c-5b96d42f82de",
+    "name": "encode single characters only are encoded without count"
+  },
+  "mutation": {
+    "from": "counter > 1",
+    "to": "counter >= 1"
+  },
+  "selected_inputs_and_expected_results": [
+    {
+      "name": "encode empty string",
+      "input": "",
+      "expected": "",
+      "mutant_actual": ""
+    },
+    {
+      "name": "encode single characters only are encoded without count",
+      "id": "52012823-b7e6-4277-893c-5b96d42f82de",
+      "input": "XYZ",
+      "expected": "XYZ",
+      "mutant_actual": "1X1Y1Z"
+    },
+    {
+      "name": "encode string with no single characters",
+      "input": "AABBBCCCC",
+      "expected": "2A3B4C",
+      "mutant_actual": "2A3B4C"
+    },
+    {
+      "name": "shortest non-empty distinguishing input",
+      "input": "A",
+      "expected": "A",
+      "mutant_actual": "1A"
+    }
+  ],
+  "learner_solution_sha256_before": {
+    "run_length_encoding.cpp": "17c3511f660fd788b26d6edb7341c37bc7532c8ecc6f8dc1ba065217041b9034",
+    "run_length_encoding.h": "8ee335b375a2b2e2b62444d845bce28b417dce5588942e84fd901f746a069cf1"
+  },
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_after": {
+    "run_length_encoding.cpp": "17c3511f660fd788b26d6edb7341c37bc7532c8ecc6f8dc1ba065217041b9034",
+    "run_length_encoding.h": "8ee335b375a2b2e2b62444d845bce28b417dce5588942e84fd901f746a069cf1"
+  },
+  "learner_files_unchanged": true,
+  "case_evidence": [
+    {
+      "name": "encode empty string",
+      "input": "",
+      "expected": "",
+      "mutant_actual": "",
+      "original_actual": ""
+    },
+    {
+      "name": "encode single characters only are encoded without count",
+      "id": "52012823-b7e6-4277-893c-5b96d42f82de",
+      "input": "XYZ",
+      "expected": "XYZ",
+      "mutant_actual": "1X1Y1Z",
+      "original_actual": "XYZ"
+    },
+    {
+      "name": "encode string with no single characters",
+      "input": "AABBBCCCC",
+      "expected": "2A3B4C",
+      "mutant_actual": "2A3B4C",
+      "original_actual": "2A3B4C"
+    },
+    {
+      "name": "shortest non-empty distinguishing input",
+      "input": "A",
+      "expected": "A",
+      "mutant_actual": "1A",
+      "original_actual": "A"
+    }
+  ]
+}

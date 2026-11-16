@@ -1,0 +1,31 @@
+[
+  {
+    "name": "encode empty string",
+    "input": "",
+    "expected": "",
+    "mutant_actual": "",
+    "original_actual": ""
+  },
+  {
+    "name": "encode single characters only are encoded without count",
+    "id": "52012823-b7e6-4277-893c-5b96d42f82de",
+    "input": "XYZ",
+    "expected": "XYZ",
+    "mutant_actual": "1X1Y1Z",
+    "original_actual": "XYZ"
+  },
+  {
+    "name": "encode string with no single characters",
+    "input": "AABBBCCCC",
+    "expected": "2A3B4C",
+    "mutant_actual": "2A3B4C",
+    "original_actual": "2A3B4C"
+  },
+  {
+    "name": "shortest non-empty distinguishing input",
+    "input": "A",
+    "expected": "A",
+    "mutant_actual": "1A",
+    "original_actual": "A"
+  }
+]
