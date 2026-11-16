@@ -1,0 +1,140 @@
+{
+  "task_id": "R20-T017",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/21",
+  "timestamp_utc": "2026-11-16T11:06:39.571337+00:00",
+  "exercise": "exercises/practice/luhn",
+  "named_cases": [
+    {
+      "id": "792a7082-feb7-48c7-b88b-bbfec160865e",
+      "name": "single digit strings can not be valid",
+      "input": "1",
+      "expected": false
+    },
+    {
+      "id": "698a7924-64d4-4d89-8daa-32e1aadc271e",
+      "name": "a single zero is invalid",
+      "input": "0",
+      "expected": false
+    },
+    {
+      "id": "73c2f62b-9b10-4c9f-9a04-83cee7367965",
+      "name": "a simple valid SIN that remains valid if reversed",
+      "input": "059",
+      "expected": true
+    }
+  ],
+  "metadata_entry_count": 22,
+  "C++_source_case_count": 22,
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_before": {
+    "luhn.cpp": "fe53e6466b104eda6f67640d743a71db420e84373d2db14b61b9c183ccf21e2d",
+    "luhn.h": "2e0ecd64a43b091dba720a7578a3d40e166e56b5d17e1256648bca1f7075abbb"
+  },
+  "configure": {
+    "command": [
+      "cmake",
+      "-S",
+      ".",
+      "-B",
+      "build",
+      "-DEXERCISM_RUN_ALL_TESTS=ON"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/luhn",
+    "returncode": 0,
+    "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/luhn/build\n"
+  },
+  "build": {
+    "command": [
+      "cmake",
+      "--build",
+      "build"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/luhn",
+    "returncode": 0,
+    "stdout": "[ 25%] Building CXX object CMakeFiles/luhn.dir/luhn_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/luhn.dir/luhn.cpp.o\n[ 75%] Building CXX object CMakeFiles/luhn.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable luhn\n[100%] Built target luhn\n===============================================================================\nAll tests passed (22 assertions in 22 test cases)\n\n[100%] Built target test_luhn\n"
+  },
+  "test_run": {
+    "command": [
+      "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/luhn/build/luhn",
+      "--reporter",
+      "junit"
+    ],
+    "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/luhn",
+    "returncode": 0,
+    "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"luhn\" errors=\"0\" failures=\"0\" tests=\"22\" hostname=\"tbd\" time=\"0.000212\" timestamp=\"2026-11-16T11:06:42Z\">\n    <testcase classname=\"luhn.global\" name=\"single digit strings can not be valid\" time=\"0.000012\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"a single zero is invalid\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"a simple valid SIN that remains valid if reversed\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"a simple valid SIN that becomes invalid if reversed\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"a valid Canadian SIN\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"invalid Canadian SIN\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"invalid credit card\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"invalid long number with an even remainder\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"invalid long number with a remainder divisible by 5\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"valid number with an even number of digits\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"valid number with an odd number of spaces\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"valid strings with a non-digit added at the end become invalid\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"valid strings with punctuation included become invalid\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"valid strings with symbols included become invalid\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"single zero with space is invalid\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"more than a single zero is valid\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"input digit 9 is correctly converted to output digit 9\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"very long input is valid\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"valid luhn with an odd number of digits and non zero first digit\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"using ascii value for non-doubled non-digit isn't allowed\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"using ascii value for doubled non-digit isn't allowed\" time=\"0.000003\" status=\"run\"/>\n    <testcase classname=\"luhn.global\" name=\"non-numeric, non-space char in the middle with a sum that's divisible by 10 isn't allowed\" time=\"0.000004\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+  },
+  "test_summary": {
+    "test_case_count": 22,
+    "failed_case_count": 0,
+    "error_case_count": 0,
+    "case_names": [
+      "single digit strings can not be valid",
+      "a single zero is invalid",
+      "a simple valid SIN that remains valid if reversed",
+      "a simple valid SIN that becomes invalid if reversed",
+      "a valid Canadian SIN",
+      "invalid Canadian SIN",
+      "invalid credit card",
+      "invalid long number with an even remainder",
+      "invalid long number with a remainder divisible by 5",
+      "valid number with an even number of digits",
+      "valid number with an odd number of spaces",
+      "valid strings with a non-digit added at the end become invalid",
+      "valid strings with punctuation included become invalid",
+      "valid strings with symbols included become invalid",
+      "single zero with space is invalid",
+      "more than a single zero is valid",
+      "input digit 9 is correctly converted to output digit 9",
+      "very long input is valid",
+      "valid luhn with an odd number of digits and non zero first digit",
+      "using ascii value for non-doubled non-digit isn't allowed",
+      "using ascii value for doubled non-digit isn't allowed",
+      "non-numeric, non-space char in the middle with a sum that's divisible by 10 isn't allowed"
+    ],
+    "failures": []
+  },
+  "micro_example": {
+    "source": "#include <iostream>\n#include <string>\n\nstd::size_t count_digits(const std::string& input) {\n    std::size_t digits = 0;\n    for (auto it = input.rbegin(); it != input.rend(); ++it) {\n        if (*it == ' ') continue;\n        if (*it < '0' || *it > '9') return 0;\n        ++digits;\n    }\n    return digits;\n}\n\nint main() {\n    const std::string number = \"0 59\";\n    std::cout << number.size() << '\\n';\n    std::cout << count_digits(number) << '\\n';\n}\n",
+    "build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/hint_micro_example.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/hint_micro_example"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "execution": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4/hint_micro_example"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t017-nsxlckk4",
+      "returncode": 0,
+      "stdout": "4\n3\n"
+    },
+    "expected_output_lines": [
+      "4",
+      "3"
+    ],
+    "actual_output_lines": [
+      "4",
+      "3"
+    ]
+  },
+  "learner_solution_sha256_after": {
+    "luhn.cpp": "fe53e6466b104eda6f67640d743a71db420e84373d2db14b61b9c183ccf21e2d",
+    "luhn.h": "2e0ecd64a43b091dba720a7578a3d40e166e56b5d17e1256648bca1f7075abbb"
+  },
+  "learner_files_unchanged": true
+}

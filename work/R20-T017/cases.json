@@ -1,0 +1,36 @@
+{
+  "canonical_cases": [
+    {
+      "id": "792a7082-feb7-48c7-b88b-bbfec160865e",
+      "name": "single digit strings can not be valid",
+      "input": "1",
+      "expected": false
+    },
+    {
+      "id": "698a7924-64d4-4d89-8daa-32e1aadc271e",
+      "name": "a single zero is invalid",
+      "input": "0",
+      "expected": false
+    },
+    {
+      "id": "73c2f62b-9b10-4c9f-9a04-83cee7367965",
+      "name": "a simple valid SIN that remains valid if reversed",
+      "input": "059",
+      "expected": true
+    }
+  ],
+  "reference_test_case_count": 22,
+  "micro_example": {
+    "input": "0 59",
+    "raw_character_count_expected": 4,
+    "digit_count_expected": 3,
+    "published_output_lines": [
+      "4",
+      "3"
+    ],
+    "actual_output_lines": [
+      "4",
+      "3"
+    ]
+  }
+}
