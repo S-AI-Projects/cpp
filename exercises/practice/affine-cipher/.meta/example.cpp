@@ -5,7 +5,15 @@
 
 namespace affine_cipher {
 
-static int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }
+static int gcd(int a, int b) {
+    // Each Euclidean step preserves gcd(a, b), reducing b to zero.
+    while (b != 0) {
+        const int remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    return a;
+}
 
 static int mod(int x, int m) {
     int r = x % m;
