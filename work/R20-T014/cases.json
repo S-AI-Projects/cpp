@@ -1,0 +1,32 @@
+[
+  {
+    "name": "encode_yes",
+    "id": "2ee1d9af-1c43-416c-b41b-cefd7d4d2b2a",
+    "input": "yes",
+    "a": 5,
+    "b": 7,
+    "expected": "xbt",
+    "before_actual": "xbt",
+    "after_actual": "xbt"
+  },
+  {
+    "name": "encode_no",
+    "id": "785bade9-e98b-4d4f-a5b0-087ba3d7de4b",
+    "input": "no",
+    "a": 15,
+    "b": 18,
+    "expected": "fu",
+    "before_actual": "fu",
+    "after_actual": "fu"
+  },
+  {
+    "name": "encode_OMG",
+    "id": "2854851c-48fb-40d8-9bf6-8f192ed25054",
+    "input": "OMG",
+    "a": 21,
+    "b": 3,
+    "expected": "lvz",
+    "before_actual": "lvz",
+    "after_actual": "lvz"
+  }
+]

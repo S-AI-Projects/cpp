@@ -1,0 +1,239 @@
+{
+  "task_id": "R20-T014",
+  "issue": "https://github.com/S-AI-Projects/cpp/issues/18",
+  "timestamp_utc": "2026-11-16T11:06:23.153816+00:00",
+  "exercise": "exercises/practice/affine-cipher",
+  "base_commit": "8d139cb04c7463722ae1f233099cc0bd39a71092",
+  "reference_sha256": {
+    "before": "06d811664c8536a3e392de4136c0204c7f0fce95d8bc35d48ad59c295b268706",
+    "after": "6091d93dc1f43cec9da846581c3867e1eef3920f18dda12855efe6f9a337adb1"
+  },
+  "selected_cases": [
+    {
+      "name": "encode_yes",
+      "id": "2ee1d9af-1c43-416c-b41b-cefd7d4d2b2a",
+      "input": "yes",
+      "a": 5,
+      "b": 7,
+      "expected": "xbt"
+    },
+    {
+      "name": "encode_no",
+      "id": "785bade9-e98b-4d4f-a5b0-087ba3d7de4b",
+      "input": "no",
+      "a": 15,
+      "b": 18,
+      "expected": "fu"
+    },
+    {
+      "name": "encode_OMG",
+      "id": "2854851c-48fb-40d8-9bf6-8f192ed25054",
+      "input": "OMG",
+      "a": 21,
+      "b": 3,
+      "expected": "lvz"
+    }
+  ],
+  "case_counts": {
+    "metadata_entries": 16,
+    "C++_source_cases": 16
+  },
+  "tool_versions": {
+    "python": "Python 3.14.6",
+    "cmake": "cmake version 4.4.5",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "learner_solution_sha256_before": {
+    "affine_cipher.cpp": "b016b3c1a7c0fc428cc31a0fb1d0ddd5fbc956c4567ac084806568b7757be01a",
+    "affine_cipher.h": "8142752fa496fcf6b3cb3863a425ee9b82e631a1693f762f02d7065570e1436e"
+  },
+  "before": {
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher",
+      "returncode": 0,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher",
+      "returncode": 0,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/affine-cipher.dir/affine_cipher_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/affine-cipher.dir/affine_cipher.cpp.o\n[ 75%] Building CXX object CMakeFiles/affine-cipher.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable affine-cipher\n[100%] Built target affine-cipher\n===============================================================================\nAll tests passed (16 assertions in 16 test cases)\n\n[100%] Built target test_affine-cipher\n"
+    },
+    "test_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher/build/affine-cipher",
+        "--reporter",
+        "junit"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher",
+      "returncode": 0,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"affine-cipher\" errors=\"0\" failures=\"0\" tests=\"16\" hostname=\"tbd\" time=\"0.000257\" timestamp=\"2026-11-16T11:06:25Z\">\n    <testcase classname=\"affine-cipher.global\" name=\"encode_yes\" time=\"0.000014\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_no\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_OMG\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_O_M_G\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_mindblowingly\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_numbers\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_deep_thought\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_all_the_letters\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_with_a_not_coprime_to_m\" time=\"0.000076\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_exercism\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_a_sentence\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_numbers\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_all_the_letters\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_with_no_spaces_in_input\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_with_too_many_spaces\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_with_a_not_coprime_to_m\" time=\"0.00002\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 16,
+      "failed_case_count": 0,
+      "error_case_count": 0,
+      "case_names": [
+        "encode_yes",
+        "encode_no",
+        "encode_OMG",
+        "encode_O_M_G",
+        "encode_mindblowingly",
+        "encode_numbers",
+        "encode_deep_thought",
+        "encode_all_the_letters",
+        "encode_with_a_not_coprime_to_m",
+        "decode_exercism",
+        "decode_a_sentence",
+        "decode_numbers",
+        "decode_all_the_letters",
+        "decode_with_no_spaces_in_input",
+        "decode_with_too_many_spaces",
+        "decode_with_a_not_coprime_to_m"
+      ],
+      "failures": []
+    },
+    "probe_build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine-cipher/affine_cipher.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "probe_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before/affine_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/before",
+      "returncode": 0,
+      "stdout": "xbt\nfu\nlvz\n"
+    },
+    "selected_outputs": [
+      "xbt",
+      "fu",
+      "lvz"
+    ]
+  },
+  "after": {
+    "configure": {
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build",
+        "-DEXERCISM_RUN_ALL_TESTS=ON"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher",
+      "returncode": 0,
+      "stdout": "CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):\n  Compatibility with CMake < 3.10 will be removed from a future version of\n  CMake.\n\n  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n  to tell CMake that the project requires at least <min> but has been updated\n  to work with policies introduced by <max> or earlier.\nThis warning is for project developers.  Use -Wno-author or -Wno-deprecated\nto suppress it.\n\n-- The CXX compiler identification is AppleClang 21.0.0.21000401\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /private/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher/build\n"
+    },
+    "build": {
+      "command": [
+        "cmake",
+        "--build",
+        "build"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher",
+      "returncode": 0,
+      "stdout": "[ 25%] Building CXX object CMakeFiles/affine-cipher.dir/affine_cipher_test.cpp.o\n[ 50%] Building CXX object CMakeFiles/affine-cipher.dir/affine_cipher.cpp.o\n[ 75%] Building CXX object CMakeFiles/affine-cipher.dir/test/tests-main.cpp.o\n[100%] Linking CXX executable affine-cipher\n[100%] Built target affine-cipher\n===============================================================================\nAll tests passed (16 assertions in 16 test cases)\n\n[100%] Built target test_affine-cipher\n"
+    },
+    "test_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher/build/affine-cipher",
+        "--reporter",
+        "junit"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher",
+      "returncode": 0,
+      "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<testsuites>\n  <testsuite name=\"affine-cipher\" errors=\"0\" failures=\"0\" tests=\"16\" hostname=\"tbd\" time=\"0.000273\" timestamp=\"2026-11-16T11:06:29Z\">\n    <testcase classname=\"affine-cipher.global\" name=\"encode_yes\" time=\"0.000014\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_no\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_OMG\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_O_M_G\" time=\"0.000004\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_mindblowingly\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_numbers\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_deep_thought\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_all_the_letters\" time=\"0.000007\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"encode_with_a_not_coprime_to_m\" time=\"0.000081\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_exercism\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_a_sentence\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_numbers\" time=\"0.000006\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_all_the_letters\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_with_no_spaces_in_input\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_with_too_many_spaces\" time=\"0.000005\" status=\"run\"/>\n    <testcase classname=\"affine-cipher.global\" name=\"decode_with_a_not_coprime_to_m\" time=\"0.000022\" status=\"run\"/>\n    <system-out/>\n    <system-err/>\n  </testsuite>\n</testsuites>\n"
+    },
+    "test_summary": {
+      "test_case_count": 16,
+      "failed_case_count": 0,
+      "error_case_count": 0,
+      "case_names": [
+        "encode_yes",
+        "encode_no",
+        "encode_OMG",
+        "encode_O_M_G",
+        "encode_mindblowingly",
+        "encode_numbers",
+        "encode_deep_thought",
+        "encode_all_the_letters",
+        "encode_with_a_not_coprime_to_m",
+        "decode_exercism",
+        "decode_a_sentence",
+        "decode_numbers",
+        "decode_all_the_letters",
+        "decode_with_no_spaces_in_input",
+        "decode_with_too_many_spaces",
+        "decode_with_a_not_coprime_to_m"
+      ],
+      "failures": []
+    },
+    "probe_build": {
+      "command": [
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine-cipher/affine_cipher.cpp",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine_probe.cpp",
+        "-o",
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after",
+      "returncode": 0,
+      "stdout": ""
+    },
+    "probe_run": {
+      "command": [
+        "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after/affine_probe"
+      ],
+      "cwd": "/var/folders/zh/7p7mzx_j7b38p72jgqbd8dg00000gn/T/r20-t014-d63hwtbv/after",
+      "returncode": 0,
+      "stdout": "xbt\nfu\nlvz\n"
+    },
+    "selected_outputs": [
+      "xbt",
+      "fu",
+      "lvz"
+    ]
+  },
+  "all_enabled_cases_match": true,
+  "selected_outputs_match": true,
+  "learner_solution_sha256_after": {
+    "affine_cipher.cpp": "b016b3c1a7c0fc428cc31a0fb1d0ddd5fbc956c4567ac084806568b7757be01a",
+    "affine_cipher.h": "8142752fa496fcf6b3cb3863a425ee9b82e631a1693f762f02d7065570e1436e"
+  },
+  "learner_files_unchanged": true
+}
