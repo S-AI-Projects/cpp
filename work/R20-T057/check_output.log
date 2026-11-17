@@ -1,0 +1,215 @@
+=== Starting check for pangram (R20-T057) ===
+
+--- Tool Versions ---
+Command: c++ --version
+Exit Code: 0
+Apple clang version 21.0.0 (clang-2100.4.1.1)
+Target: arm64-apple-darwin27.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Command: cmake --version
+Exit Code: 0
+cmake version 4.4.5
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+--- Reading Config from /Users/muditkumawat/cpp/exercises/practice/pangram/.meta/config.json ---
+Solution files: ['pangram.cpp', 'pangram.h']
+Test files: ['pangram_test.cpp']
+Example files: ['.meta/example.cpp', '.meta/example.h']
+Resolved file substitutions: [('.meta/example.cpp', 'pangram.cpp'), ('.meta/example.h', 'pangram.h')]
+
+Copying exercise (including dotfiles) to temp directory: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram
+
+Performing file substitutions in temporary copy:
+Substituting: .meta/example.cpp -> pangram.cpp
+Substituting: .meta/example.h -> pangram.h
+
+Running command: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+Exit Code: 0
+--- cmake configure stdout ---
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/build
+
+--- cmake configure stderr ---
+CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+
+
+Running command: cmake --build build
+Exit Code: 0
+--- cmake build stdout ---
+[ 25%] Building CXX object CMakeFiles/pangram.dir/pangram_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/pangram.dir/pangram.cpp.o
+[ 75%] Building CXX object CMakeFiles/pangram.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable pangram
+[100%] Built target pangram
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_pangram
+
+--- cmake build stderr ---
+
+
+Running command: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/build/pangram -s
+Exit Code: 0
+--- test execution stdout ---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pangram is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+sentence_empty
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:8
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:8: PASSED:
+  REQUIRE( !pangram::is_pangram("") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+pangram_with_only_lower_case
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:11
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:12: PASSED:
+  REQUIRE( pangram::is_pangram("the quick brown fox jumps over the lazy dog") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+missing_character_x
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:15
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:17: PASSED:
+  REQUIRE( !pangram::is_pangram( "a quick movement of the enemy will jeopardize five gunboats") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+another_missing_x
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:20
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:22: PASSED:
+  REQUIRE( !pangram::is_pangram("the quick brown fish jumps over the lazy dog") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+pangram_with_underscores
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:25
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:26: PASSED:
+  REQUIRE( pangram::is_pangram("the_quick_brown_fox_jumps_over_the_lazy_dog") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+pangram_with_numbers
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:29
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:31: PASSED:
+  REQUIRE( pangram::is_pangram( "the 1 quick brown fox jumps over the 2 lazy dogs") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+missing_letters_replaced_with_numbers
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:34
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:36: PASSED:
+  REQUIRE( !pangram::is_pangram("7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+pangram_with_mixed_case_and_punctuation
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:39
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:40: PASSED:
+  REQUIRE( pangram::is_pangram("\"Five quacking Zephyrs jolt my wax bed.\"") )
+with expansion:
+  true
+
+-------------------------------------------------------------------------------
+a_to_m_and_A_to_M_are_26_different_characters_but_not_a_pangram
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:43
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/pangram_test.cpp:44: PASSED:
+  REQUIRE( !pangram::is_pangram("abcdefghijklm ABCDEFGHIJKLM") )
+with expansion:
+  true
+
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+
+--- test execution stderr ---
+
+Executed test counts: 9 test cases, 9 assertions
+ASSERTION PASSED: Test case 'sentence_empty' executed and passed.
+ASSERTION PASSED: Test case 'pangram_with_only_lower_case' executed and passed.
+ASSERTION PASSED: Test case 'missing_character_x' executed and passed.
+
+--- Extracting and Running Micro-Examples from /Users/muditkumawat/cpp/exercises/practice/pangram/.docs/hints.md ---
+Found 2 micro-examples in hints.md
+
+Evaluating Micro-Example 1: Safe Example: Passing by Const Reference
+Source file: micro_example_1.cpp
+Compile command: c++ -std=c++17 /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/micro_example_1.cpp -o /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/micro_example_1.out
+Compile exit code: 0
+Running executable: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/micro_example_1.out
+Run exit code: 0
+Actual output:
+Found 'z': true
+Found '!': false
+Expected output:
+Found 'z': true
+Found '!': false
+ASSERTION PASSED: Micro-example 1 output matches expected output perfectly.
+
+Evaluating Micro-Example 2: Pitfall Example: Unchecked Arithmetic / Out-of-Bounds Shift
+Source file: micro_example_2.cpp
+Compile command: c++ -std=c++17 /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/micro_example_2.cpp -o /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/micro_example_2.out
+Compile exit code: 0
+Running executable: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpt7q24fbp/pangram/micro_example_2.out
+Run exit code: 0
+Actual output:
+Shift amount for space: -65
+Expected output:
+Shift amount for space: -65
+ASSERTION PASSED: Micro-example 2 output matches expected output perfectly.
