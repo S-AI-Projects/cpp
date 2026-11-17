@@ -1,0 +1,254 @@
+=== Two-Bucket Test Verification Run ===
+
+--- Tool Versions ---
+cmake version:
+cmake version 4.4.5
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+c++ version:
+Apple clang version 21.0.0 (clang-2100.4.1.1)
+Target: arm64-apple-darwin27.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+python3 version:
+Python 3.15.2
+
+--- Pre-Run Hashing ---
+  .docs/instructions.md: 69471472c9db28eda2f841096ae4afd07605949293489b8445142f4cb0cd9ff8
+  .meta/config.json: 93b129226b371faaba121ea04f33c7cf60dc6f7757c3a974bb00de869fd0b982
+  .meta/example.cpp: f0d33ff58f426a7d03c357b697444bd522edb7a17ee9140048a01e82aeec6774
+  .meta/example.h: 549b8d944d14ef5bab89d9573bdce27866b111d2b766bf04ba518d9fb19e980d
+  .meta/tests.toml: e7c7112de988f784435a045c915962ad952ea8ef5e45a18a6040eabd9858cd6a
+  CMakeLists.txt: 53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff
+  test/catch.hpp: e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553
+  test/tests-main.cpp: 5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260
+  two_bucket.cpp: 132c7916b097182db3cf6dfe273b7b6282365e52cdbe1326312b39e75c251d0d
+  two_bucket.h: 549b8d944d14ef5bab89d9573bdce27866b111d2b766bf04ba518d9fb19e980d
+  two_bucket_test.cpp: 886458136e857b899fa2b98ec3590be4625ead7c1dd623362e4b21f73558d4ff
+
+--- Metadata & Test Suite Verification ---
+Parsed 9 test cases from two_bucket_test.cpp:
+  [1] Measure using bucket one of size 3 and bucket two of size 5 - start with bucket one (a6f2b4ba-065f-4dca-b6f0-e3eee51cb661)
+  [2] Measure using bucket one of size 3 and bucket two of size 5 - start with bucket two (6c4ea451-9678-4926-b9b3-68364e066d40)
+  [3] Measure using bucket one of size 7 and bucket two of size 11 - start with bucket one (3389f45e-6a56-46d5-9607-75aa930502ff)
+  [4] Measure using bucket one of size 7 and bucket two of size 11 - start with bucket two (fe0ff9a0-3ea5-4bf7-b17d-6d4243961aa1)
+  [5] Measure one step using bucket one of size 1 and bucket two of size 3 - start with bucket two (0ee1f57e-da84-44f7-ac91-38b878691602)
+  [6] Measure using bucket one of size 2 and bucket two of size 3 - start with bucket one and end with bucket two (eb329c63-5540-4735-b30b-97f7f4df0f84)
+  [7] Not possible to reach the goal (449be72d-b10a-4f4b-a959-ca741e333b72)
+  [8] With the same buckets but a different goal, then it is possible (aac38b7a-77f4-4d62-9b91-8846d533b054)
+  [9] Goal larger than both buckets is impossible (74633132-0ccf-49de-8450-af4ab2e3b299)
+Verifying tests.toml: found 9 UUID entries in tests.toml.
+All 9 entries in tests.toml correctly match test cases.
+
+=== Scenario A: Real Reference (Expected Pass) ===
+Running cmake configure: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+Running cmake build: cmake --build build --target two-bucket
+Running test executable: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpnjuvd0v8/two-bucket/build/two-bucket
+Scenario A result: success=True, exit_code=0, executed_cases=9
+Catch2 Output:
+===============================================================================
+All tests passed (23 assertions in 9 test cases)
+
+
+Scenario A passed all assertions successfully.
+Assertion passed: all 11 files unchanged after Scenario A.
+
+=== Scenario B: Deliberately Failing Reference (Expected Failure) ===
+Running cmake configure: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+Running cmake build: cmake --build build --target two-bucket
+Running test executable: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/build/two-bucket
+Scenario B result: success=False, exit_code=21, executed_cases=9
+Catch2 Output:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+two-bucket is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Measure using bucket one of size 3 and bucket two of size 5 - start with bucket
+one
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:15
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:24: FAILED:
+  CHECK( actual.num_moves == 4 )
+with expansion:
+  999 (0x3e7) == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:26: FAILED:
+  CHECK( actual.other_bucket_volume == 5 )
+with expansion:
+  999 (0x3e7) == 5
+
+-------------------------------------------------------------------------------
+Measure using bucket one of size 3 and bucket two of size 5 - start with bucket
+two
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:35
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:44: FAILED:
+  CHECK( actual.num_moves == 8 )
+with expansion:
+  999 (0x3e7) == 8
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:45: FAILED:
+  CHECK( actual.goal_bucket == two_bucket::bucket_id::two )
+with expansion:
+  one == two
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:46: FAILED:
+  CHECK( actual.other_bucket_volume == 3 )
+with expansion:
+  999 (0x3e7) == 3
+
+-------------------------------------------------------------------------------
+Measure using bucket one of size 7 and bucket two of size 11 - start with
+bucket one
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:53
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:62: FAILED:
+  CHECK( actual.num_moves == 14 )
+with expansion:
+  999 (0x3e7) == 14
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:64: FAILED:
+  CHECK( actual.other_bucket_volume == 11 )
+with expansion:
+  999 (0x3e7) == 11
+
+-------------------------------------------------------------------------------
+Measure using bucket one of size 7 and bucket two of size 11 - start with
+bucket two
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:71
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:80: FAILED:
+  CHECK( actual.num_moves == 18 )
+with expansion:
+  999 (0x3e7) == 18
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:81: FAILED:
+  CHECK( actual.goal_bucket == two_bucket::bucket_id::two )
+with expansion:
+  one == two
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:82: FAILED:
+  CHECK( actual.other_bucket_volume == 7 )
+with expansion:
+  999 (0x3e7) == 7
+
+-------------------------------------------------------------------------------
+Measure one step using bucket one of size 1 and bucket two of size 3 - start
+with bucket two
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:89
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:98: FAILED:
+  CHECK( actual.num_moves == 1 )
+with expansion:
+  999 (0x3e7) == 1
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:99: FAILED:
+  CHECK( actual.goal_bucket == two_bucket::bucket_id::two )
+with expansion:
+  one == two
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:100: FAILED:
+  CHECK( actual.other_bucket_volume == 0 )
+with expansion:
+  999 (0x3e7) == 0
+
+-------------------------------------------------------------------------------
+Measure using bucket one of size 2 and bucket two of size 3 - start with bucket
+one and end with bucket two
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:107
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:116: FAILED:
+  CHECK( actual.num_moves == 2 )
+with expansion:
+  999 (0x3e7) == 2
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:117: FAILED:
+  CHECK( actual.goal_bucket == two_bucket::bucket_id::two )
+with expansion:
+  one == two
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:118: FAILED:
+  CHECK( actual.other_bucket_volume == 2 )
+with expansion:
+  999 (0x3e7) == 2
+
+-------------------------------------------------------------------------------
+Not possible to reach the goal
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:122
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:129: FAILED:
+  REQUIRE_THROWS( two_bucket::measure(bucket1_capacity, bucket2_capacity, goal_volume, start_bucket) )
+because no exception was thrown where one was expected:
+
+-------------------------------------------------------------------------------
+With the same buckets but a different goal, then it is possible
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:133
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:142: FAILED:
+  CHECK( actual.num_moves == 10 )
+with expansion:
+  999 (0x3e7) == 10
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:143: FAILED:
+  CHECK( actual.goal_bucket == two_bucket::bucket_id::two )
+with expansion:
+  one == two
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:144: FAILED:
+  CHECK( actual.other_bucket_volume == 0 )
+with expansion:
+  999 (0x3e7) == 0
+
+-------------------------------------------------------------------------------
+Goal larger than both buckets is impossible
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:148
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpkzcv2b1u/two-bucket/two_bucket_test.cpp:155: FAILED:
+  REQUIRE_THROWS( two_bucket::measure(bucket1_capacity, bucket2_capacity, goal_volume, start_bucket) )
+because no exception was thrown where one was expected:
+
+===============================================================================
+test cases:  9 |  9 failed
+assertions: 23 | 2 passed | 21 failed
+
+
+Scenario B correctly detected Catch2 failure and returned non-zero status.
+Assertion passed: all 11 files unchanged after Scenario B.
+
+=== Scenario C: Empty Test Selection / Zero-Test Run (Expected Failure) ===
+Running cmake configure: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+Running cmake build: cmake --build build --target two-bucket
+Running test executable: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmp0qsw9jzg/two-bucket/build/two-bucket nonexistent_test_case_xyz
+Scenario C result: success=False, exit_code=0, executed_cases=0
+Catch2 Output:
+Filters: nonexistent_test_case_xyz
+No test cases matched 'nonexistent_test_case_xyz'
+===============================================================================
+No tests ran
+
+
+Scenario C correctly detected zero-test run and propagated failure status.
+Assertion passed: all 11 files unchanged after Scenario C.
+
+=== Final Verification Summary ===
+ALL SCENARIOS AND ASSERTIONS PASSED SUCCESSFULLY.
