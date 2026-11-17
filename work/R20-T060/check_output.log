@@ -1,0 +1,165 @@
+=== Tool Versions ===
+python3: Python 3.15.2
+cmake: cmake version 4.4.5
+c++: Apple clang version 21.0.0 (clang-2100.4.1.1)
+
+=== Configuration ===
+Exercise: exercises/practice/space-age
+files.solution: ['space_age.cpp', 'space_age.h']
+files.test: ['space_age_test.cpp']
+files.example: ['.meta/example.cpp', '.meta/example.h']
+
+=== Test Execution Summary ===
+Total executed test cases: 9
+Required cases asserted: ['age_in_seconds', 'age_in_earth_years', 'age_in_mercury_years']
+Required cases passed: ['age_in_seconds', 'age_in_earth_years', 'age_in_mercury_years']
+
+=== Catch2 Detailed Results ===
+Case: age_in_seconds | Input: 1000000 | Expected seconds: 1000000 | Status: PASSED
+Case: age_in_earth_years | Input: 1000000000 | Expected earth_years: 31.69 (within 0.005) | Status: PASSED
+Case: age_in_mercury_years | Input: 2134835688 | Expected earth_years: 67.65, mercury_years: 280.88 (within 0.005) | Status: PASSED
+
+=== Raw Catch2 Test Output ===
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+space-age is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+age_in_seconds
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:8
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:11: PASSED:
+  REQUIRE( age.seconds() == 1000000 )
+with expansion:
+  1000000 (0xf4240) == 1000000 (0xf4240)
+
+-------------------------------------------------------------------------------
+age_in_earth_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:19
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:22: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(31.69, accuracy) )
+with expansion:
+  31.688087814 is within 0.005 of 31.69
+
+-------------------------------------------------------------------------------
+age_in_mercury_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:25
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:28: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(67.65, accuracy) )
+with expansion:
+  67.6488607499 is within 0.005 of 67.65
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:30: PASSED:
+  REQUIRE_THAT( age.on_mercury(), Catch::Matchers::WithinAbs(280.88, accuracy) )
+with expansion:
+  280.8793342399 is within 0.005 of 280.88
+
+-------------------------------------------------------------------------------
+age_in_venus_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:33
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:36: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(6.02, accuracy) )
+with expansion:
+  6.0156613938 is within 0.005 of 6.02
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:37: PASSED:
+  REQUIRE_THAT( age.on_venus(), Catch::Matchers::WithinAbs(9.78, accuracy) )
+with expansion:
+  9.7784268314 is within 0.005 of 9.78
+
+-------------------------------------------------------------------------------
+age_in_mars_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:40
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:43: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(73.83, accuracy) )
+with expansion:
+  73.8291644168 is within 0.005 of 73.83
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:44: PASSED:
+  REQUIRE_THAT( age.on_mars(), Catch::Matchers::WithinAbs(39.25, accuracy) )
+with expansion:
+  39.2537984936 is within 0.005 of 39.25
+
+-------------------------------------------------------------------------------
+age_in_jupiter_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:47
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:50: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(28.58, accuracy) )
+with expansion:
+  28.5787379902 is within 0.005 of 28.58
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:51: PASSED:
+  REQUIRE_THAT( age.on_jupiter(), Catch::Matchers::WithinAbs(2.41, accuracy) )
+with expansion:
+  2.4091431771 is within 0.005 of 2.41
+
+-------------------------------------------------------------------------------
+age_in_saturn_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:54
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:57: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(95.06, accuracy) )
+with expansion:
+  95.0642634421 is within 0.005 of 95.06
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:58: PASSED:
+  REQUIRE_THAT( age.on_saturn(), Catch::Matchers::WithinAbs(3.23, accuracy) )
+with expansion:
+  3.2282628372 is within 0.005 of 3.23
+
+-------------------------------------------------------------------------------
+age_in_uranus_years
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:61
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:64: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(101.72, accuracy) )
+with expansion:
+  101.7226739676 is within 0.005 of 101.72
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:65: PASSED:
+  REQUIRE_THAT( age.on_uranus(), Catch::Matchers::WithinAbs(1.21, accuracy) )
+with expansion:
+  1.2107414026 is within 0.005 of 1.21
+
+-------------------------------------------------------------------------------
+age_in_neptune_year
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:68
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:71: PASSED:
+  REQUIRE_THAT( age.on_earth(), Catch::Matchers::WithinAbs(260.16, accuracy) )
+with expansion:
+  260.1631130377 is within 0.005 of 260.16
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpzl6ti413/space-age/space_age_test.cpp:72: PASSED:
+  REQUIRE_THAT( age.on_neptune(), Catch::Matchers::WithinAbs(1.58, accuracy) )
+with expansion:
+  1.5787428187 is within 0.005 of 1.58
+
+===============================================================================
+All tests passed (16 assertions in 9 test cases)
+
+
