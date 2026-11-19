@@ -1,0 +1,12 @@
+=== R20-T006 Resistor Color Duo Check ===
+Verified Approach Selection documentation in hints.md.
+Initial hash: resistor_color_duo.cpp = a6b4507735a3...
+Initial hash: resistor_color_duo.h = 75f321f4ec3a...
+Verified learner stub in working tree is unsolved.
+Verified anchor case 'Brown and black' is present.
+Verified anchor case 'Blue and grey' is present.
+Verified anchor case 'White and red' is present.
+Reference implementation passed all 7 tests (7 assertions).
+Experimental Approach 1 (vector/std::find) passed all tests.
+Experimental Approach 2 (unordered_map) passed all tests.
+Verified: learner file hashes identical before and after run.
