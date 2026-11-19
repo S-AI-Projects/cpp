@@ -1,0 +1,35 @@
+{
+  "task": "R20-T028",
+  "exercise": "raindrops",
+  "named_cases": [
+    "the_sound_for_1_is_1",
+    "the_sound_for_3_is_pling",
+    "the_sound_for_5_is_plang"
+  ],
+  "invalid_fixtures": {
+    "missing-reference": {
+      "files": {
+        "solution": ["raindrops.cpp", "raindrops.h"],
+        "test": ["raindrops_test.cpp"],
+        "example": [".meta/nonexistent_example.cpp", ".meta/example.h"]
+      },
+      "expected_error": "FileNotFoundError"
+    },
+    "missing-test": {
+      "files": {
+        "solution": ["raindrops.cpp", "raindrops.h"],
+        "test": ["nonexistent_test.cpp"],
+        "example": [".meta/example.cpp", ".meta/example.h"]
+      },
+      "expected_error": "FileNotFoundError"
+    },
+    "outside-exercise": {
+      "files": {
+        "solution": ["raindrops.cpp", "raindrops.h"],
+        "test": ["../../outside_test.cpp"],
+        "example": [".meta/example.cpp", ".meta/example.h"]
+      },
+      "expected_error": "PermissionError"
+    }
+  }
+}

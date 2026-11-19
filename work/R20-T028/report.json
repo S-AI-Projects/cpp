@@ -1,0 +1,32 @@
+{
+  "task": "R20-T028",
+  "exercise": "raindrops",
+  "tools": {
+    "cmake": "cmake version 4.5.0",
+    "c++": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "python": "3.14.7"
+  },
+  "learner_stub_unsolved": true,
+  "config_fixtures": {
+    "missing-reference": {
+      "status": "FAILED_AS_EXPECTED",
+      "error": "FileNotFoundError",
+      "message": "Declared file for role 'example' does not exist: .meta/nonexistent_example.cpp"
+    },
+    "missing-test": {
+      "status": "FAILED_AS_EXPECTED",
+      "error": "FileNotFoundError",
+      "message": "Declared file for role 'test' does not exist: nonexistent_test.cpp"
+    },
+    "outside-exercise": {
+      "status": "FAILED_AS_EXPECTED",
+      "error": "PermissionError",
+      "message": "Path traversal detected in role 'test': '../../outside_test.cpp' escapes exercise root"
+    }
+  },
+  "test_results": {
+    "test_cases": 18,
+    "assertions": 18
+  },
+  "status": "PASS"
+}
