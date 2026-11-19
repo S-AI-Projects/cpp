@@ -1,0 +1,10 @@
+=== R20-T010 Meetup Contract Cases Check ===
+Verified hints.md with input/output walkthrough, decision table, and contract boundaries.
+Initial hash: meetup.cpp = b0d270e53512...
+Initial hash: meetup.h = 303b1a78ceda...
+Verified learner stub in working tree is unsolved.
+Verified anchor case 'monteenth_of_May_2013' is present.
+Verified anchor case 'monteenth_of_August_2013' is present.
+Verified anchor case 'monteenth_of_September_2013' is present.
+Reference passed all 90 test cases (90 assertions).
+Verified: learner file hashes identical before and after run.
