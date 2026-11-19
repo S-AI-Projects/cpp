@@ -1,0 +1,10 @@
+=== R20-T004 Rail Fence Cipher Check ===
+Confirmed scoped readability refactor and invariant documentation in example.cpp.
+Initial hash: rail_fence_cipher.cpp = 8bdaf1d8f952...
+Initial hash: rail_fence_cipher.h = 1d49800a65a0...
+Verified learner stub in working tree is unsolved.
+Verified named case: 'encode with ending in the middle' is present.
+Verified named case: 'encode with two rails' is present.
+Verified named case: 'encode with three rails' is present.
+All 6 tests passed successfully (6 assertions).
+Verified: learner file hashes identical before and after run.
