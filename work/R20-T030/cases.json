@@ -1,0 +1,34 @@
+{
+  "task": "R20-T030",
+  "exercise": "spiral-matrix",
+  "named_cases": [
+    "empty spiral",
+    "trivial spiral",
+    "spiral of size 2"
+  ],
+  "decision_table": [
+    {
+      "case_name": "empty spiral",
+      "input_size": 0,
+      "expected_output": []
+    },
+    {
+      "case_name": "trivial spiral",
+      "input_size": 1,
+      "expected_output": [[1]]
+    },
+    {
+      "case_name": "spiral of size 2",
+      "input_size": 2,
+      "expected_output": [
+        [1, 2],
+        [4, 3]
+      ]
+    }
+  ],
+  "unspecified_behavior": {
+    "negative_sizes": "Outside unsigned uint32_t type domain",
+    "non_square_grids": "Not part of N x N specification",
+    "custom_exceptions": "No exceptions or error returns specified"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "task": "R20-T030",
+  "exercise": "spiral-matrix",
+  "tools": {
+    "cmake": "cmake version 4.5.0",
+    "c++": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "python": "3.14.7"
+  },
+  "learner_stub_unsolved": true,
+  "test_results": {
+    "test_cases": 6,
+    "assertions": 6
+  },
+  "status": "PASS"
+}
