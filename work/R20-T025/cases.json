@@ -1,0 +1,30 @@
+[
+  {
+    "name": "zero_steps_for_one",
+    "input": 1,
+    "expected_steps": 0,
+    "even_steps": 0,
+    "odd_steps": 0
+  },
+  {
+    "name": "divide_if_even",
+    "input": 16,
+    "expected_steps": 4,
+    "even_steps": 4,
+    "odd_steps": 0
+  },
+  {
+    "name": "even_and_odd_steps",
+    "input": 12,
+    "expected_steps": 9,
+    "even_steps": 7,
+    "odd_steps": 2
+  },
+  {
+    "name": "large_number_of_even_and_odd_steps",
+    "input": 1000000,
+    "expected_steps": 152,
+    "even_steps": 101,
+    "odd_steps": 51
+  }
+]

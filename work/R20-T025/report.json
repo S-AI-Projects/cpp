@@ -1,0 +1,69 @@
+{
+  "task": "R20-T025",
+  "versions": {
+    "python": "3.14.7",
+    "cmake": "cmake version 4.5.0",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "exercise": "collatz-conjecture",
+  "test_run": {
+    "executed_cases": 6,
+    "summary": "All tests passed (6 assertions in 6 test cases)"
+  },
+  "named_cases": [
+    "zero_steps_for_one",
+    "divide_if_even",
+    "even_and_odd_steps"
+  ],
+  "timing_results": {
+    "1": {
+      "repetitions": [
+        83,
+        42,
+        42,
+        0,
+        0
+      ],
+      "median_ns": 42
+    },
+    "16": {
+      "repetitions": [
+        41,
+        0,
+        41,
+        41,
+        0
+      ],
+      "median_ns": 41
+    },
+    "12": {
+      "repetitions": [
+        42,
+        42,
+        42,
+        42,
+        42
+      ],
+      "median_ns": 42
+    },
+    "1000000": {
+      "repetitions": [
+        417,
+        375,
+        375,
+        375,
+        375
+      ],
+      "median_ns": 375
+    }
+  },
+  "stubs_hash_before": {
+    "collatz_conjecture.cpp": "9e47ffd2704a15694017ac8ab4a8b5a4928137aacaa0a7d765ee1f171af227f7",
+    "collatz_conjecture.h": "986e80b56480df9443f080154ca53d7b3770146befa535a4ad8d59cf548db9ff"
+  },
+  "stubs_hash_after": {
+    "collatz_conjecture.cpp": "9e47ffd2704a15694017ac8ab4a8b5a4928137aacaa0a7d765ee1f171af227f7",
+    "collatz_conjecture.h": "986e80b56480df9443f080154ca53d7b3770146befa535a4ad8d59cf548db9ff"
+  },
+  "benchmarking_notes": "Algorithmic execution time isolated from process startup and CMake compilation."
+}
