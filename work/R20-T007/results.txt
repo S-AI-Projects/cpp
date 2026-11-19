@@ -1,0 +1,11 @@
+=== R20-T007 Nth Prime Guidance Check ===
+Verified C++-specific guidance in hints.md (headers, constraints, micro-example, doc links).
+Executable micro-example compiled and verified with exact expected output.
+Initial hash: nth_prime.cpp = 6d3a7a7355d7...
+Initial hash: nth_prime.h = 9531da2beb10...
+Verified learner stub in working tree is unsolved.
+Verified anchor case 'first' is present.
+Verified anchor case 'second' is present.
+Verified anchor case 'sixth' is present.
+Reference implementation passed all 5 tests (5 assertions).
+Verified: learner file hashes identical before and after run.
