@@ -1,0 +1,27 @@
+{
+  "task": "R20-T024",
+  "versions": {
+    "python": "3.14.7",
+    "cmake": "cmake version 4.5.0",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "exercise": "sublist",
+  "original_executed_cases": 18,
+  "refactored_executed_cases": 18,
+  "original_summary": "All tests passed (18 assertions in 18 test cases)",
+  "refactored_summary": "All tests passed (18 assertions in 18 test cases)",
+  "anchor_cases": [
+    "empty lists",
+    "empty list within non empty list",
+    "non empty list contains empty list"
+  ],
+  "stubs_hash_before": {
+    "sublist.cpp": "31c47ef6adde1993c40f07b323de9681ac7e66f72898603dce32a84388e2ee01",
+    "sublist.h": "57c367cbe42ff9b64d388bf01de01c17bc4ca894fc18fdbacbb4d5759a32c06f"
+  },
+  "stubs_hash_after": {
+    "sublist.cpp": "31c47ef6adde1993c40f07b323de9681ac7e66f72898603dce32a84388e2ee01",
+    "sublist.h": "57c367cbe42ff9b64d388bf01de01c17bc4ca894fc18fdbacbb4d5759a32c06f"
+  },
+  "equivalence_verified": true
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "empty lists",
+    "id": "97319c93-ebc5-47ab-a022-02a1980e1d29",
+    "list_one": [],
+    "list_two": [],
+    "expected": "equal",
+    "before_actual": "equal",
+    "after_actual": "equal"
+  },
+  {
+    "name": "empty list within non empty list",
+    "id": "de27dbd4-df52-46fe-a336-30be58457382",
+    "list_one": [],
+    "list_two": [1, 2, 3],
+    "expected": "sublist",
+    "before_actual": "sublist",
+    "after_actual": "sublist"
+  },
+  {
+    "name": "non empty list contains empty list",
+    "id": "5487cfd1-bc7d-429f-ac6f-1177b857d4fb",
+    "list_one": [1, 2, 3],
+    "list_two": [],
+    "expected": "superlist",
+    "before_actual": "superlist",
+    "after_actual": "superlist"
+  }
+]

@@ -6,12 +6,10 @@
 namespace sublist {
 bool is_sublist(const std::vector<int>& sublist,
                 const std::vector<int>& superlist) {
-    auto superlist_end = std::prev(
-        superlist.end(), std::max<std::size_t>(1, sublist.size()) - 1);
-    for (auto it{superlist.begin()}; it != superlist_end; std::advance(it, 1)) {
-        if (std::equal(sublist.begin(), sublist.end(), it)) return true;
-    }
-    return false;
+    // Invariant: An empty list is trivially a contiguous sublist of any list.
+    // std::search finds the first contiguous occurrence of sublist within superlist.
+    return std::search(superlist.begin(), superlist.end(),
+                       sublist.begin(), sublist.end()) != superlist.end();
 }
 
 List_comparison sublist(const std::vector<int>& list_one,
