@@ -1,0 +1,530 @@
+Resolved config files from /Users/muditkumawat/cpp/exercises/practice/binary-search-tree/.meta/config.json:
+  solution: ['binary_search_tree.cpp', 'binary_search_tree.h']
+  test: ['binary_search_tree_test.cpp']
+  example: ['.meta/example.h']
+Copying /Users/muditkumawat/cpp/exercises/practice/binary-search-tree to /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree...
+No reference solution to substitute for binary_search_tree.cpp (kept original).
+Substituted .meta/example.h -> binary_search_tree.h
+=== Running command: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON in /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree ===
+CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/build
+
+=== Return code: 0 ===
+
+=== Running command: cmake --build build in /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree ===
+[ 25%] Building CXX object CMakeFiles/binary-search-tree.dir/binary_search_tree_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/binary-search-tree.dir/binary_search_tree.cpp.o
+[ 75%] Building CXX object CMakeFiles/binary-search-tree.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable binary-search-tree
+[100%] Built target binary-search-tree
+===============================================================================
+All tests passed (69 assertions in 12 test cases)
+
+[100%] Built target test_binary-search-tree
+
+=== Return code: 0 ===
+
+=== Running command: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/build/binary-search-tree -s in /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree ===
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+binary-search-tree is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+data_is_retained
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:37
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  4 == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+smaller_number_at_left_node
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:44
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  4 == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  2 == 2
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+same_number_at_left_node
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:51
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  4 == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  4 == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+greater_number_at_right_node
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:58
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  4 == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  5 == 5
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+can_create_complex_tree
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:65
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  4 == 4
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  2 == 2
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  6 == 6
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  1 == 1
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  3 == 3
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  5 == 5
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  7 == 7
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+can_sort_single_number
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:91
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:88: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  { 2 } == { 2 }
+
+-------------------------------------------------------------------------------
+can_sort_if_second_number_is_smaller_than_first
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:95
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:88: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  { 1, 2 } == { 1, 2 }
+
+-------------------------------------------------------------------------------
+can_sort_if_second_number_is_same_as_first
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:99
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:88: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  { 2, 2 } == { 2, 2 }
+
+-------------------------------------------------------------------------------
+can_sort_if_second_number_is_greater_than_first
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:103
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:88: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  { 2, 3 } == { 2, 3 }
+
+-------------------------------------------------------------------------------
+can_sort_complex_tree
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:107
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:88: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  { 1, 2, 3, 5, 6, 7 }
+  ==
+  { 1, 2, 3, 5, 6, 7 }
+
+-------------------------------------------------------------------------------
+can_create_complex_tree_strings
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:113
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "delicious" == "delicious"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "ballon" == "ballon"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "flag" == "flag"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  true == true
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "apple" == "apple"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "cat" == "cat"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "elispsis" == "elispsis"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:17: PASSED:
+  REQUIRE( data == tree->data() )
+with expansion:
+  "grains" == "grains"
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:18: PASSED:
+  REQUIRE( (bool)tree->left() == has_left )
+with expansion:
+  false == false
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:19: PASSED:
+  REQUIRE( (bool)tree->right() == has_right )
+with expansion:
+  false == false
+
+-------------------------------------------------------------------------------
+can_sort_complex_tree_strings
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:128
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp:88: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  { "A", "be", "few", "random", "should", "sorted", "strings", "that" }
+  ==
+  { "A", "be", "few", "random", "should", "sorted", "strings", "that" }
+
+===============================================================================
+All tests passed (69 assertions in 12 test cases)
+
+
+=== Return code: 0 ===
+
+=== Running command: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/build/binary-search-tree -r xml in /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree ===
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="binary-search-tree">
+  <Group name="binary-search-tree">
+    <TestCase name="data_is_retained" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="37">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="smaller_number_at_left_node" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="44">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="same_number_at_left_node" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="51">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="greater_number_at_right_node" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="58">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_create_complex_tree" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="65">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_sort_single_number" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="91">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_sort_if_second_number_is_smaller_than_first" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="95">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_sort_if_second_number_is_same_as_first" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="99">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_sort_if_second_number_is_greater_than_first" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="103">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_sort_complex_tree" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="107">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_create_complex_tree_strings" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="113">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="can_sort_complex_tree_strings" filename="/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpctph9xbz/binary-search-tree/binary_search_tree_test.cpp" line="128">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="69" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="12" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="69" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="12" failures="0" expectedFailures="0"/>
+</Catch>
+
+=== Return code: 0 ===
+
+Total executed test cases: 12
+Assertion passed: 'data_is_retained' is present and passed.
+Assertion passed: 'smaller_number_at_left_node' is present and passed.
+Assertion passed: 'same_number_at_left_node' is present and passed.
+All assertions and checks succeeded!
