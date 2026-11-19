@@ -1,0 +1,276 @@
+=== R20-T058 Verification Script ===
+
+--- Tool Versions ---
+[cmake]
+cmake version 4.4.5
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+[c++]
+Apple clang version 21.0.0 (clang-2100.4.1.1)
+Target: arm64-apple-darwin27.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+[python3]
+Python 3.15.2
+
+--- Negative Metadata Fixtures Testing ---
+Testing fixture: 'missing-reference'
+Input config:
+{
+  "files": {
+    "solution": [
+      "crypto_square.cpp",
+      "crypto_square.h"
+    ],
+    "test": [
+      "crypto_square_test.cpp"
+    ],
+    "example": [
+      ".meta/nonexistent_example.cpp",
+      ".meta/example.h"
+    ]
+  }
+}
+PASSED (Expected MissingFileError): Declared file does not exist: '.meta/nonexistent_example.cpp' (resolved: '/Users/muditkumawat/cpp/exercises/practice/crypto-square/.meta/nonexistent_example.cpp')
+
+Testing fixture: 'missing-test'
+Input config:
+{
+  "files": {
+    "solution": [
+      "crypto_square.cpp",
+      "crypto_square.h"
+    ],
+    "test": [
+      "missing_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  }
+}
+PASSED (Expected MissingFileError): Declared file does not exist: 'missing_test.cpp' (resolved: '/Users/muditkumawat/cpp/exercises/practice/crypto-square/missing_test.cpp')
+
+Testing fixture: 'outside-exercise'
+Input config:
+{
+  "files": {
+    "solution": [
+      "../pangram/pangram.cpp"
+    ],
+    "test": [
+      "crypto_square_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  }
+}
+PASSED (Expected PathTraversalError): Directory traversal ('..') detected in path: '../pangram/pangram.cpp'
+
+--- Real config.json Validation ---
+Path: /Users/muditkumawat/cpp/exercises/practice/crypto-square/.meta/config.json
+Content:
+{
+  "authors": [
+    "LegalizeAdulthood"
+  ],
+  "contributors": [
+    "cyborgsphinx",
+    "elyashiv",
+    "jackhughesweb",
+    "KevinWMatthews",
+    "kytrinyx",
+    "patricksjackson",
+    "sjwarner",
+    "ahans"
+  ],
+  "files": {
+    "solution": [
+      "crypto_square.cpp",
+      "crypto_square.h"
+    ],
+    "test": [
+      "crypto_square_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "blurb": "Implement the classic method for composing secret messages called a square code.",
+  "source": "J Dalbey's Programming Practice problems",
+  "source_url": "https://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html"
+}
+PASSED: Real config.json successfully validated.
+  solution: ['crypto_square.cpp', 'crypto_square.h']
+  test: ['crypto_square_test.cpp']
+  example: ['.meta/example.cpp', '.meta/example.h']
+  editor: []
+
+--- Temporary Copy & Catch2 Test Execution ---
+Copying '/Users/muditkumawat/cpp/exercises/practice/crypto-square' to temporary directory '/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square'
+Example files to substitute: ['example.cpp', 'example.h']
+Learner solution files to replace: ['crypto_square.cpp', 'crypto_square.h']
+Substituting '.meta/example.cpp' -> 'crypto_square.cpp'
+Substituting '.meta/example.h' -> 'crypto_square.h'
+
+Running: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+Exit code: 0
+Output:
+CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/build
+
+
+Running: cmake --build build
+Exit code: 0
+Output:
+[ 25%] Building CXX object CMakeFiles/crypto-square.dir/crypto_square_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/crypto-square.dir/crypto_square.cpp.o
+[ 75%] Building CXX object CMakeFiles/crypto-square.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable crypto-square
+[100%] Built target crypto-square
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+[100%] Built target test_crypto-square
+
+
+Running test executable: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/build/crypto-square -r console -s
+Exit code: 0
+Output:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+crypto-square is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+empty plaintext results in an empty ciphertext
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:9
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:10: PASSED:
+  REQUIRE( "" == crypto_square::cipher("").normalized_cipher_text() )
+with expansion:
+  "" == ""
+
+-------------------------------------------------------------------------------
+normalization results in empty plaintext
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:15
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:17: PASSED:
+  REQUIRE( "" == crypto_square::cipher("... --- ...").normalized_cipher_text() )
+with expansion:
+  "" == ""
+
+-------------------------------------------------------------------------------
+Lowercase
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:20
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:21: PASSED:
+  REQUIRE( "a" == crypto_square::cipher("A").normalized_cipher_text() )
+with expansion:
+  "a" == "a"
+
+-------------------------------------------------------------------------------
+Remove spaces
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:24
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:25: PASSED:
+  REQUIRE( "b" == crypto_square::cipher("  b ").normalized_cipher_text() )
+with expansion:
+  "b" == "b"
+
+-------------------------------------------------------------------------------
+Remove punctuation
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:28
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:29: PASSED:
+  REQUIRE( "1" == crypto_square::cipher("@1,%!").normalized_cipher_text() )
+with expansion:
+  "1" == "1"
+
+-------------------------------------------------------------------------------
+9 character plaintext results in 3 chunks of 3 characters
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:33
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:35: PASSED:
+  REQUIRE( "tsf hiu isn" == crypto_square::cipher("This is fun!").normalized_cipher_text() )
+with expansion:
+  "tsf hiu isn" == "tsf hiu isn"
+
+-------------------------------------------------------------------------------
+8 character plaintext results in 3 chunks, the last one with a trailing space
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:42
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:44: PASSED:
+  REQUIRE( "clu hlt io " == crypto_square::cipher("Chill out.").normalized_cipher_text() )
+with expansion:
+  "clu hlt io " == "clu hlt io "
+
+-------------------------------------------------------------------------------
+54 character plaintext results in 8 chunks, the last two with trailing spaces
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:51
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpn_16r288/crypto-square/crypto_square_test.cpp:55: PASSED:
+  REQUIRE( "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau " == crypto_square::cipher("If man was meant to stay on the ground, god " "would have given us roots.") .normalized_cipher_text() )
+with expansion:
+  "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
+  ==
+  "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
+
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+
+
+--- Checking Test Cases in Output ---
+ASSERTION PASSED: Test case 'empty plaintext results in an empty ciphertext' is present in output.
+ASSERTION PASSED: Test case 'normalization results in empty plaintext' is present in output.
+ASSERTION PASSED: Test case 'Lowercase' is present in output.
+Parsed test summary: 8 test cases, 8 passed.
+
+--- Working Tree Learner Stub Verification ---
+git status --porcelain:
+?? exercises/practice/crypto-square/.meta/maintenance.md
+?? work/
+
+ASSERTION PASSED: Working tree learner stubs (crypto_square.cpp, crypto_square.h) are unmodified.
+
+=== ALL CHECKS PASSED SUCCESSFULLY ===
