@@ -1,0 +1,14 @@
+{
+  "mutant": {
+    "file": "exercises/practice/twelve-days/.meta/example.cpp",
+    "description": "Replaces final-gift conjunction ', and ' with simple comma separator ', ' in verse()",
+    "rejecting_test_name": "second day two turtle doves",
+    "rejecting_uuid": "1c64508a-df3d-420a-b8e1-fe408847854a",
+    "minimal_input": {
+      "start_day": 2,
+      "end_day": 2
+    },
+    "expected_substring": "two Turtle Doves, and a Partridge in a Pear Tree.",
+    "mutant_substring": "two Turtle Doves, a Partridge in a Pear Tree."
+  }
+}

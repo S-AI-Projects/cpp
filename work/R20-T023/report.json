@@ -1,0 +1,30 @@
+{
+  "task": "R20-T023",
+  "versions": {
+    "python": "3.14.7",
+    "cmake": "cmake version 4.5.0",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "exercise": "twelve-days",
+  "original_run": {
+    "exit_code": 0,
+    "executed_cases": 15,
+    "summary": "All tests passed (15 assertions in 15 test cases)"
+  },
+  "mutant_run": {
+    "rejecting_test": "second day two turtle doves",
+    "rejecting_uuid": "1c64508a-df3d-420a-b8e1-fe408847854a",
+    "exit_code": 1,
+    "summary": "1 test case failed as expected",
+    "minimal_input": "recite(2, 2)"
+  },
+  "stubs_hash_before": {
+    "twelve_days.cpp": "68b2741ceaa70a1fe076a269b664d41527952d75595c97efcbb922d144ae21c4",
+    "twelve_days.h": "52af2d1b4c84033a90ab1cc5dd51f4331ca90896cbcf5ec849af987f2ab3cab6"
+  },
+  "stubs_hash_after": {
+    "twelve_days.cpp": "68b2741ceaa70a1fe076a269b664d41527952d75595c97efcbb922d144ae21c4",
+    "twelve_days.h": "52af2d1b4c84033a90ab1cc5dd51f4331ca90896cbcf5ec849af987f2ab3cab6"
+  },
+  "regression_verified": true
+}
