@@ -1,0 +1,19 @@
+{
+  "task": "R20-T027",
+  "exercise": "parallel-letter-frequency",
+  "tools": {
+    "cmake": "cmake version 4.5.0",
+    "c++": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "python": "3.14.7"
+  },
+  "learner_stub_unsolved": true,
+  "test_results": {
+    "test_cases": 12,
+    "assertions": 64
+  },
+  "micro_example_outputs": {
+    "expression_1": "Expression 1 (direct const ref): 3",
+    "expression_2": "Expression 2 (after source mutation): 0"
+  },
+  "status": "PASS"
+}

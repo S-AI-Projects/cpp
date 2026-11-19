@@ -1,0 +1,21 @@
+{
+  "task": "R20-T027",
+  "exercise": "parallel-letter-frequency",
+  "named_cases": [
+    "no texts",
+    "one text with one letter",
+    "one text with multiple letters"
+  ],
+  "micro_example": {
+    "expression_1": {
+      "input": "banana",
+      "target": "a",
+      "expected_output": "Expression 1 (direct const ref): 3"
+    },
+    "expression_2": {
+      "input": "berry",
+      "target": "a",
+      "expected_output": "Expression 2 (after source mutation): 0"
+    }
+  }
+}
