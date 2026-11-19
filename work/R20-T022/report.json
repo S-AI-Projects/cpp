@@ -1,0 +1,58 @@
+{
+  "task": "R20-T022",
+  "versions": {
+    "python": "3.14.7",
+    "cmake": "cmake version 4.5.0",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "configlet": "4.0.3"
+  },
+  "exercise": "hexadecimal",
+  "anchor_cases": [
+    "hex_1_is_decimal_1",
+    "hex_c_is_decimal_12",
+    "hex_10_is_decimal_16"
+  ],
+  "all_cases": [
+    "hex_1_is_decimal_1",
+    "hex_c_is_decimal_12",
+    "hex_10_is_decimal_16",
+    "hex_af_is_decimal_175",
+    "hex_100_is_decimal_256",
+    "hex_19ace_is_decimal_105166",
+    "invalid_hex_is_decimal_0",
+    "black",
+    "white",
+    "yellow"
+  ],
+  "stubs_hash_before": {
+    "hexadecimal.cpp": "ebc65db7a54f1cacce12768beb9842cd0db0a0a8fbf0325e3fc35d494c5a1328",
+    "hexadecimal.h": "b3ae6cae93655db3843d4fc63bf1ecc8c5f873446c7b13a27a4831e71abf5d9f"
+  },
+  "stubs_hash_after": {
+    "hexadecimal.cpp": "ebc65db7a54f1cacce12768beb9842cd0db0a0a8fbf0325e3fc35d494c5a1328",
+    "hexadecimal.h": "b3ae6cae93655db3843d4fc63bf1ecc8c5f873446c7b13a27a4831e71abf5d9f"
+  },
+  "generations": [
+    {
+      "generation": 1,
+      "configlet_output": "Checking exercises...\nThe `hexadecimal` exercise has up-to-date tests!",
+      "test_source_sha256": "a70c8ce5cce9d6d9fbf2272bafafd261a21a8543ba02a6b0b83ae3ed92e6d54b",
+      "executed_cases": 10,
+      "listed_cases": 10,
+      "summary": "All tests passed (10 assertions in 10 test cases)"
+    },
+    {
+      "generation": 2,
+      "configlet_output": "Checking exercises...\nThe `hexadecimal` exercise has up-to-date tests!",
+      "test_source_sha256": "a70c8ce5cce9d6d9fbf2272bafafd261a21a8543ba02a6b0b83ae3ed92e6d54b",
+      "executed_cases": 10,
+      "listed_cases": 10,
+      "summary": "All tests passed (10 assertions in 10 test cases)"
+    }
+  ],
+  "comparisons": {
+    "test_sources_equal_after_normalization": true,
+    "compiled_test_lists_equal": true,
+    "anchor_cases_verified": true
+  }
+}

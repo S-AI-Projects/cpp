@@ -1,0 +1,34 @@
+{
+  "anchor_cases": [
+    {
+      "test_name": "hex_1_is_decimal_1",
+      "input": "1",
+      "expected_decimal": 1,
+      "expected_hex": "0x1"
+    },
+    {
+      "test_name": "hex_c_is_decimal_12",
+      "input": "c",
+      "expected_decimal": 12,
+      "expected_hex": "0xc"
+    },
+    {
+      "test_name": "hex_10_is_decimal_16",
+      "input": "10",
+      "expected_decimal": 16,
+      "expected_hex": "0x10"
+    }
+  ],
+  "all_test_cases": [
+    "hex_1_is_decimal_1",
+    "hex_c_is_decimal_12",
+    "hex_10_is_decimal_16",
+    "hex_af_is_decimal_175",
+    "hex_100_is_decimal_256",
+    "hex_19ace_is_decimal_105166",
+    "invalid_hex_is_decimal_0",
+    "black",
+    "white",
+    "yellow"
+  ]
+}
