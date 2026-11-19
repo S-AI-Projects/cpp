@@ -1,0 +1,35 @@
+{
+  "task": "R20-T026",
+  "versions": {
+    "python": "3.14.7",
+    "cmake": "cmake version 4.5.0",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "exercise": "word-count",
+  "reference_run": {
+    "executed_cases": 14,
+    "summary": "All tests passed (14 assertions in 14 test cases)"
+  },
+  "alternative_run": {
+    "executed_cases": 14,
+    "summary": "All tests passed (14 assertions in 14 test cases)"
+  },
+  "worked_example_input": "Joe can't tell between 'large' and large.",
+  "worked_example_expected": {
+    "and": 1,
+    "between": 1,
+    "can't": 1,
+    "joe": 1,
+    "large": 2,
+    "tell": 1
+  },
+  "stubs_hash_before": {
+    "word_count.cpp": "c203653ded244fbe9a71fa70c40f9d19f047be9e16c1c2f101bcb36c4f6d6d86",
+    "word_count.h": "39740acd980ba172ece23642f309d2014b2c98011b6ad3be9428fbba05528237"
+  },
+  "stubs_hash_after": {
+    "word_count.cpp": "c203653ded244fbe9a71fa70c40f9d19f047be9e16c1c2f101bcb36c4f6d6d86",
+    "word_count.h": "39740acd980ba172ece23642f309d2014b2c98011b6ad3be9428fbba05528237"
+  },
+  "both_approaches_passed": true
+}

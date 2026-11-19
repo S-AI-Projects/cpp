@@ -1,0 +1,25 @@
+{
+  "worked_example": {
+    "input": "Joe can't tell between 'large' and large.",
+    "expected": {
+      "and": 1,
+      "between": 1,
+      "can't": 1,
+      "joe": 1,
+      "large": 2,
+      "tell": 1
+    }
+  },
+  "approaches": [
+    {
+      "name": "reference_pipeline",
+      "file": "exercises/practice/word-count/.meta/example.cpp",
+      "description": "Multi-stage functional pipeline using string normalization, splitting, and quote trimming"
+    },
+    {
+      "name": "direct_scanner",
+      "file": "work/R20-T026/alternative.cpp",
+      "description": "Single-pass index scanner with in-line contraction lookahead and zero intermediate allocations"
+    }
+  ]
+}
