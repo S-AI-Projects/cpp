@@ -1,0 +1,164 @@
+Starting check for exercises/practice/acronym
+Loaded config.json: {'solution': ['acronym.cpp', 'acronym.h'], 'test': ['acronym_test.cpp'], 'example': ['.meta/example.cpp', '.meta/example.h']}
+Solution files: ['acronym.cpp', 'acronym.h']
+Test files: ['acronym_test.cpp']
+Example files: ['.meta/example.cpp', '.meta/example.h']
+Copying /Users/muditkumawat/cpp/exercises/practice/acronym to /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym
+Copying /Users/muditkumawat/cpp/exercises/practice/acronym to /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpwxotcuij/acronym
+Verified acronym_test.cpp is identical between the two directories (ignoring timestamps)
+Substituting /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/.meta/example.cpp -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym.cpp
+Substituting /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/.meta/example.h -> /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym.h
+Running command: cmake -S . -B build -DEXERCISM_RUN_ALL_TESTS=ON
+--- cmake configure stdout ---
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/build
+
+--- cmake configure stderr ---
+CMake Warning (deprecated) at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+
+Running command: cmake --build build
+--- cmake build stdout ---
+[ 25%] Building CXX object CMakeFiles/acronym.dir/acronym_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/acronym.dir/acronym.cpp.o
+[ 75%] Building CXX object CMakeFiles/acronym.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable acronym
+[100%] Built target acronym
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_acronym
+
+--- cmake build stderr ---
+
+Running command: /var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/build/acronym -s
+--- test execution stdout ---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+acronym is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+basic
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:10
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:15: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "PNG" == "PNG"
+
+-------------------------------------------------------------------------------
+lowercase_words
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:19
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:24: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "ROR" == "ROR"
+
+-------------------------------------------------------------------------------
+punctuation
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:27
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:32: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "FIFO" == "FIFO"
+
+-------------------------------------------------------------------------------
+all_caps_word
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:35
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:40: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "GIMP" == "GIMP"
+
+-------------------------------------------------------------------------------
+punctuation_without_whitespace
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:43
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:49: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "CMOS" == "CMOS"
+
+-------------------------------------------------------------------------------
+very_long_abbreviation
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:52
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:59: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "ROTFLSHTMDCOALM" == "ROTFLSHTMDCOALM"
+
+-------------------------------------------------------------------------------
+consecutive_delimiters
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:62
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:68: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "SIMUFTA" == "SIMUFTA"
+
+-------------------------------------------------------------------------------
+apostrophes
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:71
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:76: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "HC" == "HC"
+
+-------------------------------------------------------------------------------
+underscore_emphasis
+-------------------------------------------------------------------------------
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:79
+...............................................................................
+
+/private/var/folders/n0/w89fgt453y51mj63y_ktt9_40000gn/T/tmpf0_sogeo/acronym/acronym_test.cpp:84: PASSED:
+  REQUIRE( expected == actual )
+with expansion:
+  "TRNT" == "TRNT"
+
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+
+--- test execution stderr ---
+
+Total number of executed test cases: 9 (9 assertions)
+Verified required test case present and passed: 'basic'
+Verified required test case present and passed: 'lowercase_words'
+Verified required test case present and passed: 'punctuation'
