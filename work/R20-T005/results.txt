@@ -1,0 +1,11 @@
+=== R20-T005 Matching Brackets Scaling Check ===
+Found complexity and invariant documentation in example.cpp.
+Found maintenance scaling doc at /Users/harshuuu/SnAI Asiignment/cpp/docs/maintenance/matching-brackets.md
+Initial hash: matching_brackets.cpp = 0276d81e6b01...
+Initial hash: matching_brackets.h = ee3bfaad27c0...
+Verified learner stub in working tree is unsolved.
+Verified named case: 'paired_nested_brackets' is present and verified.
+Verified named case: 'paired_wrong_nested_brackets' is present and verified.
+Verified named case: 'paired_incomplete_brackets' is present and verified.
+All 20 tests passed successfully (20 assertions).
+Verified: learner file hashes identical before and after run.
