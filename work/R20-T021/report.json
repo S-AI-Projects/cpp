@@ -1,0 +1,53 @@
+{
+  "task": "R20-T021",
+  "versions": {
+    "python": "3.14.7",
+    "cmake": "cmake version 4.5.0",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "counts_before_after": {
+    "metadata_entries": {
+      "before": 3,
+      "after": 3
+    },
+    "explicit_exclusions": {
+      "before": 0,
+      "after": 0
+    },
+    "cpp_test_cases": {
+      "before": 3,
+      "after": 3
+    }
+  },
+  "enabled_test_cases": [
+    "no_name_given",
+    "a_name_given",
+    "another_name_given"
+  ],
+  "canonical_results": [
+    {
+      "uuid": "1cf3e15a-a3d7-4a87-aeb3-ba1b43bc8dce",
+      "expected": "One for you, one for me.",
+      "actual": "One for you, one for me."
+    },
+    {
+      "uuid": "b4c6dbb8-b4fb-42c2-bafd-10785abe7709",
+      "expected": "One for Alice, one for me.",
+      "actual": "One for Alice, one for me."
+    },
+    {
+      "uuid": "3549048d-1a6e-4653-9a79-b0bda163e8d5",
+      "expected": "One for Bob, one for me.",
+      "actual": "One for Bob, one for me."
+    }
+  ],
+  "test_run": {
+    "configure_exit": 0,
+    "build_exit": 0,
+    "list_exit": 3,
+    "executable_exit": 0,
+    "listed_cases": 3,
+    "executed_cases": 3,
+    "summary": "All tests passed (3 assertions in 3 test cases)"
+  }
+}

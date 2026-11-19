@@ -4,9 +4,12 @@
 
 [1cf3e15a-a3d7-4a87-aeb3-ba1b43bc8dce]
 description = "no name given"
+comment = "Covered by C++ test 'no_name_given'. In C++, default argument syntax `const std::string& name = \"you\"` allows parameterless invocation two_fer::two_fer(), returning 'One for you, one for me.'."
 
 [b4c6dbb8-b4fb-42c2-bafd-10785abe7709]
 description = "a name given"
+comment = "Covered by C++ test 'a_name_given'. When invoked with name = \"Alice\", string concatenation yields 'One for Alice, one for me.'."
 
 [3549048d-1a6e-4653-9a79-b0bda163e8d5]
 description = "another name given"
+comment = "Covered by C++ test 'another_name_given'. Verifies general name substitution with name = \"Bob\", returning 'One for Bob, one for me.'."
