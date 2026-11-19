@@ -1,0 +1,29 @@
+=== R20-T003 Hello World Mutation Check ===
+Found hints at /Users/harshuuu/SnAI Asiignment/cpp/exercises/practice/hello-world/.docs/hints.md
+Found maintenance doc at /Users/harshuuu/SnAI Asiignment/cpp/docs/maintenance/hello-world.md
+Initial hash: hello_world.cpp = 64919388cd4f...
+Initial hash: hello_world.h = 567a0f4085fa...
+Verified learner stub in working tree is unsolved ('Goodbye, Mars!').
+Reference implementation passed all tests (Say Hi! passed).
+Mutant compiled successfully against header.
+Mutant correctly failed test_hello (Say Hi!).
+Mutant failure output snippet:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hello-world is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_hello
+-------------------------------------------------------------------------------
+/var/folders/ty/r6y1r8h929g37sh8k06zywpc0000gn/T/hw_mut_q8ztddtb/hello-world/hello_world_test.cpp:12
+...............................................................................
+
+/var/folders/ty/r6y1r8h929g37sh8k06zywpc0000gn/T/hw_mut_q8ztddtb/hello-world/hello_world_test.cpp:14: FAILED:
+  REQUIRE( hello_world::hello() == "Hello, World!" )
+with expansion:
+  "Hello World!" == "Hello, World!"
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+Verified: learner file hashes are identical before and after.
