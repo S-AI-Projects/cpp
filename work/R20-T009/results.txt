@@ -1,0 +1,23 @@
+=== R20-T009 Execution Log ===
+Return code: 0
+STDOUT:
+=== R20-T009 High Scores Isolated Runner Check ===
+Initial hash: high_scores.cpp = 682bf29e4584...
+Initial hash: high_scores.h = d4e53cf4bce7...
+Verified learner stub in working tree is unsolved.
+
+--- Mode 1: Real Reference Run ---
+Anchor case verified: 'List of scores'
+Anchor case verified: 'Latest score'
+Anchor case verified: 'Personal best'
+Real reference passed all 12 test cases successfully.
+
+--- Mode 2: Deliberately Failing Reference Run ---
+Failing reference correctly produced non-zero exit code and failure assertion.
+
+--- Mode 3: Zero-Test Selection Run ---
+Zero-test selection correctly detected 'No tests ran' and verified zero-run handling.
+
+Verified: learner file hashes identical before and after all runs.
+
+[✓] R20-T009 check passed.
