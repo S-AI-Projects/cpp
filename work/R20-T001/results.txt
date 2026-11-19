@@ -1,0 +1,19 @@
+=== R20-T001 Verification Results ===
+UUID 5d81aaf7-4f67-4125-bf33-11493cc7eab7: Found in tests.toml with documented rationale.
+UUID 06bc8b90-0c51-4c54-ac22-3ec3893a079e: Found in tests.toml with documented rationale.
+UUID 3ec0d92e-f2e2-4090-a380-70afee02f4c0: Found in tests.toml with documented rationale.
+Canonical cases total: 18, included: 13, excluded: 5
+Maintenance documentation exists at /Users/harshuuu/SnAI Asiignment/cpp/docs/maintenance/largest-series-product.md
+Learner stub in working tree verified unsolved and unchanged.
+Substituted reference .meta/example.cpp -> largest_series_product.cpp in temporary copy.
+Substituted reference .meta/example.h -> largest_series_product.h in temporary copy.
+Test run exit code: 0
+Test output:
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+
+Verified named case finds_the_largest_product_if_span_equals_length is present and tested.
+Verified named case can_find_the_largest_product_of_2_with_numbers_in_order is present and tested.
+Verified named case can_find_the_largest_product_of_2 is present and tested.
+Successfully executed 13 test cases (13 assertions). All passed!

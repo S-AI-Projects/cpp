@@ -36,6 +36,7 @@ description = "reports zero if the only digits are zero"
 [6ef0df9f-52d4-4a5d-b210-f6fae5f20e19]
 description = "reports zero if all spans include zero"
 
+# Superseded by 0ae1ce53-d9ba-41bb-827f-2fceb64f058b which asserts std::domain_error
 [5d81aaf7-4f67-4125-bf33-11493cc7eab7]
 description = "rejects span longer than string length"
 include = false
@@ -44,10 +45,12 @@ include = false
 description = "rejects span longer than string length"
 reimplements = "5d81aaf7-4f67-4125-bf33-11493cc7eab7"
 
+# Excluded in C++ track: 0 span empty product is omitted to focus on positive span series
 [06bc8b90-0c51-4c54-ac22-3ec3893a079e]
 description = "reports 1 for empty string and empty product (0 span)"
 include = false
 
+# Excluded in C++ track: 0 span empty product on nonempty string omitted to focus on positive span series
 [3ec0d92e-f2e2-4090-a380-70afee02f4c0]
 description = "reports 1 for nonempty string and empty product (0 span)"
 include = false
