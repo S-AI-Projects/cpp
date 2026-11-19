@@ -1,0 +1,30 @@
+{
+  "task": "R20-T029",
+  "exercise": "resistor-color",
+  "tools": {
+    "cmake": "cmake version 4.5.0",
+    "c++": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "python": "3.14.7"
+  },
+  "learner_file_hashes": {
+    "resistor_color.cpp": "f534f122b51fa0a1a704f628a4c3de285b769c7cb3faa8e36dd7f12bc74c2c21",
+    "resistor_color.h": "cc7cf496d390ffae870effc31b39b957e7119146debc861f041abea56bde6702"
+  },
+  "scenarios": {
+    "real_reference": {
+      "status": "PASS",
+      "exit_code": 0,
+      "tests_executed": 4
+    },
+    "deliberately_failing_reference": {
+      "status": "PASS_DETECTED_FAILURE",
+      "exit_code": 2
+    },
+    "empty_test_selection": {
+      "status": "PASS_DETECTED_ZERO_TESTS",
+      "exit_code": 3
+    }
+  },
+  "learner_stubs_intact": true,
+  "status": "PASS"
+}

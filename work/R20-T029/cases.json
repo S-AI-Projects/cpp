@@ -1,0 +1,28 @@
+{
+  "task": "R20-T029",
+  "exercise": "resistor-color",
+  "named_cases": [
+    "Black",
+    "White",
+    "Orange"
+  ],
+  "runner_scenarios": [
+    {
+      "name": "real_reference",
+      "expected_success": true,
+      "expected_exit_code": 0,
+      "min_tests": 4
+    },
+    {
+      "name": "deliberately_failing_reference",
+      "expected_success": false,
+      "expected_exit_code_nonzero": true
+    },
+    {
+      "name": "empty_test_selection",
+      "catch_args": ["~*"],
+      "expected_success": false,
+      "expected_exit_code_nonzero": true
+    }
+  ]
+}
