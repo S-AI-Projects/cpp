@@ -1,0 +1,11 @@
+=== R20-T002 Execution Log ===
+Return code: 0
+STDOUT:
+=== R20-T002 Leap Test-Generation Round-Trip Check ===
+Verified learner stubs in working tree are unsolved.
+Found maintenance documentation at /Users/harshuuu/SnAI Asiignment/cpp/docs/maintenance/leap.md
+Anchor case confirmed: not_divisible_by_4
+Anchor case confirmed: divisible_by_2_not_divisible_by_4
+Anchor case confirmed: divisible_by_4_not_divisible_by_100
+Reproducible test execution confirmed across two clean scratch runs: 6 tests passed.
+[✓] R20-T002 check passed.
