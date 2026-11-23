@@ -1,0 +1,36 @@
+{
+  "task_id": "R20-T049",
+  "all_controls_behaved_as_expected": true,
+  "controls": {
+    "assertion_failure": {
+      "scenario": "failing_reference (--reference-dir)",
+      "run_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "rejected_as_expected": true
+    },
+    "zero_tests": {
+      "filter": "no-such-test*",
+      "runner_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "rejected_as_expected": true
+    },
+    "interrupted_sigint": {
+      "signal": "SIGINT",
+      "runner_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "rejected_as_expected": true
+    },
+    "child_failure": {
+      "synthetic_run_rc_1_failures": [
+        "run_rc=1 (expected 0)"
+      ],
+      "synthetic_build_rc_2_failures": [
+        "build_rc=2 (expected 0)"
+      ],
+      "rejected_as_expected": true
+    }
+  }
+}

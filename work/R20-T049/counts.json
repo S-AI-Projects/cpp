@@ -1,0 +1,47 @@
+{
+  "task_id": "R20-T049",
+  "exercise": "bank-account",
+  "expected_cases": 17,
+  "static_test_case_count": 17,
+  "xml_executed_case_count": 17,
+  "xml_passed_case_count": 17,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 17,
+  "tests_toml_total": 17,
+  "tests_toml_included": 17,
+  "tests_toml_excluded": 0,
+  "scenarios": [
+    {
+      "scenario": "real_reference",
+      "expected_rc": 0,
+      "actual_rc": 0,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    },
+    {
+      "scenario": "failing_reference",
+      "expected_rc": "non-zero",
+      "actual_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    },
+    {
+      "scenario": "empty_test_selection",
+      "expected_rc": "non-zero",
+      "actual_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    },
+    {
+      "scenario": "interrupted_sigint",
+      "expected_rc": "non-zero",
+      "actual_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    }
+  ]
+}
