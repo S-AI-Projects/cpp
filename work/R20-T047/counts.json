@@ -1,0 +1,24 @@
+{
+  "task_id": "R20-T047",
+  "exercise": "trinary",
+  "expected_cases": 9,
+  "static_test_case_count": 9,
+  "xml_executed_case_count": 9,
+  "xml_passed_case_count": 9,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 9,
+  "tests_toml_total": 11,
+  "tests_toml_included": 11,
+  "tests_toml_excluded": 0,
+  "micro_example": {
+    "expected_output": [
+      "zero_copy_same_addr=1",
+      "same_storage=true char='1' numeric=1 pitfall_without_minus_zero=49 safe_mul3=true"
+    ],
+    "actual_output": [
+      "zero_copy_same_addr=1",
+      "same_storage=true char='1' numeric=1 pitfall_without_minus_zero=49 safe_mul3=true"
+    ],
+    "stdout_matches_published_text": true
+  }
+}
