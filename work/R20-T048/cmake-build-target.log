@@ -1,0 +1,4 @@
+$ cmake --build build --target diamond
+exit_code: 0
+--- stdout ---
+[100%] Built target diamond

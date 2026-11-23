@@ -1,0 +1,41 @@
+{
+  "task_id": "R20-T048",
+  "all_controls_behaved_as_expected": true,
+  "controls": {
+    "assertion_failure": {
+      "target_named_case": "Degenerate case with a single 'A' row",
+      "mutation": "if (middle_letter == 'A') return {\"WRONG\"};",
+      "compile_rc": 0,
+      "run_rc": 1,
+      "named_case_failed": true,
+      "evaluate_failures": [
+        "run_rc=1 (expected 0)",
+        "OverallResultsCases reported failures=1",
+        "Named case did not pass: \"Degenerate case with a single 'A' row\""
+      ],
+      "rejected_as_expected": true
+    },
+    "zero_tests": {
+      "filter": "no-such-test-filter*",
+      "catch2_run_rc": 0,
+      "xml_total_cases": 0,
+      "evaluate_failures": [
+        "ZERO-TEST GUARD: OverallResultsCases successes+failures == 0",
+        "Total executed cases 0 != expected 5",
+        "Named case missing from XML: \"Degenerate case with a single 'A' row\"",
+        "Named case missing from XML: 'Degenerate case with no row containing 3 distinct groups of spaces'",
+        "Named case missing from XML: 'Smallest non-degenerate case with odd diamond side length'"
+      ],
+      "rejected_as_expected": true
+    },
+    "child_failure": {
+      "synthetic_run_rc_1_failures": [
+        "run_rc=1 (expected 0)"
+      ],
+      "synthetic_build_rc_2_failures": [
+        "build_rc=2 (expected 0)"
+      ],
+      "rejected_as_expected": true
+    }
+  }
+}

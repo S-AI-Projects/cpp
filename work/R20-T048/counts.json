@@ -1,0 +1,38 @@
+{
+  "task_id": "R20-T048",
+  "exercise": "diamond",
+  "expected_cases": 5,
+  "static_test_case_count": 5,
+  "xml_executed_case_count": 5,
+  "xml_passed_case_count": 5,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 5,
+  "tests_toml_total": 5,
+  "tests_toml_included": 5,
+  "tests_toml_excluded": 0,
+  "fixture_validation_summary": {
+    "real_config": {
+      "rc": 0,
+      "passed": true
+    },
+    "missing_reference": {
+      "expected_rc": 5,
+      "actual_rc": 5,
+      "passed": true,
+      "message": "MISSING_EXAMPLE: declared reference file not found: .meta/example.cpp"
+    },
+    "missing_test": {
+      "expected_rc": 4,
+      "actual_rc": 4,
+      "passed": true,
+      "message": "MISSING_TEST: declared test file not found: diamond_test.cpp"
+    },
+    "outside_exercise_path": {
+      "expected_rc": 3,
+      "actual_rc": 3,
+      "passed": true,
+      "message": "PATH_TRAVERSAL: parent traversal '..' rejected in 'solution': ../two-fer/two_fer.cpp"
+    },
+    "distinct_exit_codes": true
+  }
+}

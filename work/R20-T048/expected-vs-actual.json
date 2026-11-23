@@ -1,0 +1,83 @@
+{
+  "task_id": "R20-T048",
+  "exercise": "diamond",
+  "expected_executed_cases": 5,
+  "actual_executed_cases": 5,
+  "named_cases": [
+    "Degenerate case with a single 'A' row",
+    "Degenerate case with no row containing 3 distinct groups of spaces",
+    "Smallest non-degenerate case with odd diamond side length"
+  ],
+  "fixture_results": {
+    "real_config": {
+      "rc": 0,
+      "passed": true
+    },
+    "missing_reference": {
+      "expected_rc": 5,
+      "actual_rc": 5,
+      "passed": true,
+      "message": "MISSING_EXAMPLE: declared reference file not found: .meta/example.cpp"
+    },
+    "missing_test": {
+      "expected_rc": 4,
+      "actual_rc": 4,
+      "passed": true,
+      "message": "MISSING_TEST: declared test file not found: diamond_test.cpp"
+    },
+    "outside_exercise_path": {
+      "expected_rc": 3,
+      "actual_rc": 3,
+      "passed": true,
+      "message": "PATH_TRAVERSAL: parent traversal '..' rejected in 'solution': ../two-fer/two_fer.cpp"
+    },
+    "distinct_exit_codes": true
+  },
+  "cases": [
+    {
+      "index": 1,
+      "uuid": "202fb4cc-6a38-4883-9193-a29d5cb92076",
+      "name": "Degenerate case with a single 'A' row",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "27"
+    },
+    {
+      "index": 2,
+      "uuid": "bd6a6d78-9302-42e9-8f60-ac1461e9abae",
+      "name": "Degenerate case with no row containing 3 distinct groups of spaces",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "33"
+    },
+    {
+      "index": 3,
+      "uuid": "af8efb49-14ed-447f-8944-4cc59ce3fd76",
+      "name": "Smallest non-degenerate case with odd diamond side length",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "39"
+    },
+    {
+      "index": 4,
+      "uuid": "e0c19a95-9888-4d05-86a0-fa81b9e70d1d",
+      "name": "Smallest non-degenerate case with even diamond side length",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "46"
+    },
+    {
+      "index": 5,
+      "uuid": "82ea9aa9-4c0e-442a-b07e-40204e925944",
+      "name": "Largest possible diamond",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "54"
+    }
+  ]
+}
