@@ -1,0 +1,2 @@
+$ <TMP>/darts/build/darts no-such-test-filter* -r xml -o <TMP>/neg_zero.xml
+exit_code: 0

@@ -1,0 +1,179 @@
+{
+  "task_id": "R20-T050",
+  "exercise": "darts",
+  "expected_executed_cases": 13,
+  "actual_executed_cases": 13,
+  "named_cases": [
+    "missed_target",
+    "on_the_outer_circle",
+    "on_the_middle_circle"
+  ],
+  "decision_table_and_repro": {
+    "darts_test_requires": {
+      "missed_target": {
+        "x": -9.0,
+        "y": 9.0,
+        "expected": 0
+      },
+      "on_the_outer_circle": {
+        "x": 0.0,
+        "y": 10.0,
+        "expected": 1
+      },
+      "on_the_middle_circle": {
+        "x": -5.0,
+        "y": 0.0,
+        "expected": 5
+      }
+    },
+    "hints_decision_table": {
+      "missed_target": {
+        "x": -9.0,
+        "y": 9.0,
+        "distance_col": "sqrt(162) ~ 12.73` (`> 10`)",
+        "rule_col": "Outside target (`distance > 10`) -> `0` points",
+        "expected": 0
+      },
+      "on_the_outer_circle": {
+        "x": 0.0,
+        "y": 10.0,
+        "distance_col": "10` (`<= 10`, inclusive)",
+        "rule_col": "Outer circle (radius `10`, inclusive) -> `1` point",
+        "expected": 1
+      },
+      "on_the_middle_circle": {
+        "x": -5.0,
+        "y": 0.0,
+        "distance_col": "5` (`<= 5`, inclusive)",
+        "rule_col": "Middle circle (radius `5`, inclusive) -> `5` points",
+        "expected": 5
+      }
+    },
+    "reference_reproduction": {
+      "missed_target": {
+        "x": -9.0,
+        "y": 9.0,
+        "hypot": 12.7279,
+        "score": 0
+      },
+      "on_the_outer_circle": {
+        "x": 0.0,
+        "y": 10.0,
+        "hypot": 10.0,
+        "score": 1
+      },
+      "on_the_middle_circle": {
+        "x": -5.0,
+        "y": 0.0,
+        "hypot": 5.0,
+        "score": 5
+      }
+    }
+  },
+  "cases": [
+    {
+      "index": 1,
+      "name": "missed_target",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "8"
+    },
+    {
+      "index": 2,
+      "name": "on_the_outer_circle",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "11"
+    },
+    {
+      "index": 3,
+      "name": "on_the_middle_circle",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "13"
+    },
+    {
+      "index": 4,
+      "name": "on_the_inner_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "15"
+    },
+    {
+      "index": 5,
+      "name": "exactly_on_centre",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "17"
+    },
+    {
+      "index": 6,
+      "name": "near_the_centre",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "19"
+    },
+    {
+      "index": 7,
+      "name": "just_within_the_inner_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "21"
+    },
+    {
+      "index": 8,
+      "name": "just_outside_the_inner_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "25"
+    },
+    {
+      "index": 9,
+      "name": "just_within_the_middle_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "29"
+    },
+    {
+      "index": 10,
+      "name": "just_outside_the_middle_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "33"
+    },
+    {
+      "index": 11,
+      "name": "just_within_the_outer_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "37"
+    },
+    {
+      "index": 12,
+      "name": "just_outside_the_outer_circle",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "41"
+    },
+    {
+      "index": 13,
+      "name": "asymmetric_position_between_the_inner_and_middle_circles",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "45"
+    }
+  ]
+}

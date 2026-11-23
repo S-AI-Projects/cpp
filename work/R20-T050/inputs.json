@@ -1,0 +1,67 @@
+{
+  "task_id": "R20-T050",
+  "exercise": "darts",
+  "exercise_dir": "<REPO>/exercises/practice/darts",
+  "config_files": {
+    "solution": [
+      "darts.cpp",
+      "darts.h"
+    ],
+    "test": [
+      "darts_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/darts/darts.cpp",
+      "<REPO>/exercises/practice/darts/darts.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/darts/darts_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/darts/.meta/example.cpp",
+      "<REPO>/exercises/practice/darts/.meta/example.h"
+    ]
+  },
+  "expected_cases": 13,
+  "named_cases": [
+    "missed_target",
+    "on_the_outer_circle",
+    "on_the_middle_circle"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/hints.md": "b1dcca4b42ebfff1e68127f875ffd9e22605cbc007a3070c4f90c7adee44df2d",
+    ".docs/instructions.md": "080480cf90b3a55b22e56907726dda736e4540f5713dd3ac8ca6f9dc2a0b09c6",
+    ".meta/config.json": "73e2f8405ef407cd53c88caa98bb996750c07089d58177c18f4f5ac2fc45d04c",
+    ".meta/example.cpp": "708149770a10a2978f834bec1a865a89ea75f8091121513228f889ccd4b794db",
+    ".meta/example.h": "fea1c0ab58e7a308de2dc6fc2a051c697f57fd3b60587b5d75708144257f7747",
+    ".meta/tests.toml": "c2c72c632575495b9d6a4feb12699aa6db506d131cf3f4767f98d601dd7dab30",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "darts.cpp": "cd46818828b63ce25f3c12f910a56e338a00fb512735c39ecf30447f144007f9",
+    "darts.h": "1f56a61ac32f86754a30ade37ab3c4cd0364daa4becc5c4fe4d35c0cb855d558",
+    "darts_test.cpp": "99afda5a07b667683a34fb31d9b7fdbbf46e21f363c30ee81755ea7336e5b3dd",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/hints.md": "b1dcca4b42ebfff1e68127f875ffd9e22605cbc007a3070c4f90c7adee44df2d",
+    ".docs/instructions.md": "080480cf90b3a55b22e56907726dda736e4540f5713dd3ac8ca6f9dc2a0b09c6",
+    ".meta/config.json": "73e2f8405ef407cd53c88caa98bb996750c07089d58177c18f4f5ac2fc45d04c",
+    ".meta/example.cpp": "708149770a10a2978f834bec1a865a89ea75f8091121513228f889ccd4b794db",
+    ".meta/example.h": "fea1c0ab58e7a308de2dc6fc2a051c697f57fd3b60587b5d75708144257f7747",
+    ".meta/tests.toml": "c2c72c632575495b9d6a4feb12699aa6db506d131cf3f4767f98d601dd7dab30",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "darts.cpp": "cd46818828b63ce25f3c12f910a56e338a00fb512735c39ecf30447f144007f9",
+    "darts.h": "1f56a61ac32f86754a30ade37ab3c4cd0364daa4becc5c4fe4d35c0cb855d558",
+    "darts_test.cpp": "99afda5a07b667683a34fb31d9b7fdbbf46e21f363c30ee81755ea7336e5b3dd",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "protected_files_unchanged_during_run": true
+}
