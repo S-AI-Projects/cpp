@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/trinary.dir/trinary_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/trinary.dir/trinary.cpp.o
+[ 75%] Building CXX object CMakeFiles/trinary.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable trinary
+[100%] Built target trinary
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_trinary

@@ -1,0 +1,97 @@
+{
+  "task_id": "R20-T047",
+  "exercise": "trinary",
+  "expected_executed_cases": 9,
+  "actual_executed_cases": 9,
+  "named_cases": [
+    "_1_yields_decimal_1",
+    "_2_yields_decimal_2",
+    "_10_yields_decimal_3"
+  ],
+  "note": "trinary_test.cpp has 9 hand-named TEST_CASE blocks while tests.toml has 11 entries.",
+  "micro_example": {
+    "expected_output": [
+      "zero_copy_same_addr=1",
+      "same_storage=true char='1' numeric=1 pitfall_without_minus_zero=49 safe_mul3=true"
+    ],
+    "actual_output": [
+      "zero_copy_same_addr=1",
+      "same_storage=true char='1' numeric=1 pitfall_without_minus_zero=49 safe_mul3=true"
+    ],
+    "stdout_matches_published_text": true
+  },
+  "cases": [
+    {
+      "index": 1,
+      "name": "_1_yields_decimal_1",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "8"
+    },
+    {
+      "index": 2,
+      "name": "_2_yields_decimal_2",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "11"
+    },
+    {
+      "index": 3,
+      "name": "_10_yields_decimal_3",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "13"
+    },
+    {
+      "index": 4,
+      "name": "_11_yields_decimal_4",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "15"
+    },
+    {
+      "index": 5,
+      "name": "_100_yields_decimal_9",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "17"
+    },
+    {
+      "index": 6,
+      "name": "_112_yields_decimal_14",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "19"
+    },
+    {
+      "index": 7,
+      "name": "_222_yields_decimal_26",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "23"
+    },
+    {
+      "index": 8,
+      "name": "_1122000120_yields_decimal_32091",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "27"
+    },
+    {
+      "index": 9,
+      "name": "invalid_yields_decimal_0",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "31"
+    }
+  ]
+}
