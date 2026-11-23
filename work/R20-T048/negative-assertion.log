@@ -1,0 +1,2 @@
+$ <TMP>/diamond/build/diamond -r xml -o <TMP>/neg_assert.xml
+exit_code: 1

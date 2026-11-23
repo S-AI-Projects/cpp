@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="diamond">
+  <Group name="diamond">
+    <TestCase name="Degenerate case with a single 'A' row" tags="[202fb4cc-6a38-4883-9193-a29d5cb92076]" filename="&lt;TMP&gt;/diamond/diamond_test.cpp" line="27">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="Degenerate case with no row containing 3 distinct groups of spaces" tags="[bd6a6d78-9302-42e9-8f60-ac1461e9abae]" filename="&lt;TMP&gt;/diamond/diamond_test.cpp" line="33">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="Smallest non-degenerate case with odd diamond side length" tags="[af8efb49-14ed-447f-8944-4cc59ce3fd76]" filename="&lt;TMP&gt;/diamond/diamond_test.cpp" line="39">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="Smallest non-degenerate case with even diamond side length" tags="[e0c19a95-9888-4d05-86a0-fa81b9e70d1d]" filename="&lt;TMP&gt;/diamond/diamond_test.cpp" line="46">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="Largest possible diamond" tags="[82ea9aa9-4c0e-442a-b07e-40204e925944]" filename="&lt;TMP&gt;/diamond/diamond_test.cpp" line="54">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="5" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="5" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="5" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="5" failures="0" expectedFailures="0"/>
+</Catch>
