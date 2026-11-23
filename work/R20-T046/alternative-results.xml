@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="alphametics">
+  <Group name="alphametics">
+    <TestCase name="puzzle_with_three_letters" tags="[e0c08b07-9028-4d5f-91e1-d178fead8e1a]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="9">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="solution_must_have_unique_value_for_each_letter" tags="[a504ee41-cb92-4ec2-9f11-c37e95ab3f25]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="21">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="leading_zero_solution_is_invalid" tags="[4e3b81d2-be7b-4c5c-9a80-cd72bc6d465a]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="27">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_two_digits_final_carry" tags="[8a3e3168-d1ee-4df7-94c7-b9c54845ac3a]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="33">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_four_letters" tags="[a9630645-15bd-48b6-a61e-d85c4021cc09]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="44">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_six_letters" tags="[3d905a86-5a52-4e4e-bf80-8951535791bd]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="54">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_seven_letters" tags="[4febca56-e7b7-4789-97b9-530d09ba95f0]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="67">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_eight_letters" tags="[12125a75-7284-4f9a-a5fa-191471e0d44f]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="81">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_ten_letters" tags="[fb05955f-38dc-477a-a0b6-5ef78969fffa]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="95">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="puzzle_with_ten_letters_and_199_addends" tags="[9a101e81-9216-472b-b458-b513a7adacf7]" filename="&lt;TMP&gt;/alt/alphametics/alphametics_test.cpp" line="113">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="61" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="10" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="61" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="10" failures="0" expectedFailures="0"/>
+</Catch>

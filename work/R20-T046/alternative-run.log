@@ -1,0 +1,2 @@
+$ <TMP>/alt/alphametics/build/alphametics -r xml -o <TMP>/alternative-results.xml
+exit_code: 0
