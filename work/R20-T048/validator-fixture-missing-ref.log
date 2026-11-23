@@ -1,0 +1,12 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 <REPO>/tools/course_checks/r20-t048.py <TMP>/fixtures/missing_ref/diamond
+exit_code: 5
+--- stdout ---
+role      | path                  | exists
+----------+-----------------------+-------
+solution  | diamond.cpp           | True
+solution  | diamond.h             | True
+test      | diamond_test.cpp      | True
+example   | .meta/example.cpp     | False
+example   | .meta/example.h       | True
+editor    | (not declared)        | n/a
+MISSING_EXAMPLE: declared reference file not found: .meta/example.cpp

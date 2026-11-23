@@ -1,0 +1,12 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 <REPO>/tools/course_checks/r20-t048.py exercises/practice/diamond
+exit_code: 0
+--- stdout ---
+role      | path                  | exists
+----------+-----------------------+-------
+solution  | diamond.cpp           | True
+solution  | diamond.h             | True
+test      | diamond_test.cpp      | True
+example   | .meta/example.cpp     | True
+example   | .meta/example.h       | True
+editor    | (not declared)        | n/a
+OK: diamond config.json and CMake rules validated (5 files)

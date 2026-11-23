@@ -1,0 +1,7 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 <REPO>/tools/course_checks/r20-t048.py <TMP>/fixtures/outside_path/diamond
+exit_code: 3
+--- stdout ---
+role      | path                  | exists
+----------+-----------------------+-------
+editor    | (not declared)        | n/a
+PATH_TRAVERSAL: parent traversal '..' rejected in 'solution': ../two-fer/two_fer.cpp

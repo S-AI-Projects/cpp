@@ -1,0 +1,65 @@
+{
+  "task_id": "R20-T048",
+  "exercise": "diamond",
+  "exercise_dir": "<REPO>/exercises/practice/diamond",
+  "config_files": {
+    "solution": [
+      "diamond.cpp",
+      "diamond.h"
+    ],
+    "test": [
+      "diamond_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/diamond/diamond.cpp",
+      "<REPO>/exercises/practice/diamond/diamond.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/diamond/diamond_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/diamond/.meta/example.cpp",
+      "<REPO>/exercises/practice/diamond/.meta/example.h"
+    ]
+  },
+  "expected_cases": 5,
+  "named_cases": [
+    "Degenerate case with a single 'A' row",
+    "Degenerate case with no row containing 3 distinct groups of spaces",
+    "Smallest non-degenerate case with odd diamond side length"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/instructions.md": "ff20bbc2d91cf1ffb8b35ffbe4715867a8e0fdec29a83bf8d9ef8a18da2d9d68",
+    ".meta/config.json": "ab687c7bd48e4c78c4ebc23650a79d7a876c0562ca8163875ea99cb143fe6b5c",
+    ".meta/example.cpp": "77a0be8e4002384fcb63c2ab71c88f0e63884a3aa22eaff973e823539f33d388",
+    ".meta/example.h": "b9580b022a43606848e0a5eb7183d60f1280883caafadb4463f93741dd23da43",
+    ".meta/tests.toml": "2b9c8ee60ab2b86ac7ba50cee1f39727d4a8fab13e1a5f794452670562c9ed8c",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "diamond.cpp": "d7d3b4961e7012e885f5a9f2f88a1f89062cfce87511d5204c3237b775d08619",
+    "diamond.h": "b3977acffffe2e8dc219b05ec3e2a3fa4dfe1f7006803b81e5f0c0f7ad183115",
+    "diamond_test.cpp": "d9bc0b5d6371e4cc0f8b67aa4f107c3d5426d796256fa523ab2285a0055a0c03",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/instructions.md": "ff20bbc2d91cf1ffb8b35ffbe4715867a8e0fdec29a83bf8d9ef8a18da2d9d68",
+    ".meta/config.json": "ab687c7bd48e4c78c4ebc23650a79d7a876c0562ca8163875ea99cb143fe6b5c",
+    ".meta/example.cpp": "77a0be8e4002384fcb63c2ab71c88f0e63884a3aa22eaff973e823539f33d388",
+    ".meta/example.h": "b9580b022a43606848e0a5eb7183d60f1280883caafadb4463f93741dd23da43",
+    ".meta/tests.toml": "2b9c8ee60ab2b86ac7ba50cee1f39727d4a8fab13e1a5f794452670562c9ed8c",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "diamond.cpp": "d7d3b4961e7012e885f5a9f2f88a1f89062cfce87511d5204c3237b775d08619",
+    "diamond.h": "b3977acffffe2e8dc219b05ec3e2a3fa4dfe1f7006803b81e5f0c0f7ad183115",
+    "diamond_test.cpp": "d9bc0b5d6371e4cc0f8b67aa4f107c3d5426d796256fa523ab2285a0055a0c03",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_files_unchanged_during_run": true
+}
