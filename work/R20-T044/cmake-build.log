@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/anagram.dir/anagram_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/anagram.dir/anagram.cpp.o
+[ 75%] Building CXX object CMakeFiles/anagram.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable anagram
+[100%] Built target anagram
+===============================================================================
+All tests passed (16 assertions in 16 test cases)
+
+[100%] Built target test_anagram

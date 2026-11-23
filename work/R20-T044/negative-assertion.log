@@ -1,0 +1,2 @@
+$ <TMP>/after/anagram/build/anagram -r xml -o <TMP>/neg_assert.xml
+exit_code: 1

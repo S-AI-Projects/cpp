@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="anagram">
+  <Group name="anagram">
+    <TestCase name="no_matches" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="37">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_two_anagrams" tags="[03eb9bbe-8906-4ea0-84fa-ffe711b52c8b][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="46">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="does_not_detect_anagram_subsets" tags="[a27558ee-9ba0-4552-96b1-ecf665b06556][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="54">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_anagram" tags="[64cd4584-fc15-4781-b633-3d814c4941a4][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="62">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_three_anagrams" tags="[99c91beb-838f-4ccd-b123-935139917283][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="70">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_multiple_anagrams_with_different_case" tags="[78487770-e258-4e1f-a646-8ece10950d90][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="80">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="does_not_detect_non_anagrams_with_identical_checksum" tags="[1d0ab8aa-362f-49b7-9902-3d0c668d557b][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="88">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_anagrams_case_insensitively" tags="[9e632c0b-c0b1-4804-8cc1-e295dea6d8a8][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="96">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_anagrams_using_case_insensitive_subject" tags="[b248e49f-0905-48d2-9c8d-bd02d8c3e392][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="104">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="detects_anagrams_using_case_insensitive_possible_matches" tags="[f367325c-78ec-411c-be76-e79047f4bd54][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="112">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="does_not_detect_an_anagram_if_the_original_word_is_repeated" tags="[630abb71-a94e-4715-8395-179ec1df9f91][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="120">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="anagrams_must_use_all_letters_exactly_once" tags="[9878a1c9-d6ea-4235-ae51-3ea2befd6842][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="128">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="words_are_not_anagrams_of_themselves" tags="[68934ed0-010b-4ef9-857a-20c9012d1ebf][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="136">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="words_are_not_anagrams_of_themselves_even_if_letter_case_is_partially_different" tags="[589384f3-4c8a-4e7d-9edc-51c3e5f0c90e][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="147">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="words_are_not_anagrams_of_themselves_even_if_letter_case_is_completely_different" tags="[ba53e423-7e02-41ee-9ae2-71f91e6d18e6][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="158">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="words_other_than_themselves_can_be_anagrams" tags="[33d3f67e-fbb9-49d3-a90e-0beb00861da7][findAnagrams]" filename="&lt;TMP&gt;/after/anagram/anagram_test.cpp" line="166">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="16" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="16" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="16" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="16" failures="0" expectedFailures="0"/>
+</Catch>

@@ -1,0 +1,67 @@
+{
+  "task_id": "R20-T044",
+  "exercise": "anagram",
+  "exercise_dir": "<REPO>/exercises/practice/anagram",
+  "config_files": {
+    "solution": [
+      "anagram.cpp",
+      "anagram.h"
+    ],
+    "test": [
+      "anagram_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/anagram/anagram.cpp",
+      "<REPO>/exercises/practice/anagram/anagram.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/anagram/anagram_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/anagram/.meta/example.cpp",
+      "<REPO>/exercises/practice/anagram/.meta/example.h"
+    ]
+  },
+  "expected_cases": 16,
+  "named_cases": [
+    "no_matches",
+    "detects_two_anagrams",
+    "does_not_detect_anagram_subsets"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/instructions.md": "dc5595b08571a71bf0146dc3dbd5668a348468f1f28fdcb12a432b49afd51a71",
+    ".docs/introduction.md": "417bb211f77d55e3b1f2fdea0df5deb250547981e87ca015479530918d35d79e",
+    ".meta/config.json": "1e83b6f2437435a39e88670fb44bc3436caa0f9963accbad242efbe5bb779779",
+    ".meta/example.cpp": "7bea25a8138cd1646fc7c7a3c10781bee1ab137ba4ab8768bf50d1d5dc46f8a7",
+    ".meta/example.h": "16476c4c2f8243509b1944107a4deecfac69b7e2c7e328f92f21f0b485f72623",
+    ".meta/tests.toml": "20210bffcbc00e9c79138d4eacae06e8b43857ac2dfc0a93c8c43a8f6eb20eb2",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "anagram.cpp": "ca14b6d1fe09e9843daf6b757c3a2b0e6bf2e319513e5f55f4c9ca2b6a946dcf",
+    "anagram.h": "3ff3fb4c8a206e306960e4664ff144e00276a0425884dec8e1676a119ae6f024",
+    "anagram_test.cpp": "6a477c4cd954cb6206057532b5b9c42c3f507d9c6243bc7db8e18d8dc5f1798c",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/instructions.md": "dc5595b08571a71bf0146dc3dbd5668a348468f1f28fdcb12a432b49afd51a71",
+    ".docs/introduction.md": "417bb211f77d55e3b1f2fdea0df5deb250547981e87ca015479530918d35d79e",
+    ".meta/config.json": "1e83b6f2437435a39e88670fb44bc3436caa0f9963accbad242efbe5bb779779",
+    ".meta/example.cpp": "7bea25a8138cd1646fc7c7a3c10781bee1ab137ba4ab8768bf50d1d5dc46f8a7",
+    ".meta/example.h": "16476c4c2f8243509b1944107a4deecfac69b7e2c7e328f92f21f0b485f72623",
+    ".meta/tests.toml": "20210bffcbc00e9c79138d4eacae06e8b43857ac2dfc0a93c8c43a8f6eb20eb2",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "anagram.cpp": "ca14b6d1fe09e9843daf6b757c3a2b0e6bf2e319513e5f55f4c9ca2b6a946dcf",
+    "anagram.h": "3ff3fb4c8a206e306960e4664ff144e00276a0425884dec8e1676a119ae6f024",
+    "anagram_test.cpp": "6a477c4cd954cb6206057532b5b9c42c3f507d9c6243bc7db8e18d8dc5f1798c",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "protected_files_unchanged_during_run": true
+}
