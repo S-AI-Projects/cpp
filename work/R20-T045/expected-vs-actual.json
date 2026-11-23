@@ -1,0 +1,54 @@
+{
+  "task_id": "R20-T045",
+  "exercise": "beer-song",
+  "expected_executed_cases": 5,
+  "actual_executed_cases": 5,
+  "named_cases": [
+    "prints_an_arbitrary_verse",
+    "handles_1_bottle",
+    "handles_0_bottles"
+  ],
+  "note": "beer_song_test.cpp defines 5 hand-named TEST_CASE blocks (no UUID tags), while .meta/tests.toml lists 8 canonical entries.",
+  "cases": [
+    {
+      "index": 1,
+      "name": "prints_an_arbitrary_verse",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "10"
+    },
+    {
+      "index": 2,
+      "name": "handles_1_bottle",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "19"
+    },
+    {
+      "index": 3,
+      "name": "handles_0_bottles",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "28"
+    },
+    {
+      "index": 4,
+      "name": "sings_several_verses",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "36"
+    },
+    {
+      "index": 5,
+      "name": "sings_the_rest_of_the_verses",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "50"
+    }
+  ]
+}

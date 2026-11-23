@@ -1,0 +1,6 @@
+$ ./bench_runner
+exit_code: 0
+--- stdout ---
+verse(8) verses=1 reps=9 batch=500 median_us=0.660584 min_us=0.62775 max_us=0.751334
+sing(9,0) verses=10 reps=9 batch=200 median_us=3.71166 min_us=3.27125 max_us=3.72584
+sing(99,0) verses=100 reps=9 batch=50 median_us=34.58 min_us=30.0317 max_us=41.2092

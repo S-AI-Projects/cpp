@@ -1,0 +1,41 @@
+{
+  "task_id": "R20-T045",
+  "all_controls_behaved_as_expected": true,
+  "controls": {
+    "assertion_failure": {
+      "target_named_case": "prints_an_arbitrary_verse",
+      "mutation": "if (num == 8) return \"wrong\";",
+      "compile_rc": 0,
+      "run_rc": 1,
+      "named_case_failed": true,
+      "evaluate_failures": [
+        "run_rc=1 (expected 0)",
+        "OverallResultsCases reported failures=1",
+        "Named case did not pass: 'prints_an_arbitrary_verse'"
+      ],
+      "rejected_as_expected": true
+    },
+    "zero_tests": {
+      "filter": "no-such-test-filter*",
+      "catch2_run_rc": 0,
+      "xml_total_cases": 0,
+      "evaluate_failures": [
+        "ZERO-TEST GUARD: OverallResultsCases successes+failures == 0",
+        "Total executed cases 0 != expected 5",
+        "Named case missing from XML: 'prints_an_arbitrary_verse'",
+        "Named case missing from XML: 'handles_1_bottle'",
+        "Named case missing from XML: 'handles_0_bottles'"
+      ],
+      "rejected_as_expected": true
+    },
+    "child_failure": {
+      "synthetic_run_rc_1_failures": [
+        "run_rc=1 (expected 0)"
+      ],
+      "synthetic_build_rc_2_failures": [
+        "build_rc=2 (expected 0)"
+      ],
+      "rejected_as_expected": true
+    }
+  }
+}
