@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="beer-song">
+  <Group name="beer-song">
+    <TestCase name="prints_an_arbitrary_verse" filename="&lt;TMP&gt;/beer-song/beer_song_test.cpp" line="10">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="handles_1_bottle" filename="&lt;TMP&gt;/beer-song/beer_song_test.cpp" line="19">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="handles_0_bottles" filename="&lt;TMP&gt;/beer-song/beer_song_test.cpp" line="28">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="sings_several_verses" filename="&lt;TMP&gt;/beer-song/beer_song_test.cpp" line="36">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="sings_the_rest_of_the_verses" filename="&lt;TMP&gt;/beer-song/beer_song_test.cpp" line="50">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="5" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="5" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="5" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="5" failures="0" expectedFailures="0"/>
+</Catch>

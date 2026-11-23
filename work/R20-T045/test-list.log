@@ -1,0 +1,8 @@
+$ <TMP>/beer-song/build/beer-song --list-test-names-only
+exit_code: 5
+--- stdout ---
+prints_an_arbitrary_verse
+handles_1_bottle
+handles_0_bottles
+sings_several_verses
+sings_the_rest_of_the_verses
