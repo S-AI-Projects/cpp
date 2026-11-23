@@ -21,6 +21,18 @@ string make_key(string const& s) {
     return key;
 }
 
+bool is_anagram_candidate(string const& candidate,
+                          string const& lowered_subject,
+                          string const& subject_key) {
+    if (candidate.length() != subject_key.length()) {
+        return false;
+    }
+    if (to_lower_copy(candidate) == lowered_subject) {
+        return false;
+    }
+    return make_key(candidate) == subject_key;
+}
+
 }  // namespace
 
 namespace anagram {
@@ -28,13 +40,14 @@ namespace anagram {
 anagram::anagram(string const& subject)
     : subject_(subject), key_(make_key(subject)) {}
 
-vector<string> anagram::matches(vector<string> const& matches) {
+// Invariant: a candidate matches iff it shares subject_'s case-insensitive
+// letter multiset (key_) without being the same word case-insensitively.
+vector<string> anagram::matches(vector<string> const& candidates) {
+    const string lowered_subject = to_lower_copy(subject_);
     vector<string> result;
-    for (string const& s : matches) {
-        if (s.length() == key_.length() &&
-            to_lower_copy(s) != to_lower_copy(subject_) &&
-            make_key(s) == key_) {
-            result.push_back(s);
+    for (string const& candidate : candidates) {
+        if (is_anagram_candidate(candidate, lowered_subject, key_)) {
+            result.push_back(candidate);
         }
     }
     return result;

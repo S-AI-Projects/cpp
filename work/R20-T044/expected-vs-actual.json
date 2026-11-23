@@ -1,0 +1,142 @@
+{
+  "task_id": "R20-T044",
+  "exercise": "anagram",
+  "expected_executed_cases": 16,
+  "actual_executed_cases": 16,
+  "named_cases": [
+    "no_matches",
+    "detects_two_anagrams",
+    "does_not_detect_anagram_subsets"
+  ],
+  "equivalence_harness_identical": true,
+  "cases": [
+    {
+      "index": 1,
+      "name": "no_matches",
+      "is_named_case": true,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "37"
+    },
+    {
+      "index": 2,
+      "name": "detects_two_anagrams",
+      "is_named_case": true,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "46"
+    },
+    {
+      "index": 3,
+      "name": "does_not_detect_anagram_subsets",
+      "is_named_case": true,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "54"
+    },
+    {
+      "index": 4,
+      "name": "detects_anagram",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "62"
+    },
+    {
+      "index": 5,
+      "name": "detects_three_anagrams",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "70"
+    },
+    {
+      "index": 6,
+      "name": "detects_multiple_anagrams_with_different_case",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "80"
+    },
+    {
+      "index": 7,
+      "name": "does_not_detect_non_anagrams_with_identical_checksum",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "88"
+    },
+    {
+      "index": 8,
+      "name": "detects_anagrams_case_insensitively",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "96"
+    },
+    {
+      "index": 9,
+      "name": "detects_anagrams_using_case_insensitive_subject",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "104"
+    },
+    {
+      "index": 10,
+      "name": "detects_anagrams_using_case_insensitive_possible_matches",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "112"
+    },
+    {
+      "index": 11,
+      "name": "does_not_detect_an_anagram_if_the_original_word_is_repeated",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "120"
+    },
+    {
+      "index": 12,
+      "name": "anagrams_must_use_all_letters_exactly_once",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "128"
+    },
+    {
+      "index": 13,
+      "name": "words_are_not_anagrams_of_themselves",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "136"
+    },
+    {
+      "index": 14,
+      "name": "words_are_not_anagrams_of_themselves_even_if_letter_case_is_partially_different",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "147"
+    },
+    {
+      "index": 15,
+      "name": "words_are_not_anagrams_of_themselves_even_if_letter_case_is_completely_different",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "158"
+    },
+    {
+      "index": 16,
+      "name": "words_other_than_themselves_can_be_anagrams",
+      "is_named_case": false,
+      "before_pass": true,
+      "after_pass": true,
+      "test_file_line": "166"
+    }
+  ]
+}

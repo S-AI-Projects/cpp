@@ -1,0 +1,16 @@
+{
+  "task_id": "R20-T044",
+  "exercise": "anagram",
+  "expected_cases": 16,
+  "static_test_case_count": 16,
+  "uuid_tags_in_test_file_count": 15,
+  "xml_executed_case_count_before": 16,
+  "xml_executed_case_count_after": 16,
+  "xml_passed_case_count": 16,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 16,
+  "tests_toml_total": 22,
+  "tests_toml_included": 16,
+  "tests_toml_excluded": 6,
+  "equivalence_corpus_cases_verified": 14
+}
