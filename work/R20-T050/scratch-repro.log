@@ -1,0 +1,6 @@
+$ <TMP>/scratch_repro/repro
+exit_code: 0
+--- stdout ---
+missed_target|-9|9|12.7279|0
+on_the_outer_circle|0|10|10|1
+on_the_middle_circle|-5|0|5|5

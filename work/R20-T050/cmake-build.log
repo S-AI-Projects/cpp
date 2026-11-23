@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/darts.dir/darts_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/darts.dir/darts.cpp.o
+[ 75%] Building CXX object CMakeFiles/darts.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable darts
+[100%] Built target darts
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+[100%] Built target test_darts

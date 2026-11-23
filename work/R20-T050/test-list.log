@@ -1,0 +1,16 @@
+$ <TMP>/darts/build/darts --list-test-names-only
+exit_code: 13
+--- stdout ---
+missed_target
+on_the_outer_circle
+on_the_middle_circle
+on_the_inner_circle
+exactly_on_centre
+near_the_centre
+just_within_the_inner_circle
+just_outside_the_inner_circle
+just_within_the_middle_circle
+just_outside_the_middle_circle
+just_within_the_outer_circle
+just_outside_the_outer_circle
+asymmetric_position_between_the_inner_and_middle_circles

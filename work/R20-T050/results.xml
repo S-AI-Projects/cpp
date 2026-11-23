@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="darts">
+  <Group name="darts">
+    <TestCase name="missed_target" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="8">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="on_the_outer_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="11">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="on_the_middle_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="13">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="on_the_inner_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="15">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="exactly_on_centre" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="17">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="near_the_centre" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="19">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="just_within_the_inner_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="21">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="just_outside_the_inner_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="25">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="just_within_the_middle_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="29">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="just_outside_the_middle_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="33">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="just_within_the_outer_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="37">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="just_outside_the_outer_circle" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="41">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="asymmetric_position_between_the_inner_and_middle_circles" filename="&lt;TMP&gt;/darts/darts_test.cpp" line="45">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="13" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="13" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="13" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="13" failures="0" expectedFailures="0"/>
+</Catch>

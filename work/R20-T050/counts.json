@@ -1,0 +1,14 @@
+{
+  "task_id": "R20-T050",
+  "exercise": "darts",
+  "expected_cases": 13,
+  "static_test_case_count": 13,
+  "xml_executed_case_count": 13,
+  "xml_passed_case_count": 13,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 13,
+  "tests_toml_total": 13,
+  "tests_toml_included": 13,
+  "tests_toml_excluded": 0,
+  "decision_table_verified": true
+}

@@ -1,0 +1,41 @@
+{
+  "task_id": "R20-T050",
+  "all_controls_behaved_as_expected": true,
+  "controls": {
+    "assertion_failure": {
+      "target_named_case": "missed_target",
+      "mutation": "return 99; (outside target)",
+      "compile_rc": 0,
+      "run_rc": 2,
+      "named_case_failed": true,
+      "evaluate_failures": [
+        "run_rc=2 (expected 0)",
+        "OverallResultsCases reported failures=2",
+        "Named case did not pass: 'missed_target'"
+      ],
+      "rejected_as_expected": true
+    },
+    "zero_tests": {
+      "filter": "no-such-test-filter*",
+      "catch2_run_rc": 0,
+      "xml_total_cases": 0,
+      "evaluate_failures": [
+        "ZERO-TEST GUARD: OverallResultsCases successes+failures == 0",
+        "Total executed cases 0 != expected 13",
+        "Named case missing from XML: 'missed_target'",
+        "Named case missing from XML: 'on_the_outer_circle'",
+        "Named case missing from XML: 'on_the_middle_circle'"
+      ],
+      "rejected_as_expected": true
+    },
+    "child_failure": {
+      "synthetic_run_rc_1_failures": [
+        "run_rc=1 (expected 0)"
+      ],
+      "synthetic_build_rc_2_failures": [
+        "build_rc=2 (expected 0)"
+      ],
+      "rejected_as_expected": true
+    }
+  }
+}
