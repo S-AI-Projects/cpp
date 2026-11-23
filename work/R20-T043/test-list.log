@@ -1,0 +1,21 @@
+$ <TMP>/orig/dnd-character/build/dnd-character --list-test-names-only
+exit_code: 18
+--- stdout ---
+ability modifier for score 3 is -4
+ability modifier for score 4 is -3
+ability modifier for score 5 is -3
+ability modifier for score 6 is -2
+ability modifier for score 7 is -2
+ability modifier for score 8 is -1
+ability modifier for score 9 is -1
+ability modifier for score 10 is 0
+ability modifier for score 11 is 0
+ability modifier for score 12 is +1
+ability modifier for score 13 is +1
+ability modifier for score 14 is +2
+ability modifier for score 15 is +2
+ability modifier for score 16 is +3
+ability modifier for score 17 is +3
+ability modifier for score 18 is +4
+random ability is within range
+random character is valid

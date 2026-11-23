@@ -1,0 +1,2 @@
+$ <TMP>/orig/dnd-character/build/dnd-character -r xml -o <TMP>/neg_assert.xml
+exit_code: 4

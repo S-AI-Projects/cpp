@@ -1,0 +1,297 @@
+{
+  "task_id": "R20-T043",
+  "exercise": "dnd-character",
+  "expected_executed_cases": 18,
+  "actual_executed_cases": 18,
+  "named_cases": [
+    "ability modifier for score 3 is -4",
+    "ability modifier for score 4 is -3",
+    "ability modifier for score 5 is -3"
+  ],
+  "smallest_rejecting_input": {
+    "score": 3,
+    "expected": -4,
+    "mutant": -3,
+    "uuid": "1e9ae1dc-35bd-43ba-aa08-e4b94c20fa37"
+  },
+  "domain_3_to_18_comparison": [
+    {
+      "score": 3,
+      "original": -4,
+      "mutant": -3,
+      "matches": false
+    },
+    {
+      "score": 4,
+      "original": -3,
+      "mutant": -3,
+      "matches": true
+    },
+    {
+      "score": 5,
+      "original": -3,
+      "mutant": -2,
+      "matches": false
+    },
+    {
+      "score": 6,
+      "original": -2,
+      "mutant": -2,
+      "matches": true
+    },
+    {
+      "score": 7,
+      "original": -2,
+      "mutant": -1,
+      "matches": false
+    },
+    {
+      "score": 8,
+      "original": -1,
+      "mutant": -1,
+      "matches": true
+    },
+    {
+      "score": 9,
+      "original": -1,
+      "mutant": 0,
+      "matches": false
+    },
+    {
+      "score": 10,
+      "original": 0,
+      "mutant": 0,
+      "matches": true
+    },
+    {
+      "score": 11,
+      "original": 0,
+      "mutant": 0,
+      "matches": true
+    },
+    {
+      "score": 12,
+      "original": 1,
+      "mutant": 1,
+      "matches": true
+    },
+    {
+      "score": 13,
+      "original": 1,
+      "mutant": 1,
+      "matches": true
+    },
+    {
+      "score": 14,
+      "original": 2,
+      "mutant": 2,
+      "matches": true
+    },
+    {
+      "score": 15,
+      "original": 2,
+      "mutant": 2,
+      "matches": true
+    },
+    {
+      "score": 16,
+      "original": 3,
+      "mutant": 3,
+      "matches": true
+    },
+    {
+      "score": 17,
+      "original": 3,
+      "mutant": 3,
+      "matches": true
+    },
+    {
+      "score": 18,
+      "original": 4,
+      "mutant": 4,
+      "matches": true
+    }
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "uuid": "1e9ae1dc-35bd-43ba-aa08-e4b94c20fa37",
+      "name": "ability modifier for score 3 is -4",
+      "is_named_case": true,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": false,
+      "test_file_line": "30"
+    },
+    {
+      "index": 2,
+      "uuid": "cc9bb24e-56b8-4e9e-989d-a0d1a29ebb9c",
+      "name": "ability modifier for score 4 is -3",
+      "is_named_case": true,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "37"
+    },
+    {
+      "index": 3,
+      "uuid": "5b519fcd-6946-41ee-91fe-34b4f9808326",
+      "name": "ability modifier for score 5 is -3",
+      "is_named_case": true,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": false,
+      "test_file_line": "42"
+    },
+    {
+      "index": 4,
+      "uuid": "dc2913bd-6d7a-402e-b1e2-6d568b1cbe21",
+      "name": "ability modifier for score 6 is -2",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "47"
+    },
+    {
+      "index": 5,
+      "uuid": "099440f5-0d66-4b1a-8a10-8f3a03cc499f",
+      "name": "ability modifier for score 7 is -2",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": false,
+      "test_file_line": "52"
+    },
+    {
+      "index": 6,
+      "uuid": "cfda6e5c-3489-42f0-b22b-4acb47084df0",
+      "name": "ability modifier for score 8 is -1",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "57"
+    },
+    {
+      "index": 7,
+      "uuid": "c70f0507-fa7e-4228-8463-858bfbba1754",
+      "name": "ability modifier for score 9 is -1",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": false,
+      "test_file_line": "62"
+    },
+    {
+      "index": 8,
+      "uuid": "6f4e6c88-1cd9-46a0-92b8-db4a99b372f7",
+      "name": "ability modifier for score 10 is 0",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "67"
+    },
+    {
+      "index": 9,
+      "uuid": "e00d9e5c-63c8-413f-879d-cd9be9697097",
+      "name": "ability modifier for score 11 is 0",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "72"
+    },
+    {
+      "index": 10,
+      "uuid": "eea06f3c-8de0-45e7-9d9d-b8cab4179715",
+      "name": "ability modifier for score 12 is +1",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "77"
+    },
+    {
+      "index": 11,
+      "uuid": "9c51f6be-db72-4af7-92ac-b293a02c0dcd",
+      "name": "ability modifier for score 13 is +1",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "82"
+    },
+    {
+      "index": 12,
+      "uuid": "94053a5d-53b6-4efc-b669-a8b5098f7762",
+      "name": "ability modifier for score 14 is +2",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "87"
+    },
+    {
+      "index": 13,
+      "uuid": "8c33e7ca-3f9f-4820-8ab3-65f2c9e2f0e2",
+      "name": "ability modifier for score 15 is +2",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "92"
+    },
+    {
+      "index": 14,
+      "uuid": "c3ec871e-1791-44d0-b3cc-77e5fb4cd33d",
+      "name": "ability modifier for score 16 is +3",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "97"
+    },
+    {
+      "index": 15,
+      "uuid": "3d053cee-2888-4616-b9fd-602a3b1efff4",
+      "name": "ability modifier for score 17 is +3",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "102"
+    },
+    {
+      "index": 16,
+      "uuid": "bafd997a-e852-4e56-9f65-14b60261faee",
+      "name": "ability modifier for score 18 is +4",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "107"
+    },
+    {
+      "index": 17,
+      "uuid": "4f28f19c-2e47-4453-a46a-c0d365259c14",
+      "name": "random ability is within range",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "112"
+    },
+    {
+      "index": 18,
+      "uuid": "385d7e72-864f-4e88-8279-81a7d75b04ad",
+      "name": "random character is valid",
+      "is_named_case": false,
+      "expected_original_pass": true,
+      "actual_original_pass": true,
+      "mutant_pass": true,
+      "test_file_line": "118"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "R20-T043",
+  "exercise": "dnd-character",
+  "expected_cases": 18,
+  "static_test_case_count": 18,
+  "xml_executed_case_count": 18,
+  "xml_passed_case_count": 18,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 18,
+  "tests_toml_total": 20,
+  "tests_toml_included": 18,
+  "tests_toml_excluded": 2,
+  "mutant_passed_case_count": 14,
+  "mutant_failed_case_count": 4,
+  "mutant_failed_case_names": [
+    "ability modifier for score 3 is -4",
+    "ability modifier for score 5 is -3",
+    "ability modifier for score 7 is -2",
+    "ability modifier for score 9 is -1"
+  ],
+  "smallest_rejecting_score": 3
+}

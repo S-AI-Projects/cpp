@@ -1,0 +1,2 @@
+$ <TMP>/orig/dnd-character/build/dnd-character -r xml -o <TMP>/results.xml
+exit_code: 0
