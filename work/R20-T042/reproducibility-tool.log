@@ -1,0 +1,13 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 <REPO>/tools/course_checks/r20-t042.py --exercise pig-latin --ref org/main --json-out <TMP>/repro-report.json
+exit_code: 0
+--- stdout ---
+Prepared exercise: pig-latin (ref=org/main 8d139cb04c74)
+Timestamp normalisation: identity (no timestamps embedded in track test sources or build_fixup)
+Note: Boost not installed locally; applied ci.yml workaround (removed gigasecond/meetup in temp copies)
+PASS SHA-256 (pig_latin.cpp): 798419a4836e3eaa6a6f172966f1af07024e64c502bd5d09fe9af457330b7e21 == 798419a4836e3eaa6a6f172966f1af07024e64c502bd5d09fe9af457330b7e21
+PASS SHA-256 (pig_latin.h): 207610bf44363b3e3ada3d2fe969025d04960f57c77178cddba9a7d7554f21a5 == 207610bf44363b3e3ada3d2fe969025d04960f57c77178cddba9a7d7554f21a5
+PASS SHA-256 (pig_latin_test.cpp): 921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0 == 921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0
+PASS --list-test-names-only identical across both builds: 23 test cases
+PASS UUID bijection: 23 included tests.toml UUIDs == 23 test tags == 23 compiled Catch2 cases
+PASS working-tree pig_latin_test.cpp equals prepared copy byte-for-byte (921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0)
+REPRODUCIBILITY CHECK PASS: pig-latin (23 cases, identical across 2 clean archives)

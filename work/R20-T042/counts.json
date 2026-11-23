@@ -1,0 +1,24 @@
+{
+  "task_id": "R20-T042",
+  "exercise": "pig-latin",
+  "expected_cases": 23,
+  "static_test_case_count": 23,
+  "xml_executed_case_count": 23,
+  "xml_passed_case_count": 23,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 23,
+  "tests_toml_total": 23,
+  "tests_toml_included": 23,
+  "tests_toml_excluded": 0,
+  "reproducibility_two_copy_hashes_identical": true,
+  "reproducibility_copy_a_hashes": {
+    "pig_latin_test.cpp": "921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0",
+    "pig_latin.cpp": "798419a4836e3eaa6a6f172966f1af07024e64c502bd5d09fe9af457330b7e21",
+    "pig_latin.h": "207610bf44363b3e3ada3d2fe969025d04960f57c77178cddba9a7d7554f21a5"
+  },
+  "reproducibility_copy_b_hashes": {
+    "pig_latin_test.cpp": "921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0",
+    "pig_latin.cpp": "798419a4836e3eaa6a6f172966f1af07024e64c502bd5d09fe9af457330b7e21",
+    "pig_latin.h": "207610bf44363b3e3ada3d2fe969025d04960f57c77178cddba9a7d7554f21a5"
+  }
+}

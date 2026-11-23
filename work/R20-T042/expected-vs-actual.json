@@ -1,0 +1,222 @@
+{
+  "task_id": "R20-T042",
+  "exercise": "pig-latin",
+  "expected_executed_cases": 23,
+  "actual_executed_cases": 23,
+  "named_cases": [
+    "word beginning with a",
+    "word beginning with e",
+    "word beginning with i"
+  ],
+  "reproducibility_normalisation": "identity (no timestamps emitted)",
+  "configlet_sync_note": "configlet 4.0.3 (`configlet sync --tests --exercise pig-latin`) exited 1 warning that upstream problem-specifications added 2 newer cases (44616581-5ce3-4a81-82d0-40c7ab13d2d0, 44616581-5ce3-4a81-82d0-40c7ab13d2d1) after pinned commit 8d139cb04c74; at the pinned commit all 23 tests.toml UUIDs align with pig_latin_test.cpp 1-to-1.",
+  "cases": [
+    {
+      "index": 1,
+      "uuid": "11567f84-e8c6-4918-aedb-435f0b73db57",
+      "name": "word beginning with a",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "8"
+    },
+    {
+      "index": 2,
+      "uuid": "f623f581-bc59-4f45-9032-90c3ca9d2d90",
+      "name": "word beginning with e",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "14"
+    },
+    {
+      "index": 3,
+      "uuid": "7dcb08b3-23a6-4e8a-b9aa-d4e859450d58",
+      "name": "word beginning with i",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "18"
+    },
+    {
+      "index": 4,
+      "uuid": "0e5c3bff-266d-41c8-909f-364e4d16e09c",
+      "name": "word beginning with o",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "22"
+    },
+    {
+      "index": 5,
+      "uuid": "614ba363-ca3c-4e96-ab09-c7320799723c",
+      "name": "word beginning with u",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "26"
+    },
+    {
+      "index": 6,
+      "uuid": "bf2538c6-69eb-4fa7-a494-5a3fec911326",
+      "name": "word beginning with a vowel and followed by a qu",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "31"
+    },
+    {
+      "index": 7,
+      "uuid": "e5be8a01-2d8a-45eb-abb4-3fcc9582a303",
+      "name": "word beginning with p",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "35"
+    },
+    {
+      "index": 8,
+      "uuid": "d36d1e13-a7ed-464d-a282-8820cb2261ce",
+      "name": "word beginning with k",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "39"
+    },
+    {
+      "index": 9,
+      "uuid": "d838b56f-0a89-4c90-b326-f16ff4e1dddc",
+      "name": "word beginning with x",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "43"
+    },
+    {
+      "index": 10,
+      "uuid": "bce94a7a-a94e-4e2b-80f4-b2bb02e40f71",
+      "name": "word beginning with q without a following u",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "48"
+    },
+    {
+      "index": 11,
+      "uuid": "c01e049a-e3e2-451c-bf8e-e2abb7e438b8",
+      "name": "word beginning with ch",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "52"
+    },
+    {
+      "index": 12,
+      "uuid": "9ba1669e-c43f-4b93-837a-cfc731fd1425",
+      "name": "word beginning with qu",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "56"
+    },
+    {
+      "index": 13,
+      "uuid": "92e82277-d5e4-43d7-8dd3-3a3b316c41f7",
+      "name": "word beginning with qu and a preceding consonant",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "61"
+    },
+    {
+      "index": 14,
+      "uuid": "79ae4248-3499-4d5b-af46-5cb05fa073ac",
+      "name": "word beginning with th",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "65"
+    },
+    {
+      "index": 15,
+      "uuid": "e0b3ae65-f508-4de3-8999-19c2f8e243e1",
+      "name": "word beginning with thr",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "69"
+    },
+    {
+      "index": 16,
+      "uuid": "20bc19f9-5a35-4341-9d69-1627d6ee6b43",
+      "name": "word beginning with sch",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "73"
+    },
+    {
+      "index": 17,
+      "uuid": "54b796cb-613d-4509-8c82-8fbf8fc0af9e",
+      "name": "word beginning with yt",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "77"
+    },
+    {
+      "index": 18,
+      "uuid": "8c37c5e1-872e-4630-ba6e-d20a959b67f6",
+      "name": "word beginning with xr",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "81"
+    },
+    {
+      "index": 19,
+      "uuid": "a4a36d33-96f3-422c-a233-d4021460ff00",
+      "name": "y is treated like a consonant at the beginning of a word",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "86"
+    },
+    {
+      "index": 20,
+      "uuid": "adc90017-1a12-4100-b595-e346105042c7",
+      "name": "y is treated like a vowel at the end of a consonant cluster",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "91"
+    },
+    {
+      "index": 21,
+      "uuid": "e59dbbe8-ccee-4619-a8e9-ce017489bfc0",
+      "name": "first_letter_and_ay_are_moved_to_the_end_of_words_that_start_with_consonants_->_word_beginning_with_consonant_and_vowel_containing_qu",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "97"
+    },
+    {
+      "index": 22,
+      "uuid": "29b4ca3d-efe5-4a95-9a54-8467f2e5e59a",
+      "name": "y as second letter in two letter word",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "103"
+    },
+    {
+      "index": 23,
+      "uuid": "44616581-5ce3-4a81-82d0-40c7ab13d2cf",
+      "name": "a whole phrase",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "107"
+    }
+  ]
+}

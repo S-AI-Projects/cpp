@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/pig-latin.dir/pig_latin_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/pig-latin.dir/pig_latin.cpp.o
+[ 75%] Building CXX object CMakeFiles/pig-latin.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable pig-latin
+[100%] Built target pig-latin
+===============================================================================
+All tests passed (23 assertions in 23 test cases)
+
+[100%] Built target test_pig-latin
