@@ -1,0 +1,10 @@
+$ <TMP>/knapsack/build/knapsack --list-test-names-only
+exit_code: 7
+--- stdout ---
+no items
+one item, too heavy
+five items (cannot be greedy by weight)
+five items (cannot be greedy by value)
+example knapsack
+8 items
+15 items

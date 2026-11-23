@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/knapsack.dir/knapsack_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/knapsack.dir/knapsack.cpp.o
+[ 75%] Building CXX object CMakeFiles/knapsack.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable knapsack
+[100%] Built target knapsack
+===============================================================================
+All tests passed (7 assertions in 7 test cases)
+
+[100%] Built target test_knapsack

@@ -1,0 +1,91 @@
+{
+  "task_id": "R20-T041",
+  "exercise": "knapsack",
+  "expected_executed_cases": 7,
+  "actual_executed_cases": 7,
+  "named_cases": [
+    "no items",
+    "one item, too heavy",
+    "five items (cannot be greedy by weight)"
+  ],
+  "excluded_case": {
+    "uuid": "a4d7d2f0-ad8a-460c-86f3-88ba709d41a7",
+    "description": "no items",
+    "include": false,
+    "reimplemented_by": "3993a824-c20e-493d-b3c9-ee8a7753ee59",
+    "classification": "replacement case (not unsupported in C++, not a bug)",
+    "toml_comment": "Excluded replacement case: canonical items was '{}' instead of '[]'; superseded by 3993a824-c20e-493d-b3c9-ee8a7753ee59 ('no items' in knapsack_test.cpp) and omitted to avoid duplicate Catch2 TEST_CASE('no items')."
+  },
+  "cases": [
+    {
+      "index": 1,
+      "uuid": "3993a824-c20e-493d-b3c9-ee8a7753ee59",
+      "name": "no items",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "10",
+      "toml_comment": "Reimplements a4d7d2f0-ad8a-460c-86f3-88ba709d41a7 with items = []: TEST_CASE('no items') passes empty std::vector<Item>{}, skipping the outer items loop in maximum_value and returning zero-initialized dp[100] == 0."
+    },
+    {
+      "index": 2,
+      "uuid": "1d39e98c-6249-4a8b-912f-87cb12e506b0",
+      "name": "one item, too heavy",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "19",
+      "toml_comment": "TEST_CASE('one item, too heavy') verifies the inner-loop capacity guard weight >= item.weight (10 >= 100 is false in maximum_value), leaving dp[10] == 0."
+    },
+    {
+      "index": 3,
+      "uuid": "833ea310-6323-44f2-9d27-a278740ffbd8",
+      "name": "five items (cannot be greedy by weight)",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "26",
+      "toml_comment": "TEST_CASE('five items (cannot be greedy by weight)') verifies 0/1 DP transition std::max(dp[weight], dp[weight - item.weight] + item.value) selects {10, 21} (21) over four {2, 5} items (20)."
+    },
+    {
+      "index": 4,
+      "uuid": "277cdc52-f835-4c7d-872b-bff17bab2456",
+      "name": "five items (cannot be greedy by value)",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "34",
+      "toml_comment": ""
+    },
+    {
+      "index": 5,
+      "uuid": "81d8e679-442b-4f7a-8a59-7278083916c9",
+      "name": "example knapsack",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "42",
+      "toml_comment": ""
+    },
+    {
+      "index": 6,
+      "uuid": "f23a2449-d67c-4c26-bf3e-cde020f27ecc",
+      "name": "8 items",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "48",
+      "toml_comment": ""
+    },
+    {
+      "index": 7,
+      "uuid": "7c682ae9-c385-4241-a197-d2fa02c81a11",
+      "name": "15 items",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "56",
+      "toml_comment": ""
+    }
+  ]
+}

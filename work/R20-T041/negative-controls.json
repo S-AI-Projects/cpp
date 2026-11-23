@@ -1,0 +1,41 @@
+{
+  "task_id": "R20-T041",
+  "all_controls_behaved_as_expected": true,
+  "controls": {
+    "assertion_failure": {
+      "target_named_case": "no items",
+      "mutation": "if (items.empty()) { return -1; }",
+      "compile_rc": 0,
+      "run_rc": 1,
+      "named_case_failed": true,
+      "evaluate_failures": [
+        "run_rc=1 (expected 0)",
+        "OverallResultsCases reported failures=1",
+        "Named case did not pass: 'no items'"
+      ],
+      "rejected_as_expected": true
+    },
+    "zero_tests": {
+      "filter": "no-such-test-filter*",
+      "catch2_run_rc": 0,
+      "xml_total_cases": 0,
+      "evaluate_failures": [
+        "ZERO-TEST GUARD: OverallResultsCases successes+failures == 0",
+        "Total executed cases 0 != expected 7",
+        "Named case missing from XML: 'no items'",
+        "Named case missing from XML: 'one item, too heavy'",
+        "Named case missing from XML: 'five items (cannot be greedy by weight)'"
+      ],
+      "rejected_as_expected": true
+    },
+    "child_failure": {
+      "synthetic_run_rc_1_failures": [
+        "run_rc=1 (expected 0)"
+      ],
+      "synthetic_build_rc_2_failures": [
+        "build_rc=2 (expected 0)"
+      ],
+      "rejected_as_expected": true
+    }
+  }
+}
