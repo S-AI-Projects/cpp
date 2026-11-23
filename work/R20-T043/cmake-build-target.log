@@ -1,0 +1,4 @@
+$ cmake --build build --target dnd-character
+exit_code: 0
+--- stdout ---
+[100%] Built target dnd-character

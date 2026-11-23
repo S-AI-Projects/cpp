@@ -1,0 +1,70 @@
+{
+  "task_id": "R20-T043",
+  "exercise": "dnd-character",
+  "exercise_dir": "<REPO>/exercises/practice/dnd-character",
+  "config_files": {
+    "solution": [
+      "dnd_character.cpp",
+      "dnd_character.h"
+    ],
+    "test": [
+      "dnd_character_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/dnd-character/dnd_character.cpp",
+      "<REPO>/exercises/practice/dnd-character/dnd_character.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/dnd-character/dnd_character_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/dnd-character/.meta/example.cpp",
+      "<REPO>/exercises/practice/dnd-character/.meta/example.h"
+    ]
+  },
+  "expected_cases": 18,
+  "named_cases": [
+    "ability modifier for score 3 is -4",
+    "ability modifier for score 4 is -3",
+    "ability modifier for score 5 is -3"
+  ],
+  "mutant_file": "work/R20-T043/mutant.cpp",
+  "exercise_file_sha256_before": {
+    ".docs/hints.md": "7ee55141a445a65afc4da4e4279ade1d98a4919464f7079f15a7d14cc33127c9",
+    ".docs/instructions.md": "289bfe2a6471256fd95171707a3a432b7af35ee1b63c01dfa2cf1a613f3118b4",
+    ".docs/introduction.md": "dff0a022809b89edfb055b2f3a5df1f27fe6dec2fadf0a3836185fd16e985a6a",
+    ".meta/config.json": "c8a2656325d47550fb977e6986afc12d48554bd009600f370b200cf88a8ff858",
+    ".meta/example.cpp": "283b2cc89667e83905d01f6c3fdc924b0e05fe7e85a9731fffbc301e932a8d61",
+    ".meta/example.h": "7aa06621256ed069a24b771daf90b8124bf34c94cb18aabbf94724ba0d8dab2e",
+    ".meta/tests.toml": "c995b54cfc24dd3a5946bf2720d81ebbbfaed0fa3ddefa091a4fd5d2afe00201",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "dnd_character.cpp": "6c319692509a512018956cb44623882acd40523179ab6f32f2c848a89fd9cf9c",
+    "dnd_character.h": "811ddf6043bc35e09fcc886d2ac7824dc7d366d880cfc5160c489de9aaff8c53",
+    "dnd_character_test.cpp": "5aafc5e1740c7e4f57f81ac132dd8c53c2eb1e685426e4dcadf9399a6d3c2754",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/hints.md": "7ee55141a445a65afc4da4e4279ade1d98a4919464f7079f15a7d14cc33127c9",
+    ".docs/instructions.md": "289bfe2a6471256fd95171707a3a432b7af35ee1b63c01dfa2cf1a613f3118b4",
+    ".docs/introduction.md": "dff0a022809b89edfb055b2f3a5df1f27fe6dec2fadf0a3836185fd16e985a6a",
+    ".meta/config.json": "c8a2656325d47550fb977e6986afc12d48554bd009600f370b200cf88a8ff858",
+    ".meta/example.cpp": "283b2cc89667e83905d01f6c3fdc924b0e05fe7e85a9731fffbc301e932a8d61",
+    ".meta/example.h": "7aa06621256ed069a24b771daf90b8124bf34c94cb18aabbf94724ba0d8dab2e",
+    ".meta/tests.toml": "c995b54cfc24dd3a5946bf2720d81ebbbfaed0fa3ddefa091a4fd5d2afe00201",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "dnd_character.cpp": "6c319692509a512018956cb44623882acd40523179ab6f32f2c848a89fd9cf9c",
+    "dnd_character.h": "811ddf6043bc35e09fcc886d2ac7824dc7d366d880cfc5160c489de9aaff8c53",
+    "dnd_character_test.cpp": "5aafc5e1740c7e4f57f81ac132dd8c53c2eb1e685426e4dcadf9399a6d3c2754",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_files_unchanged_during_run": true
+}

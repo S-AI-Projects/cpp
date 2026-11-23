@@ -1,0 +1,2 @@
+$ <TMP>/mutant/dnd-character/build/dnd-character -r xml -o <TMP>/mutant-results.xml
+exit_code: 4
