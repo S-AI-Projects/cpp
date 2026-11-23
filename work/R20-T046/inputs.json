@@ -1,0 +1,71 @@
+{
+  "task_id": "R20-T046",
+  "exercise": "alphametics",
+  "exercise_dir": "<REPO>/exercises/practice/alphametics",
+  "config_files": {
+    "solution": [
+      "alphametics.cpp",
+      "alphametics.h"
+    ],
+    "test": [
+      "alphametics_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/alphametics/alphametics.cpp",
+      "<REPO>/exercises/practice/alphametics/alphametics.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/alphametics/alphametics_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/alphametics/.meta/example.cpp",
+      "<REPO>/exercises/practice/alphametics/.meta/example.h"
+    ]
+  },
+  "expected_cases": 10,
+  "named_cases": [
+    "puzzle_with_three_letters",
+    "solution_must_have_unique_value_for_each_letter",
+    "leading_zero_solution_is_invalid"
+  ],
+  "alternative_files": [
+    "work/R20-T046/alternative.cpp",
+    "work/R20-T046/alternative.h"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/hints.md": "46535d9f16479e71ea6184a2ed0a329c99cee9119714275fee780acd58c952ce",
+    ".docs/instructions.md": "8f798632934cfd35d9e2f36b9e66cae5ffa23279a09ddc61974f64e88180c4de",
+    ".meta/config.json": "c26e7e601580634d770058ca6ac8afe65be202fc47a1f995ea8f9875d5e27783",
+    ".meta/example.cpp": "1c0f5636e5e0ada1f7a1278876f18b5ebd08738af84286c7ced1c3dc0d99a2f1",
+    ".meta/example.h": "86a4d6156b740664ff476aaa446548f62bcc50f934ace3c96b6212f1a2b58fb0",
+    ".meta/tests.toml": "4d453f9047a71c714516b49a04b21fb3e66d84de9e627e71397845dd2571b41a",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "alphametics.cpp": "5845bc1b5354a371fa809c13f615a4ea48072bf3d518aee2439cd3d9a08086b4",
+    "alphametics.h": "9cc7714e8265e9d825c52de5e2ac52b3a6f9619560fb4a8b6b1c565d6a7e46c5",
+    "alphametics_test.cpp": "904d922c043f0f5075ac560f047e6cc745470789df95643ab7de5bd8e3ce3d65",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/hints.md": "46535d9f16479e71ea6184a2ed0a329c99cee9119714275fee780acd58c952ce",
+    ".docs/instructions.md": "8f798632934cfd35d9e2f36b9e66cae5ffa23279a09ddc61974f64e88180c4de",
+    ".meta/config.json": "c26e7e601580634d770058ca6ac8afe65be202fc47a1f995ea8f9875d5e27783",
+    ".meta/example.cpp": "1c0f5636e5e0ada1f7a1278876f18b5ebd08738af84286c7ced1c3dc0d99a2f1",
+    ".meta/example.h": "86a4d6156b740664ff476aaa446548f62bcc50f934ace3c96b6212f1a2b58fb0",
+    ".meta/tests.toml": "4d453f9047a71c714516b49a04b21fb3e66d84de9e627e71397845dd2571b41a",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "alphametics.cpp": "5845bc1b5354a371fa809c13f615a4ea48072bf3d518aee2439cd3d9a08086b4",
+    "alphametics.h": "9cc7714e8265e9d825c52de5e2ac52b3a6f9619560fb4a8b6b1c565d6a7e46c5",
+    "alphametics_test.cpp": "904d922c043f0f5075ac560f047e6cc745470789df95643ab7de5bd8e3ce3d65",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "protected_files_unchanged_during_run": true
+}

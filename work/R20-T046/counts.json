@@ -1,0 +1,89 @@
+{
+  "task_id": "R20-T046",
+  "exercise": "alphametics",
+  "expected_cases": 10,
+  "static_test_case_count": 10,
+  "reference_xml_executed_count": 10,
+  "alternative_xml_executed_count": 10,
+  "list_test_names_only_count": 10,
+  "tests_toml_total": 10,
+  "tests_toml_included": 10,
+  "tests_toml_excluded": 0,
+  "normalized_token_stream_similarity": 0.0909,
+  "search_work_comparison": {
+    "reference_dfs": [
+      {
+        "puzzle": "I + BB == ILL",
+        "solvable": true,
+        "search_nodes": 67
+      },
+      {
+        "puzzle": "A == B",
+        "solvable": false,
+        "search_nodes": 101
+      },
+      {
+        "puzzle": "ACA + DD == BD",
+        "solvable": false,
+        "search_nodes": 4195
+      },
+      {
+        "puzzle": "AS + A == MOM",
+        "solvable": true,
+        "search_nodes": 4303
+      },
+      {
+        "puzzle": "NO + NO + TOO == LATE",
+        "solvable": true,
+        "search_nodes": 95580
+      },
+      {
+        "puzzle": "SEND + MORE == MONEY",
+        "solvable": true,
+        "search_nodes": 2002687
+      },
+      {
+        "puzzle": "AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE",
+        "solvable": true,
+        "search_nodes": 2270516
+      }
+    ],
+    "alternative_column_carry": [
+      {
+        "puzzle": "I + BB == ILL",
+        "solvable": true,
+        "search_nodes": 28
+      },
+      {
+        "puzzle": "A == B",
+        "solvable": false,
+        "search_nodes": 11
+      },
+      {
+        "puzzle": "ACA + DD == BD",
+        "solvable": false,
+        "search_nodes": 82
+      },
+      {
+        "puzzle": "AS + A == MOM",
+        "solvable": true,
+        "search_nodes": 224
+      },
+      {
+        "puzzle": "NO + NO + TOO == LATE",
+        "solvable": true,
+        "search_nodes": 95
+      },
+      {
+        "puzzle": "SEND + MORE == MONEY",
+        "solvable": true,
+        "search_nodes": 4267
+      },
+      {
+        "puzzle": "AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE",
+        "solvable": true,
+        "search_nodes": 40027
+      }
+    ]
+  }
+}

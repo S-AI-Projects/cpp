@@ -1,0 +1,2 @@
+$ <TMP>/ref/alphametics/build/alphametics -r xml -o <TMP>/results.xml
+exit_code: 0
