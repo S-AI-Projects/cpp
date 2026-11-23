@@ -1,0 +1,5 @@
+$ <TMP>/micro_example/micro
+exit_code: 0
+--- stdout ---
+zero_copy_same_addr=1
+same_storage=true char='1' numeric=1 pitfall_without_minus_zero=49 safe_mul3=true

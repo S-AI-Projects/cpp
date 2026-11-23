@@ -1,0 +1,12 @@
+$ <TMP>/trinary/build/trinary --list-test-names-only
+exit_code: 9
+--- stdout ---
+_1_yields_decimal_1
+_2_yields_decimal_2
+_10_yields_decimal_3
+_11_yields_decimal_4
+_100_yields_decimal_9
+_112_yields_decimal_14
+_222_yields_decimal_26
+_1122000120_yields_decimal_32091
+invalid_yields_decimal_0
