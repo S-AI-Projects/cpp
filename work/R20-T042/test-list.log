@@ -1,0 +1,26 @@
+$ <TMP>/pig-latin/build/pig-latin --list-test-names-only
+exit_code: 23
+--- stdout ---
+word beginning with a
+word beginning with e
+word beginning with i
+word beginning with o
+word beginning with u
+word beginning with a vowel and followed by a qu
+word beginning with p
+word beginning with k
+word beginning with x
+word beginning with q without a following u
+word beginning with ch
+word beginning with qu
+word beginning with qu and a preceding consonant
+word beginning with th
+word beginning with thr
+word beginning with sch
+word beginning with yt
+word beginning with xr
+y is treated like a consonant at the beginning of a word
+y is treated like a vowel at the end of a consonant cluster
+first_letter_and_ay_are_moved_to_the_end_of_words_that_start_with_consonants_->_word_beginning_with_consonant_and_vowel_containing_qu
+y as second letter in two letter word
+a whole phrase

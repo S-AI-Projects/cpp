@@ -1,0 +1,67 @@
+{
+  "task_id": "R20-T042",
+  "exercise": "pig-latin",
+  "exercise_dir": "<REPO>/exercises/practice/pig-latin",
+  "config_files": {
+    "solution": [
+      "pig_latin.cpp",
+      "pig_latin.h"
+    ],
+    "test": [
+      "pig_latin_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/pig-latin/pig_latin.cpp",
+      "<REPO>/exercises/practice/pig-latin/pig_latin.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/pig-latin/pig_latin_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/pig-latin/.meta/example.cpp",
+      "<REPO>/exercises/practice/pig-latin/.meta/example.h"
+    ]
+  },
+  "expected_cases": 23,
+  "named_cases": [
+    "word beginning with a",
+    "word beginning with e",
+    "word beginning with i"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/instructions.md": "549115cb33a5a91e8e5c4aeea68cf6e672c84fd8d77669d2eeb2518a2d4d6aa5",
+    ".docs/introduction.md": "215d592a2a5bb66bf521678d712e71e395e9f3375219bf59d69dfe0ba524698a",
+    ".meta/config.json": "ab3ec3bf0ef3bdcc57dd5c67d629617d0e65f6bfe1b3609d144612def9bc018c",
+    ".meta/example.cpp": "798419a4836e3eaa6a6f172966f1af07024e64c502bd5d09fe9af457330b7e21",
+    ".meta/example.h": "207610bf44363b3e3ada3d2fe969025d04960f57c77178cddba9a7d7554f21a5",
+    ".meta/tests.toml": "932c1fa4640d172e5a84085502fb3651af64da40f15f5cbb787c442d2c092dbf",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "pig_latin.cpp": "d2bf7f02112dbf1647626c685b02fb24afa54e8627b6c699e88e20a3853fcdd4",
+    "pig_latin.h": "3cce33346dd1f85dd1ad99db5647b50dbb78324c39283d4a9254f81a89d28c36",
+    "pig_latin_test.cpp": "921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/instructions.md": "549115cb33a5a91e8e5c4aeea68cf6e672c84fd8d77669d2eeb2518a2d4d6aa5",
+    ".docs/introduction.md": "215d592a2a5bb66bf521678d712e71e395e9f3375219bf59d69dfe0ba524698a",
+    ".meta/config.json": "ab3ec3bf0ef3bdcc57dd5c67d629617d0e65f6bfe1b3609d144612def9bc018c",
+    ".meta/example.cpp": "798419a4836e3eaa6a6f172966f1af07024e64c502bd5d09fe9af457330b7e21",
+    ".meta/example.h": "207610bf44363b3e3ada3d2fe969025d04960f57c77178cddba9a7d7554f21a5",
+    ".meta/tests.toml": "932c1fa4640d172e5a84085502fb3651af64da40f15f5cbb787c442d2c092dbf",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "pig_latin.cpp": "d2bf7f02112dbf1647626c685b02fb24afa54e8627b6c699e88e20a3853fcdd4",
+    "pig_latin.h": "3cce33346dd1f85dd1ad99db5647b50dbb78324c39283d4a9254f81a89d28c36",
+    "pig_latin_test.cpp": "921cab3f213223a0ae5d7155bb99fac2d34ef1490734d36549b65e1bdeda89e0",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_files_unchanged_during_run": true
+}

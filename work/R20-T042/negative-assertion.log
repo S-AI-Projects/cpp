@@ -1,0 +1,2 @@
+$ <TMP>/pig-latin/build/pig-latin -r xml -o <TMP>/neg_assert.xml
+exit_code: 1

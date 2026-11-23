@@ -1,0 +1,2 @@
+$ <TMP>/pig-latin/build/pig-latin -r xml -o <TMP>/results.xml
+exit_code: 0
