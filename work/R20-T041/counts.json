@@ -1,0 +1,22 @@
+{
+  "task_id": "R20-T041",
+  "exercise": "knapsack",
+  "expected_cases": 7,
+  "static_test_case_count": 7,
+  "xml_executed_case_count": 7,
+  "xml_passed_case_count": 7,
+  "xml_failed_case_count": 0,
+  "list_test_names_only_count": 7,
+  "uuid_tags_in_test_file_count": 7,
+  "tests_toml_before": {
+    "total": 8,
+    "included": 7,
+    "excluded": 1
+  },
+  "tests_toml_after": {
+    "total": 8,
+    "included": 7,
+    "excluded": 1,
+    "changed_inclusions": 0
+  }
+}

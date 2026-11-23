@@ -1,0 +1,76 @@
+{
+  "task_id": "R20-T041",
+  "exercise": "knapsack",
+  "exercise_dir": "<REPO>/exercises/practice/knapsack",
+  "config_json_path": "<REPO>/exercises/practice/knapsack/.meta/config.json",
+  "config_files": {
+    "solution": [
+      "knapsack.cpp",
+      "knapsack.h"
+    ],
+    "test": [
+      "knapsack_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/knapsack/knapsack.cpp",
+      "<REPO>/exercises/practice/knapsack/knapsack.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/knapsack/knapsack_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/knapsack/.meta/example.cpp",
+      "<REPO>/exercises/practice/knapsack/.meta/example.h"
+    ]
+  },
+  "expected_cases": 7,
+  "named_cases": [
+    "no items",
+    "one item, too heavy",
+    "five items (cannot be greedy by weight)"
+  ],
+  "targeted_uuids": [
+    "a4d7d2f0-ad8a-460c-86f3-88ba709d41a7",
+    "3993a824-c20e-493d-b3c9-ee8a7753ee59",
+    "1d39e98c-6249-4a8b-912f-87cb12e506b0",
+    "833ea310-6323-44f2-9d27-a278740ffbd8"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/instructions.md": "ce34c464d117fd69bbdfe259b80ae8e167d913f2497f300d2eb683e51794377f",
+    ".docs/introduction.md": "f92946c2531a4140dc3bd57edc0cd1c601771169f2b681edbeca63005478b956",
+    ".meta/config.json": "2114b07dd78349c795bca28eface40a069ae766cb12a3a5a526e497c834f1fdb",
+    ".meta/create_tests.py": "0cc956b668788894f1b652fa53c4068e2c0652aa2d985a02a3faa86250623df4",
+    ".meta/example.cpp": "d5745ffbccd7f3b11367c955f11c70843e319b9efed07e60b307c28b7d766e1a",
+    ".meta/example.h": "fc5e9f1688514ad4aff4b044054ff816c8fcec810f89b6f3a3b76891f5db4299",
+    ".meta/tests.toml": "858052f8b424a34c6c1d70cd63e283a2297143115267beaa893dd6219a0920d2",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "knapsack.cpp": "19fc4e9bfc1bd94a263cb255f37d49076a50c4226b4b62c904dbb61057f7d96e",
+    "knapsack.h": "e0d0a6b1e533fb68f3fb6b4de6756ce65299b85c81406778361f5906c24357d5",
+    "knapsack_test.cpp": "f798aed6a492025b666b0e73bab97ed4688f44ecef4c1508179f03f015b9edcd",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/instructions.md": "ce34c464d117fd69bbdfe259b80ae8e167d913f2497f300d2eb683e51794377f",
+    ".docs/introduction.md": "f92946c2531a4140dc3bd57edc0cd1c601771169f2b681edbeca63005478b956",
+    ".meta/config.json": "2114b07dd78349c795bca28eface40a069ae766cb12a3a5a526e497c834f1fdb",
+    ".meta/create_tests.py": "0cc956b668788894f1b652fa53c4068e2c0652aa2d985a02a3faa86250623df4",
+    ".meta/example.cpp": "d5745ffbccd7f3b11367c955f11c70843e319b9efed07e60b307c28b7d766e1a",
+    ".meta/example.h": "fc5e9f1688514ad4aff4b044054ff816c8fcec810f89b6f3a3b76891f5db4299",
+    ".meta/tests.toml": "858052f8b424a34c6c1d70cd63e283a2297143115267beaa893dd6219a0920d2",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "knapsack.cpp": "19fc4e9bfc1bd94a263cb255f37d49076a50c4226b4b62c904dbb61057f7d96e",
+    "knapsack.h": "e0d0a6b1e533fb68f3fb6b4de6756ce65299b85c81406778361f5906c24357d5",
+    "knapsack_test.cpp": "f798aed6a492025b666b0e73bab97ed4688f44ecef4c1508179f03f015b9edcd",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_files_unchanged_during_run": true
+}

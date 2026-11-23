@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="knapsack">
+  <Group name="knapsack">
+    <TestCase name="no items" tags="[3993a824-c20e-493d-b3c9-ee8a7753ee59][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="10">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="one item, too heavy" tags="[1d39e98c-6249-4a8b-912f-87cb12e506b0][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="19">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="five items (cannot be greedy by weight)" tags="[833ea310-6323-44f2-9d27-a278740ffbd8][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="26">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="five items (cannot be greedy by value)" tags="[277cdc52-f835-4c7d-872b-bff17bab2456][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="34">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="example knapsack" tags="[81d8e679-442b-4f7a-8a59-7278083916c9][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="42">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="8 items" tags="[f23a2449-d67c-4c26-bf3e-cde020f27ecc][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="48">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="15 items" tags="[7c682ae9-c385-4241-a197-d2fa02c81a11][maximumValue]" filename="&lt;TMP&gt;/knapsack/knapsack_test.cpp" line="56">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="7" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="7" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="7" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="7" failures="0" expectedFailures="0"/>
+</Catch>

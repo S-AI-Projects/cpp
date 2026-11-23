@@ -1,0 +1,36 @@
+{
+  "task_id": "R20-T041",
+  "exercise": "knapsack",
+  "python": {
+    "version": "3.9.6",
+    "implementation": "CPython",
+    "tomllib_available": false
+  },
+  "cmake": {
+    "version_line": "cmake version 4.5.1",
+    "generator": "Unix Makefiles",
+    "cmake_policy_version_minimum_used": null
+  },
+  "compiler": {
+    "id": "AppleClang",
+    "version": "21.0.0.21000401",
+    "version_line": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "catch2": {
+    "version": "2.13.6",
+    "header": "exercises/practice/knapsack/test/catch.hpp"
+  },
+  "os": {
+    "system": "Darwin",
+    "release": "27.2.0",
+    "version": "Darwin Kernel Version 27.2.0: Wed Oct 14 23:48:06 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T8142",
+    "machine": "arm64",
+    "platform": "macOS-27.2.1-arm64-arm-64bit"
+  },
+  "git": {
+    "head": "8d139cb04c7463722ae1f233099cc0bd39a71092",
+    "base_ref": "org/main",
+    "org_main_sha": "8d139cb04c7463722ae1f233099cc0bd39a71092",
+    "used_fallback_ref": false
+  }
+}

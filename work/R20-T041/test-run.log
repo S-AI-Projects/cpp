@@ -1,0 +1,2 @@
+$ <TMP>/knapsack/build/knapsack -r xml -o <TMP>/results.xml
+exit_code: 0
