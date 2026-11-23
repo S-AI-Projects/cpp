@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/beer-song.dir/beer_song_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/beer-song.dir/beer_song.cpp.o
+[ 75%] Building CXX object CMakeFiles/beer-song.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable beer-song
+[100%] Built target beer-song
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_beer-song

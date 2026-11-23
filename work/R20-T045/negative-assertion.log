@@ -1,0 +1,2 @@
+$ <TMP>/beer-song/build/beer-song -r xml -o <TMP>/neg_assert.xml
+exit_code: 1

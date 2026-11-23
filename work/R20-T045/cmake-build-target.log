@@ -1,0 +1,4 @@
+$ cmake --build build --target beer-song
+exit_code: 0
+--- stdout ---
+[100%] Built target beer-song
