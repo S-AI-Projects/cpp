@@ -1,0 +1,17 @@
+Newly opened account has zero balance
+Single deposit
+Multiple deposits
+Withdraw once
+Withdraw twice
+Can do multiple operations sequentially
+annot check balance of closed account
+Cannot deposit into closed account
+Cannot deposit into unopened account
+Cannot withdraw from closed account
+Cannot close an account that was not opened
+Cannot open an already opened account
+Reopened account does not retain balance
+Cannot withdraw more than deposited
+Cannot withdraw negative
+Cannot deposit negative
+Can handle concurrent transactions

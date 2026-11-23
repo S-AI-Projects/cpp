@@ -1,0 +1,67 @@
+{
+  "task_id": "R20-T049",
+  "exercise": "bank-account",
+  "exercise_dir": "<REPO>/exercises/practice/bank-account",
+  "config_files": {
+    "solution": [
+      "bank_account.cpp",
+      "bank_account.h"
+    ],
+    "test": [
+      "bank_account_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/bank-account/bank_account.cpp",
+      "<REPO>/exercises/practice/bank-account/bank_account.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/bank-account/bank_account_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/bank-account/.meta/example.cpp",
+      "<REPO>/exercises/practice/bank-account/.meta/example.h"
+    ]
+  },
+  "expected_cases": 17,
+  "named_cases": [
+    "Newly opened account has zero balance",
+    "Single deposit",
+    "Multiple deposits"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/instructions.md": "ad0c5ba4f4feaf16a2b0224b6da0f521fcfc683c30b57d2d061feab02a936535",
+    ".docs/introduction.md": "2e727a4587e11d589e4fb38116cc24e1550d04d781725bdb50ed70028dedce2a",
+    ".meta/config.json": "93ed393352a6ef81cdb763f0d3653544b6e93ca66a36cb19a3276244c247982c",
+    ".meta/example.cpp": "1dd7e57d8165c0ce6f22ea6b1c377471737e3cbe0cb47df875f266e8d362261e",
+    ".meta/example.h": "d4b90925d3a019a25f39f279e832f039c6adb5f51c01c5c81bf0eef4eccd9615",
+    ".meta/tests.toml": "ed82182dba3714c9bdb10bcb5efa199814b03a1e5c474497b52696248181f1aa",
+    "CMakeLists.txt": "9f97b18ee31d7b22e34c8334d28f45947f7f34548f3659cead93fac35bb33636",
+    "bank_account.cpp": "4dd7d6220960938d02881c35f226237ae818d51594397f82f8ba34ee2b7625ad",
+    "bank_account.h": "7c7fec5200baced608c1895e83351ca07302ac2d7206885646664a4ba9e4b7a3",
+    "bank_account_test.cpp": "4caf9c56298a19ffeb80afa738c28977c355089e3c29f85f9b6c811790d7b20a",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/instructions.md": "ad0c5ba4f4feaf16a2b0224b6da0f521fcfc683c30b57d2d061feab02a936535",
+    ".docs/introduction.md": "2e727a4587e11d589e4fb38116cc24e1550d04d781725bdb50ed70028dedce2a",
+    ".meta/config.json": "93ed393352a6ef81cdb763f0d3653544b6e93ca66a36cb19a3276244c247982c",
+    ".meta/example.cpp": "1dd7e57d8165c0ce6f22ea6b1c377471737e3cbe0cb47df875f266e8d362261e",
+    ".meta/example.h": "d4b90925d3a019a25f39f279e832f039c6adb5f51c01c5c81bf0eef4eccd9615",
+    ".meta/tests.toml": "ed82182dba3714c9bdb10bcb5efa199814b03a1e5c474497b52696248181f1aa",
+    "CMakeLists.txt": "9f97b18ee31d7b22e34c8334d28f45947f7f34548f3659cead93fac35bb33636",
+    "bank_account.cpp": "4dd7d6220960938d02881c35f226237ae818d51594397f82f8ba34ee2b7625ad",
+    "bank_account.h": "7c7fec5200baced608c1895e83351ca07302ac2d7206885646664a4ba9e4b7a3",
+    "bank_account_test.cpp": "4caf9c56298a19ffeb80afa738c28977c355089e3c29f85f9b6c811790d7b20a",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_files_unchanged_during_run": true
+}
