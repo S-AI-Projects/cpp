@@ -1,0 +1,8 @@
+$ <TMP>/diamond/build/diamond --list-test-names-only
+exit_code: 5
+--- stdout ---
+Degenerate case with a single 'A' row
+Degenerate case with no row containing 3 distinct groups of spaces
+Smallest non-degenerate case with odd diamond side length
+Smallest non-degenerate case with even diamond side length
+Largest possible diamond
