@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catch name="trinary">
+  <Group name="trinary">
+    <TestCase name="_1_yields_decimal_1" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="8">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_2_yields_decimal_2" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="11">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_10_yields_decimal_3" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="13">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_11_yields_decimal_4" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="15">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_100_yields_decimal_9" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="17">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_112_yields_decimal_14" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="19">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_222_yields_decimal_26" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="23">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="_1122000120_yields_decimal_32091" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="27">
+      <OverallResult success="true"/>
+    </TestCase>
+    <TestCase name="invalid_yields_decimal_0" filename="&lt;TMP&gt;/trinary/trinary_test.cpp" line="31">
+      <OverallResult success="true"/>
+    </TestCase>
+    <OverallResults successes="9" failures="0" expectedFailures="0"/>
+    <OverallResultsCases successes="9" failures="0" expectedFailures="0"/>
+  </Group>
+  <OverallResults successes="9" failures="0" expectedFailures="0"/>
+  <OverallResultsCases successes="9" failures="0" expectedFailures="0"/>
+</Catch>

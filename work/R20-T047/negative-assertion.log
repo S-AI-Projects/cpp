@@ -1,0 +1,2 @@
+$ <TMP>/trinary/build/trinary -r xml -o <TMP>/neg_assert.xml
+exit_code: 8

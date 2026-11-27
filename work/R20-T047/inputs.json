@@ -1,0 +1,67 @@
+{
+  "task_id": "R20-T047",
+  "exercise": "trinary",
+  "exercise_dir": "<REPO>/exercises/practice/trinary",
+  "config_files": {
+    "solution": [
+      "trinary.cpp",
+      "trinary.h"
+    ],
+    "test": [
+      "trinary_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/trinary/trinary.cpp",
+      "<REPO>/exercises/practice/trinary/trinary.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/trinary/trinary_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/trinary/.meta/example.cpp",
+      "<REPO>/exercises/practice/trinary/.meta/example.h"
+    ]
+  },
+  "expected_cases": 9,
+  "named_cases": [
+    "_1_yields_decimal_1",
+    "_2_yields_decimal_2",
+    "_10_yields_decimal_3"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/hints.md": "3e8e37259822c72ee5ad59982e281c11c2550aea7cfb66904b63deb840261634",
+    ".docs/instructions.md": "0089580f98707988a877f149cb9ad78a69545d2a192d449454615adaabb08d5b",
+    ".meta/config.json": "4d46dfe9ad379972c4c6859504f73d62537773ce2319723c6d41672f7c66ff79",
+    ".meta/example.cpp": "0d36c9ed2dea8d4df49a11eca22232370615e6feb898f69f8d3eb6214d4c17d1",
+    ".meta/example.h": "58b80c8c9b36d1805a7b34f6b0553159a3293965c5cd7763fbea7d57b939ccab",
+    ".meta/tests.toml": "acfa5010641ea1b6135a4a479569567088e131f74e7a6d5bfe2a9a69490aff81",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260",
+    "trinary.cpp": "bbfe5a54a43f526723957c5f378be728a5a8bd44ae276b5c35b6b8c9ae7f6d04",
+    "trinary.h": "ee15bcacd945338d0714e44e2dc69e1e098ec9cfe964af6b5bd4273c8b397896",
+    "trinary_test.cpp": "da6859000a2315f3efd595ba6975090599f42724a48ac77b4e0ba371d7ebc570"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/hints.md": "3e8e37259822c72ee5ad59982e281c11c2550aea7cfb66904b63deb840261634",
+    ".docs/instructions.md": "0089580f98707988a877f149cb9ad78a69545d2a192d449454615adaabb08d5b",
+    ".meta/config.json": "4d46dfe9ad379972c4c6859504f73d62537773ce2319723c6d41672f7c66ff79",
+    ".meta/example.cpp": "0d36c9ed2dea8d4df49a11eca22232370615e6feb898f69f8d3eb6214d4c17d1",
+    ".meta/example.h": "58b80c8c9b36d1805a7b34f6b0553159a3293965c5cd7763fbea7d57b939ccab",
+    ".meta/tests.toml": "acfa5010641ea1b6135a4a479569567088e131f74e7a6d5bfe2a9a69490aff81",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260",
+    "trinary.cpp": "bbfe5a54a43f526723957c5f378be728a5a8bd44ae276b5c35b6b8c9ae7f6d04",
+    "trinary.h": "ee15bcacd945338d0714e44e2dc69e1e098ec9cfe964af6b5bd4273c8b397896",
+    "trinary_test.cpp": "da6859000a2315f3efd595ba6975090599f42724a48ac77b4e0ba371d7ebc570"
+  },
+  "protected_files_unchanged_during_run": true
+}
