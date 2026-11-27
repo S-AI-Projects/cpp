@@ -1,0 +1,8 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 <REPO>/tools/course_checks/r20-t049.py --exercise bank-account --xml-out <TMP>/s1_results.xml --list-out <TMP>/s1_list.txt
+exit_code: 0
+--- stdout ---
+TEMP_DIR: <RUNNER_TMP>
+PASS: Learner stub and test files equal org/main
+PASS: Temp directory cleaned up (<RUNNER_TMP>)
+PASS: All 12 exercise files unchanged (SHA-256 verified)
+RESULT: PASS - executed 17 cases

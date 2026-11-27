@@ -1,0 +1,200 @@
+{
+  "task_id": "R20-T049",
+  "exercise": "bank-account",
+  "expected_executed_cases": 17,
+  "actual_executed_cases": 17,
+  "named_cases": [
+    "Newly opened account has zero balance",
+    "Single deposit",
+    "Multiple deposits"
+  ],
+  "scenario_table": [
+    {
+      "scenario": "real_reference",
+      "expected_rc": 0,
+      "actual_rc": 0,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    },
+    {
+      "scenario": "failing_reference",
+      "expected_rc": "non-zero",
+      "actual_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    },
+    {
+      "scenario": "empty_test_selection",
+      "expected_rc": "non-zero",
+      "actual_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    },
+    {
+      "scenario": "interrupted_sigint",
+      "expected_rc": "non-zero",
+      "actual_rc": 1,
+      "temp_dir_cleaned": true,
+      "hashes_identical": true,
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "uuid": "983a1528-4ceb-45e5-8257-8ce01aceb5ed",
+      "name": "Newly opened account has zero balance",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "12"
+    },
+    {
+      "index": 2,
+      "uuid": "e88d4ec3-c6bf-4752-8e59-5046c44e3ba7",
+      "name": "Single deposit",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "19"
+    },
+    {
+      "index": 3,
+      "uuid": "3d9147d4-63f4-4844-8d2b-1fee2e9a2a0d",
+      "name": "Multiple deposits",
+      "is_named_case": true,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "26"
+    },
+    {
+      "index": 4,
+      "uuid": "08f1af07-27ae-4b38-aa19-770bde558064",
+      "name": "Withdraw once",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "34"
+    },
+    {
+      "index": 5,
+      "uuid": "6f6d242f-8c31-4ac6-8995-a90d42cad59f",
+      "name": "Withdraw twice",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "42"
+    },
+    {
+      "index": 6,
+      "uuid": "45161c94-a094-4c77-9cec-998b70429bda",
+      "name": "Can do multiple operations sequentially",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "52"
+    },
+    {
+      "index": 7,
+      "uuid": "f9facfaa-d824-486e-8381-48832c4bbffd",
+      "name": "annot check balance of closed account",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "64"
+    },
+    {
+      "index": 8,
+      "uuid": "7a65ba52-e35c-4fd2-8159-bda2bde6e59c",
+      "name": "Cannot deposit into closed account",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "73"
+    },
+    {
+      "index": 9,
+      "uuid": "a0a1835d-faae-4ad4-a6f3-1fcc2121380b",
+      "name": "Cannot deposit into unopened account",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "82"
+    },
+    {
+      "index": 10,
+      "uuid": "570dfaa5-0532-4c1f-a7d3-0f65c3265608",
+      "name": "Cannot withdraw from closed account",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "88"
+    },
+    {
+      "index": 11,
+      "uuid": "c396d233-1c49-4272-98dc-7f502dbb9470",
+      "name": "Cannot close an account that was not opened",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "97"
+    },
+    {
+      "index": 12,
+      "uuid": "c06f534f-bdc2-4a02-a388-1063400684de",
+      "name": "Cannot open an already opened account",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "104"
+    },
+    {
+      "index": 13,
+      "uuid": "0722d404-6116-4f92-ba3b-da7f88f1669c",
+      "name": "Reopened account does not retain balance",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "112"
+    },
+    {
+      "index": 14,
+      "uuid": "ec42245f-9361-4341-8231-a22e8d19c52f",
+      "name": "Cannot withdraw more than deposited",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "123"
+    },
+    {
+      "index": 15,
+      "uuid": "4f381ef8-10ef-4507-8e1d-0631ecc8ee72",
+      "name": "Cannot withdraw negative",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "132"
+    },
+    {
+      "index": 16,
+      "uuid": "d45df9ea-1db0-47f3-b18c-d365db49d938",
+      "name": "Cannot deposit negative",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "139"
+    },
+    {
+      "index": 17,
+      "uuid": "ba0c1e0b-0f00-416f-8097-a7dfc97871ff",
+      "name": "Can handle concurrent transactions",
+      "is_named_case": false,
+      "expected_pass": true,
+      "actual_pass": true,
+      "test_file_line": "147"
+    }
+  ]
+}
