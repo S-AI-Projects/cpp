@@ -1,0 +1,104 @@
+{
+  "task_id": "R20-T046",
+  "exercise": "alphametics",
+  "expected_executed_cases": 10,
+  "reference_executed_cases": 10,
+  "alternative_executed_cases": 10,
+  "named_cases": [
+    "puzzle_with_three_letters",
+    "solution_must_have_unique_value_for_each_letter",
+    "leading_zero_solution_is_invalid"
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "uuid": "e0c08b07-9028-4d5f-91e1-d178fead8e1a",
+      "name": "puzzle_with_three_letters",
+      "is_named_case": true,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "9"
+    },
+    {
+      "index": 2,
+      "uuid": "a504ee41-cb92-4ec2-9f11-c37e95ab3f25",
+      "name": "solution_must_have_unique_value_for_each_letter",
+      "is_named_case": true,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "21"
+    },
+    {
+      "index": 3,
+      "uuid": "4e3b81d2-be7b-4c5c-9a80-cd72bc6d465a",
+      "name": "leading_zero_solution_is_invalid",
+      "is_named_case": true,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "27"
+    },
+    {
+      "index": 4,
+      "uuid": "8a3e3168-d1ee-4df7-94c7-b9c54845ac3a",
+      "name": "puzzle_with_two_digits_final_carry",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "33"
+    },
+    {
+      "index": 5,
+      "uuid": "a9630645-15bd-48b6-a61e-d85c4021cc09",
+      "name": "puzzle_with_four_letters",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "44"
+    },
+    {
+      "index": 6,
+      "uuid": "3d905a86-5a52-4e4e-bf80-8951535791bd",
+      "name": "puzzle_with_six_letters",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "54"
+    },
+    {
+      "index": 7,
+      "uuid": "4febca56-e7b7-4789-97b9-530d09ba95f0",
+      "name": "puzzle_with_seven_letters",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "67"
+    },
+    {
+      "index": 8,
+      "uuid": "12125a75-7284-4f9a-a5fa-191471e0d44f",
+      "name": "puzzle_with_eight_letters",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "81"
+    },
+    {
+      "index": 9,
+      "uuid": "fb05955f-38dc-477a-a0b6-5ef78969fffa",
+      "name": "puzzle_with_ten_letters",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "95"
+    },
+    {
+      "index": 10,
+      "uuid": "9a101e81-9216-472b-b458-b513a7adacf7",
+      "name": "puzzle_with_ten_letters_and_199_addends",
+      "is_named_case": false,
+      "reference_pass": true,
+      "alternative_pass": true,
+      "test_file_line": "113"
+    }
+  ]
+}

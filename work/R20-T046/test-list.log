@@ -1,0 +1,13 @@
+$ <TMP>/ref/alphametics/build/alphametics --list-test-names-only
+exit_code: 10
+--- stdout ---
+puzzle_with_three_letters
+solution_must_have_unique_value_for_each_letter
+leading_zero_solution_is_invalid
+puzzle_with_two_digits_final_carry
+puzzle_with_four_letters
+puzzle_with_six_letters
+puzzle_with_seven_letters
+puzzle_with_eight_letters
+puzzle_with_ten_letters
+puzzle_with_ten_letters_and_199_addends

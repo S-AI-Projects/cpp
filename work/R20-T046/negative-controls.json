@@ -1,0 +1,41 @@
+{
+  "task_id": "R20-T046",
+  "all_controls_behaved_as_expected": true,
+  "controls": {
+    "assertion_failure": {
+      "target_named_case": "puzzle_with_three_letters",
+      "mutation": "if (puzzle == \"I + BB == ILL\") return std::nullopt;",
+      "compile_rc": 0,
+      "run_rc": 1,
+      "named_case_failed": true,
+      "evaluate_failures": [
+        "run_rc=1 (expected 0)",
+        "OverallResultsCases reported failures=1",
+        "Named case did not pass: 'puzzle_with_three_letters'"
+      ],
+      "rejected_as_expected": true
+    },
+    "zero_tests": {
+      "filter": "no-such-test-filter*",
+      "catch2_run_rc": 0,
+      "xml_total_cases": 0,
+      "evaluate_failures": [
+        "ZERO-TEST GUARD: OverallResultsCases successes+failures == 0",
+        "Total executed cases 0 != expected 10",
+        "Named case missing from XML: 'puzzle_with_three_letters'",
+        "Named case missing from XML: 'solution_must_have_unique_value_for_each_letter'",
+        "Named case missing from XML: 'leading_zero_solution_is_invalid'"
+      ],
+      "rejected_as_expected": true
+    },
+    "child_failure": {
+      "synthetic_run_rc_1_failures": [
+        "run_rc=1 (expected 0)"
+      ],
+      "synthetic_build_rc_2_failures": [
+        "build_rc=2 (expected 0)"
+      ],
+      "rejected_as_expected": true
+    }
+  }
+}

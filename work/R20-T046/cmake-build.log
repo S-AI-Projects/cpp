@@ -1,0 +1,12 @@
+$ cmake --build build
+exit_code: 0
+--- stdout ---
+[ 25%] Building CXX object CMakeFiles/alphametics.dir/alphametics_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/alphametics.dir/alphametics.cpp.o
+[ 75%] Building CXX object CMakeFiles/alphametics.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable alphametics
+[100%] Built target alphametics
+===============================================================================
+All tests passed (61 assertions in 10 test cases)
+
+[100%] Built target test_alphametics
