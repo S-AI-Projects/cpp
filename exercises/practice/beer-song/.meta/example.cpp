@@ -23,6 +23,12 @@ ostream& operator<<(ostream& stream, bottles const& b) {
     return stream << " of beer";
 }
 
+// Complexity & invariant: O(1) time and O(1) auxiliary space per call across
+// the supported song domain (count in 0..99). For count > 0, constructs two
+// `bottles` objects (formatting <= 2 digits) and executes 4 top-level stream
+// insertions (10 leaf insertions via operator<<); for count == 0, constructs
+// one `bottles` object and executes 3 top-level insertions (4 leaf
+// insertions). Hence sing(begin, end) runs in Theta(begin - end + 1) time.
 void bottles_of_beer_on_the_wall(ostream& stream, unsigned count) {
     if (count) {
         stream << bottles(count) << " on the wall, " << bottles(count) << ".\n";

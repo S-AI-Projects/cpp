@@ -1,0 +1,6 @@
+$ ./inst_runner
+exit_code: 0
+--- stdout ---
+verse(8) verses=1 chars=115 wall_calls=1 wall_bottles=2 wall_top_ops=4 wall_leaf_ops=10 total_bottles=3 total_leaf_ops=16
+sing(9,0) verses=10 chars=1175 wall_calls=10 wall_bottles=19 wall_top_ops=39 wall_leaf_ops=94 total_bottles=28 total_leaf_ops=156
+sing(99,0) verses=100 chars=11884 wall_calls=100 wall_bottles=199 wall_top_ops=399 wall_leaf_ops=994 total_bottles=298 total_leaf_ops=1686

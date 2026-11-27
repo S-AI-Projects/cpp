@@ -1,0 +1,65 @@
+{
+  "task_id": "R20-T045",
+  "exercise": "beer-song",
+  "exercise_dir": "<REPO>/exercises/practice/beer-song",
+  "config_files": {
+    "solution": [
+      "beer_song.cpp",
+      "beer_song.h"
+    ],
+    "test": [
+      "beer_song_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "has_editor_key": false,
+  "resolved_paths": {
+    "solution": [
+      "<REPO>/exercises/practice/beer-song/beer_song.cpp",
+      "<REPO>/exercises/practice/beer-song/beer_song.h"
+    ],
+    "test": [
+      "<REPO>/exercises/practice/beer-song/beer_song_test.cpp"
+    ],
+    "example": [
+      "<REPO>/exercises/practice/beer-song/.meta/example.cpp",
+      "<REPO>/exercises/practice/beer-song/.meta/example.h"
+    ]
+  },
+  "expected_cases": 5,
+  "named_cases": [
+    "prints_an_arbitrary_verse",
+    "handles_1_bottle",
+    "handles_0_bottles"
+  ],
+  "exercise_file_sha256_before": {
+    ".docs/instructions.md": "74f85047feabcf41b1846d5c58ad0133a51e0963567d0afbc5e21541beb37e4f",
+    ".meta/config.json": "50f6ed387e682865172e82abf88be02c9e6f4cfe980180883aa0dedbebf788ca",
+    ".meta/example.cpp": "81b7e0adc30267da5a1d2a269aac38172bb7418fa41e2374945382bc0b5d3ae6",
+    ".meta/example.h": "906e74e1dd908e400285ed0370ce9ef75d174ac74e4f60555b23d058484db9ec",
+    ".meta/tests.toml": "6497d67ccf3744ac0ab1bd8018bf29fcc9d10ba44b200297413f3cce494678bc",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "beer_song.cpp": "8356a28a64550c913ad592beb3d77b46689b81d9cf1e8fdcc52d0c28a7f92351",
+    "beer_song.h": "1cab363b46a247654ebb44bad8949dd67fa91d9b4fbf83f846a65c0259db9f8d",
+    "beer_song_test.cpp": "e1117ed04c4eb060eb3ff0a7df796d0aef00a2563e971bf0468f3d912b2ba608",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "exercise_file_sha256_after": {
+    ".docs/instructions.md": "74f85047feabcf41b1846d5c58ad0133a51e0963567d0afbc5e21541beb37e4f",
+    ".meta/config.json": "50f6ed387e682865172e82abf88be02c9e6f4cfe980180883aa0dedbebf788ca",
+    ".meta/example.cpp": "81b7e0adc30267da5a1d2a269aac38172bb7418fa41e2374945382bc0b5d3ae6",
+    ".meta/example.h": "906e74e1dd908e400285ed0370ce9ef75d174ac74e4f60555b23d058484db9ec",
+    ".meta/tests.toml": "6497d67ccf3744ac0ab1bd8018bf29fcc9d10ba44b200297413f3cce494678bc",
+    "CMakeLists.txt": "53d531120e650972adf19a2a42aa2d5bc716c93700ffac74c1c2868fdce633ff",
+    "beer_song.cpp": "8356a28a64550c913ad592beb3d77b46689b81d9cf1e8fdcc52d0c28a7f92351",
+    "beer_song.h": "1cab363b46a247654ebb44bad8949dd67fa91d9b4fbf83f846a65c0259db9f8d",
+    "beer_song_test.cpp": "e1117ed04c4eb060eb3ff0a7df796d0aef00a2563e971bf0468f3d912b2ba608",
+    "test/catch.hpp": "e11ac6b2994c046909c4a7c730a6a536e8f9563172563026878b7baadecdf553",
+    "test/tests-main.cpp": "5847fda35c1320d94f8d088aaf34229d689f66f1da235f885cbb28c8f17e4260"
+  },
+  "protected_files_unchanged_during_run": true
+}

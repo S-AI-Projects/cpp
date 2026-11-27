@@ -1,0 +1,2 @@
+$ <TMP>/beer-song/build/beer-song -r xml -o <TMP>/results.xml
+exit_code: 0
